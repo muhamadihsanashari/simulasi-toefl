@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">sehatq-apps-test</string>
+    <string name="facebook_app_id">184515390095334</string>
+    <string name="fb_login_protocol_scheme">fb184515390095334</string>
+    <string name="sehat">Sehat</string>
+    <string name="label_q">Q</string>
+    <string name="sign_in_with_facebook">Sign in With Facebook</string>
+    <string name="sign_in_with_google">Sign in With Google</string>
+    <string name="sign_up">Dont have an account?</string>
+    <string name="sign_here">Signup here</string>
+    <string name="login">Login</string>
 </resources>

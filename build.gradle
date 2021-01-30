@@ -45,6 +45,9 @@ ext {
     //room
     room_version = '2.1.0'
 
+    //facebook
+    facebook_auth_version='[5,6)'
+
 }
 
 allprojects {

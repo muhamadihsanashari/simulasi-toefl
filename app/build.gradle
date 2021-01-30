@@ -92,5 +92,8 @@ dependencies {
     implementation "androidx.room:room-runtime:$rootProject.room_version"
     kapt "androidx.room:room-compiler:$rootProject.room_version"
 
+    //facebook
+    implementation "com.facebook.android:facebook-android-sdk:$rootProject.facebook_auth_version"
+
 
 }

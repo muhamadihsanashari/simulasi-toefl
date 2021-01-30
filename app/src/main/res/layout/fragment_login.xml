@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.sehatq.test.ui.login.LoginViewModel" />
+    </data>
+
+    <ScrollView
+        svOverScroll="@{true}"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_slarge">
+
+            <include layout="@layout/content_title" />
+
+            <!--suppress AndroidUnknownAttribute -->
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:drawableStart="@android:drawable/ic_dialog_email"
+                android:drawablePadding="@dimen/margin_smed"
+                android:drawableTint="@color/colorPrimary"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/padding_small"
+                tools:ignore="UnusedAttribute" />
+
+            <!--suppress AndroidUnknownAttribute -->
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_hms"
+                android:drawableStart="@android:drawable/ic_lock_lock"
+                android:drawablePadding="@dimen/margin_smed"
+                android:drawableTint="@color/colorPrimary"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="@dimen/padding_small"
+                tools:ignore="UnusedAttribute" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_hms"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Remember Me" />
+
+                <Button
+                    style="@style/SmallBorderlessButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot Password?" />
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_30dp"
+                android:layout_marginBottom="@dimen/size_10dp"
+                android:background="@drawable/default_button"
+                android:text="@string/login"
+                android:textAllCaps="false" />
+
+
+            <include layout="@layout/layout_divider" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:background="@drawable/default_button_facebook"
+                android:gravity="center"
+                android:text="@string/sign_in_with_facebook"
+                android:textAllCaps="false"
+                app:backgroundTint="@null"
+                app:icon="@drawable/ic_facebook"
+                app:iconGravity="textStart"
+                app:iconPadding="10dp"
+                app:iconTint="@null" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:background="@drawable/default_button_google"
+                android:gravity="center"
+                android:text="@string/sign_in_with_google"
+                android:textAllCaps="false"
+                app:backgroundTint="@null"
+                app:icon="@drawable/ic_google"
+                app:iconGravity="textStart"
+                app:iconPadding="10dp"
+                app:iconTint="@null" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_smed"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_s"
+                    android:textStyle="bold" />
+
+                <Button
+                    style="@style/SmallBorderlessButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_here"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

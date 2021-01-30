@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_slarge">20dp</dimen>
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="margin_smed">10dp</dimen>
+    <dimen name="margin_hms">16dp</dimen>
+    <dimen name="padding_small">10dp</dimen>
+    <dimen name="size_30dp">30dp</dimen>
+    <dimen name="size_10dp">10dp</dimen>
+    <dimen name="radius_xsmall">4dp</dimen>
+</resources>
