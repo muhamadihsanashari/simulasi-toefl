@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/text_ms</item>
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+
     <style name="SmallBorderlessButton" parent="Widget.AppCompat.Button.Borderless">
         <item name="android:textAllCaps">false</item>
-        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
         <item name="android:textSize">@dimen/text_s</item>
         <item name="android:minHeight">0dp</item>
         <item name="android:minWidth">0dp</item>
     </style>
 
-    <color name="colorPrimary">#03a9f4</color>
-    <dimen name="text_s">12sp</dimen>
+
+    <dimen name="text_ms">14sp</dimen>
 </resources>

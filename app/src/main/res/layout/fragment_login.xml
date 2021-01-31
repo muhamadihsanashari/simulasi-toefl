@@ -12,7 +12,6 @@
     </data>
 
     <ScrollView
-        svOverScroll="@{true}"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true">
@@ -32,10 +31,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_small"
+                android:afterTextChanged="@{viewModel::afterEmailChanged}"
                 android:drawableStart="@android:drawable/ic_dialog_email"
                 android:drawablePadding="@dimen/margin_smed"
-                android:drawableTint="@color/colorPrimary"
-                android:hint="Email"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:hint="@string/email"
                 android:inputType="textEmailAddress"
                 android:padding="@dimen/padding_small"
                 tools:ignore="UnusedAttribute" />
@@ -46,10 +46,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_hms"
+                android:afterTextChanged="@{viewModel::afterPasswordChange}"
                 android:drawableStart="@android:drawable/ic_lock_lock"
                 android:drawablePadding="@dimen/margin_smed"
-                android:drawableTint="@color/colorPrimary"
-                android:hint="Password"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:hint="@string/password"
                 android:inputType="textPassword"
                 android:padding="@dimen/padding_small"
                 tools:ignore="UnusedAttribute" />
@@ -64,24 +65,27 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Remember Me" />
+                    android:text="@string/remember_me" />
 
                 <Button
                     style="@style/SmallBorderlessButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Forgot Password?" />
+                    android:text="@string/forgot_password" />
             </LinearLayout>
 
-            <com.google.android.material.button.MaterialButton
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/size_30dp"
                 android:layout_marginBottom="@dimen/size_10dp"
                 android:background="@drawable/default_button"
+                android:onClick="@{() -> viewModel.btnLoginClick()}"
                 android:text="@string/login"
-                android:textAllCaps="false" />
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
 
 
             <include layout="@layout/layout_divider" />
@@ -92,6 +96,7 @@
                 android:layout_marginTop="@dimen/size_10dp"
                 android:background="@drawable/default_button_facebook"
                 android:gravity="center"
+                android:onClick="@{() ->  viewModel.btnFacebookClick()}"
                 android:text="@string/sign_in_with_facebook"
                 android:textAllCaps="false"
                 app:backgroundTint="@null"
@@ -106,6 +111,7 @@
                 android:layout_marginTop="@dimen/size_10dp"
                 android:background="@drawable/default_button_google"
                 android:gravity="center"
+                android:onClick="@{() -> viewModel.btnGoogleClick()}"
                 android:text="@string/sign_in_with_google"
                 android:textAllCaps="false"
                 app:backgroundTint="@null"

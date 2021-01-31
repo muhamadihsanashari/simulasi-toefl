@@ -7,8 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="colorPrimary">#fff59d</color>
-    <color name="colorAccent">#ffeb3b</color>
+    <color name="colorPrimary">#ffeb3b</color>
+    <color name="colorPrimaryDark">#c8b900</color>
+    <color name="colorAccent">#c8b900</color>
     <color name="grey_background">#fafafa</color>
     <color name="blue_facebook">#4285F4</color>
     <color name="blue_facebook_dark">#2D5CAA</color>

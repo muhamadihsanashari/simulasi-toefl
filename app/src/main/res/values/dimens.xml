@@ -8,4 +8,5 @@
     <dimen name="size_30dp">30dp</dimen>
     <dimen name="size_10dp">10dp</dimen>
     <dimen name="radius_xsmall">4dp</dimen>
+    <dimen name="text_s">12sp</dimen>
 </resources>

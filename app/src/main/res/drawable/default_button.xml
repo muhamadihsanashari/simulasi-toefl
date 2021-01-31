@@ -9,7 +9,7 @@
     <item>
         <shape>
             <corners android:radius="@dimen/radius_xsmall" />
-            <solid android:color="@color/colorAccent" />
+            <solid android:color="@color/colorPrimaryDark" />
         </shape>
     </item>
 </selector>
