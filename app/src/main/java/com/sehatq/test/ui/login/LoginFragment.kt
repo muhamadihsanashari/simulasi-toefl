@@ -58,7 +58,7 @@ class LoginFragment : Fragment() {
 
             val signInIntent: Intent = mGoogleSignInClient!!.signInIntent
 
-            startActivityForResult(signInIntent, RC_SIGN_IN);
+            startActivityForResult(signInIntent, RC_SIGN_IN)
 
         })
 
@@ -90,7 +90,7 @@ class LoginFragment : Fragment() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (loginViewModel.mCallbackManager.onActivityResult(requestCode, resultCode, data)) {
-            return;
+            return
         }
         if (requestCode == RC_SIGN_IN){
             loginViewModel.handleIntent(data)
