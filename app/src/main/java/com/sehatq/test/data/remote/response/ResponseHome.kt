@@ -1,7 +1,7 @@
 package com.sehatq.test.data.remote.response
 
+import com.sehatq.test.data.local.model.Product
 import com.sehatq.test.data.remote.model.Category
-import com.sehatq.test.data.remote.model.Product
 
 data class ResponseHome(val data: Data? = null)
 

@@ -9,7 +9,7 @@ import com.sehatq.test.data.local.model.Product
 
 @Dao
 interface ProductDao {
-    @Query("SELECT * from Product")
+    @Query("SELECT * from product")
     fun getAllProduct(): LiveData<List<Product>>
 
     @Query("SELECT * FROM Product WHERE id=:id")
@@ -18,6 +18,6 @@ interface ProductDao {
     @get:Query("SELECT count(*) FROM Product")
     val count: Int
 
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
-    fun insert(vararg product: Product)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun insert(product: Product) : Long
 }

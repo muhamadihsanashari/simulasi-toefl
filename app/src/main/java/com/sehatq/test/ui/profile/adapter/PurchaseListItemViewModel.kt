@@ -1,17 +1,16 @@
-package com.sehatq.test.ui.home.adapter
-
+package com.sehatq.test.ui.profile.adapter
 
 import androidx.core.view.ViewCompat
 import androidx.databinding.ObservableField
 import com.sehatq.test.R
 import com.sehatq.test.data.local.model.Product
-import com.sehatq.test.databinding.ItemProductBinding
+import com.sehatq.test.databinding.ItemPurchaseBinding
 import java.util.*
 
-class ProductListItemViewModel(
+class PurchaseListItemViewModel(
     itemData: Product?,
-    var actionDetail: (Product, ItemProductBinding) -> Unit,
-    var binding: ItemProductBinding
+    var actionDetail: (Product, ItemPurchaseBinding) -> Unit,
+    var binding: ItemPurchaseBinding
 ) : Observable() {
 
     val title = ObservableField<String>()

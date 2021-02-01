@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:tools="http://schemas.android.com/tools">
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -38,7 +39,8 @@
                         android:id="@+id/iv_image"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/size_300dp"
-                        android:scaleType="fitXY" />
+                        android:scaleType="fitXY"
+                        app:imageUrl="@{viewModel.product.imageUrl}" />
 
                     <FrameLayout
                         android:layout_width="match_parent"
@@ -57,6 +59,7 @@
                             android:layout_height="@dimen/size_48dp"
                             android:layout_gravity="end"
                             android:background="?selectableItemBackground"
+                            android:onClick="@{() -> viewModel.shareProduct()}"
                             android:src="@drawable/ic_share" />
                     </FrameLayout>
 
@@ -84,6 +87,7 @@
                             android:includeFontPadding="false"
                             android:maxLines="1"
                             android:padding="@dimen/padding_xxsmall"
+                            android:text="@{viewModel.product.title}"
                             android:textAlignment="textStart"
                             android:textColor="@color/black"
                             android:textSize="@dimen/text_smm"
@@ -98,8 +102,8 @@
                             android:background="?selectableItemBackground"
                             android:clickable="true"
                             android:focusable="true"
-                            android:onClick="@{}" />
-                        <!--                            app:imageSource="@{viewModel.loved}" />-->
+                            android:onClick="@{() -> viewModel.changeLove()}"
+                            app:imageSource="@{viewModel.loved}" />
 
                     </LinearLayout>
 
@@ -110,6 +114,7 @@
                         android:ellipsize="end"
                         android:includeFontPadding="false"
                         android:padding="@dimen/padding_xxsmall"
+                        android:text="@{viewModel.product.description}"
                         android:textAlignment="textStart"
                         android:textColor="@color/grey_dark"
                         android:textSize="@dimen/text_s"
@@ -132,10 +137,9 @@
                 android:layout_marginEnd="@dimen/margin_smed"
                 android:layout_marginBottom="@dimen/size_10dp"
                 android:background="@drawable/default_button"
+                android:onClick="@{() -> viewModel.doBuy()}"
+                android:text="@{viewModel.textButton}"
                 android:textAllCaps="false" />
-            <!--                android:onClick="@{() -> viewModel.doBuy()}"-->
-            <!--                android:text="@{viewModel.textButton}"-->
-
         </FrameLayout>
     </LinearLayout>
 </layout>

@@ -70,8 +70,7 @@ class LoginFragment : Fragment() {
                 binding.edtEmail.error = getString(loginFormState.emailError)
             }
 
-            if (loginFormState.passwordError != null) {
-                binding.edtPassword.error = getString(loginFormState.passwordError)
+            if (loginFormState.passwordError != null) { binding.edtPassword.error = getString(loginFormState.passwordError)
             }
         })
 

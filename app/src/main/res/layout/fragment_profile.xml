@@ -6,6 +6,10 @@
     <data>
 
         <variable
+            name="adapter"
+            type="com.sehatq.test.ui.profile.adapter.PurchaseListAdapter" />
+
+        <variable
             name="viewModel"
             type="com.sehatq.test.ui.profile.ProfileViewModel" />
     </data>
@@ -40,13 +44,14 @@
                 android:layout_marginBottom="@dimen/margin_vxhigh"
                 android:background="@color/abu_abu_sad"
                 android:nestedScrollingEnabled="false"
+                android:setAdapter="@{adapter}"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 app:rvAnimation="@{true}"
                 tools:ignore="UnusedAttribute"
                 tools:listitem="@layout/item_product" />
 
             <TextView
-                isVisible="@{false}"
+                isVisible="@{viewModel.emptyShow}"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

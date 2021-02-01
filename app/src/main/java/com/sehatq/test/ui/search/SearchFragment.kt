@@ -9,9 +9,11 @@ import androidx.core.view.ViewCompat
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.FragmentNavigatorExtras
+import androidx.navigation.fragment.findNavController
 import androidx.transition.TransitionInflater
 import com.sehatq.test.R
-import com.sehatq.test.data.remote.model.Product
+import com.sehatq.test.data.local.model.Product
 import com.sehatq.test.databinding.FragmentSearchBinding
 import com.sehatq.test.databinding.ItemProductBinding
 import com.sehatq.test.ui.home.adapter.ProductListAdapter
@@ -68,6 +70,20 @@ class SearchFragment : Fragment() {
     }
 
     fun seeDetailProduct(product: Product, itemProductBinding: ItemProductBinding) {
-
+        val bundle = Bundle()
+        bundle.putSerializable("data", product)
+        val extras = FragmentNavigatorExtras(
+            itemProductBinding.ivImage to "image",
+            itemProductBinding.ivLove to "love",
+            itemProductBinding.tvTitle to "title",
+            itemProductBinding.tvDescription to "desc",
+            itemProductBinding.tvPrice to "price"
+        )
+        findNavController().navigate(
+            R.id.action_searchFragment_to_detailProductFragment,
+            bundle,
+            null,
+            extras
+        )
     }
 }

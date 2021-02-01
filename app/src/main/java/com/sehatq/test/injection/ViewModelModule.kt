@@ -33,7 +33,7 @@ val viewModelModule = module {
     }
 
     viewModel {
-        ProfileViewModel()
+        ProfileViewModel(repository = get())
     }
 
     viewModel {
@@ -41,7 +41,7 @@ val viewModelModule = module {
     }
 
     viewModel {
-        DetailProductViewModel()
+        DetailProductViewModel(repository = get())
     }
 
 }

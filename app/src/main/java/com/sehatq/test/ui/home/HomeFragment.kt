@@ -13,8 +13,8 @@ import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
 import androidx.transition.TransitionInflater
 import com.sehatq.test.R
+import com.sehatq.test.data.local.model.Product
 import com.sehatq.test.data.remote.model.Category
-import com.sehatq.test.data.remote.model.Product
 import com.sehatq.test.databinding.FragmentHomeBinding
 import com.sehatq.test.databinding.ItemCategoryBinding
 import com.sehatq.test.databinding.ItemProductBinding
@@ -43,8 +43,10 @@ class HomeFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            sharedElementEnterTransition = TransitionInflater.from(context).inflateTransition(android.R.transition.move)
-            sharedElementReturnTransition = TransitionInflater.from(context).inflateTransition(android.R.transition.move)
+            sharedElementEnterTransition =
+                TransitionInflater.from(context).inflateTransition(android.R.transition.move)
+            sharedElementReturnTransition =
+                TransitionInflater.from(context).inflateTransition(android.R.transition.move)
         }
     }
 
@@ -94,6 +96,20 @@ class HomeFragment : Fragment() {
     }
 
     fun seeDetailProduct(product: Product, itemProductBinding: ItemProductBinding) {
-
+        val bundle = Bundle()
+        bundle.putSerializable("data", product)
+        val extras = FragmentNavigatorExtras(
+            itemProductBinding.ivImage to "image",
+            itemProductBinding.ivLove to "love",
+            itemProductBinding.tvTitle to "title",
+            itemProductBinding.tvDescription to "desc",
+            itemProductBinding.tvPrice to "price"
+        )
+        findNavController().navigate(
+            R.id.action_homeFragment_to_detailProductFragment,
+            bundle,
+            null,
+            extras
+        )
     }
 }

@@ -97,6 +97,7 @@ dependencies {
 
     //google
     implementation "com.google.android.gms:play-services-auth:$rootProject.google_service_version"
+    implementation 'com.jakewharton.timber:timber:4.7.1'
 
 
 }
