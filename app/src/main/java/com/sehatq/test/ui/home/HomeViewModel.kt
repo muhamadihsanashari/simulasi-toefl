@@ -14,7 +14,7 @@ class HomeViewModel(private val repository: HomeRepositoryImpl) : BaseViewModel(
 
     val showLoading = ObservableBoolean()
     val homeData = MutableLiveData<ResponseHome>()
-    private val showError = SingleLiveEvent<String>()
+    val showError = SingleLiveEvent<String>()
     val btnSearchEvent = SingleLiveEvent<Long>()
 
 

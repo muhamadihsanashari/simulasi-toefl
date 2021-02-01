@@ -1,15 +1,17 @@
 package com.sehatq.test.injection
 
+import android.content.Context
 import com.sehatq.test.data.local.database.dao.ProductDao
 import com.sehatq.test.data.remote.network.HomeAPI
 import com.sehatq.test.data.repository.HomeRepositoryImpl
 import com.sehatq.test.data.repository.ProductRepositoryImpl
+import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module
 
 val repositoryModule = module {
 
-    fun providehomeRepositoryModule(api: HomeAPI): HomeRepositoryImpl {
-        return HomeRepositoryImpl(api)
+    fun providehomeRepositoryModule(api: HomeAPI, context: Context): HomeRepositoryImpl {
+        return HomeRepositoryImpl(api, context)
     }
 
     fun provideProductRepositoryModule(productDao: ProductDao): ProductRepositoryImpl {
@@ -17,7 +19,7 @@ val repositoryModule = module {
     }
 
     single {
-        providehomeRepositoryModule(get())
+        providehomeRepositoryModule(get(), androidContext())
     }
 
     single {

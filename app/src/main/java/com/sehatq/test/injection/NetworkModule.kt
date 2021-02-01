@@ -1,6 +1,7 @@
 package com.sehatq.test.injection
 
 import okhttp3.OkHttpClient
+import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.dsl.module
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
@@ -12,9 +13,12 @@ val networkModule = module {
     val readTimeout: Long = 40 // 20s
 
     fun provideHttpClient(): OkHttpClient {
+        val interceptor = HttpLoggingInterceptor()
+        interceptor.level = HttpLoggingInterceptor.Level.BODY
         val okHttpClientBuilder = OkHttpClient.Builder()
             .connectTimeout(connectTimeout, TimeUnit.SECONDS)
             .readTimeout(readTimeout, TimeUnit.SECONDS)
+            .addInterceptor(interceptor)
         okHttpClientBuilder.build()
         return okHttpClientBuilder.build()
     }

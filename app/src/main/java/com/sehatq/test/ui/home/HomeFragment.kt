@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.core.view.ViewCompat
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
@@ -48,6 +50,14 @@ class HomeFragment : Fragment() {
             sharedElementReturnTransition =
                 TransitionInflater.from(context).inflateTransition(android.R.transition.move)
         }
+
+        val callback: OnBackPressedCallback =
+            object : OnBackPressedCallback(true /* enabled by default */) {
+                override fun handleOnBackPressed() {
+                    activity?.finish()
+                }
+            }
+        requireActivity().onBackPressedDispatcher.addCallback(this, callback)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -63,6 +73,12 @@ class HomeFragment : Fragment() {
                 productListAdapter.addItems(datas = it.data.productPromo)
             }
 
+        })
+
+        homeViewModel.showError.observe(viewLifecycleOwner, Observer {
+            if (it != null) {
+                Toast.makeText(activity, it, Toast.LENGTH_SHORT).show()
+            }
         })
 
         homeViewModel.btnSearchEvent.observe(viewLifecycleOwner, Observer {
