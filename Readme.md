@@ -7,7 +7,6 @@ The list of features that my project has:
  4. MVVM Architecture
  5. Retrofit
  6. Kotlin Coroutines
- 7. Data Binding
- 8. Live Data
- 9. Lifecycles
+ 7. Live Data
+ 8. Lifecycles
 
