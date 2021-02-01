@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.sehatq.test.ui.profile.ProfileViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_hms"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:padding="@dimen/padding_xxsmall"
+            android:text="@string/label_your_purchase_history"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_smm" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_smed"
+                android:layout_marginBottom="@dimen/margin_vxhigh"
+                android:background="@color/abu_abu_sad"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:rvAnimation="@{true}"
+                tools:ignore="UnusedAttribute"
+                tools:listitem="@layout/item_product" />
+
+            <TextView
+                isVisible="@{false}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_hms"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:padding="@dimen/padding_xxsmall"
+                android:text="@string/you_haven_t_bought_anything_yet"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_smm" />
+        </FrameLayout>
+
+    </LinearLayout>
+</layout>

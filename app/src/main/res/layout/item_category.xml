@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+<!--        <variable-->
+<!--            name="itemViewModel"-->
+<!--            type="com.sehatq.test.ui.home.adapter.CategoryListItemViewModel" />-->
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_smed"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/padding_xsmall"
+        android:paddingEnd="@dimen/padding_xsmall">
+
+        <FrameLayout
+            android:layout_width="@dimen/size_58dp"
+            android:layout_height="@dimen/size_58dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/size_1dp"
+            android:layout_marginEnd="@dimen/size_1dp"
+            android:background="@drawable/bg_stroke_primary"
+            android:padding="@dimen/padding_xxsmall">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:includeFontPadding="false"
+            android:lines="2"
+            android:padding="@dimen/padding_xxsmall"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_xms"
+            tools:text="Baju" />
+    </LinearLayout>
+
+</layout>

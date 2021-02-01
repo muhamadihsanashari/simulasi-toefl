@@ -18,6 +18,16 @@
         <item name="android:minWidth">0dp</item>
     </style>
 
+    <style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">@dimen/text_xms</item>
+        <item name="android:textColor">@drawable/selector_text_color_navigation</item>
+    </style>
 
-    <dimen name="text_ms">14sp</dimen>
+    <style name="BottomNavigationView.Active" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">@dimen/text_xms</item>
+        <item name="android:textColor">@drawable/selector_text_color_navigation</item>
+    </style>
+
+
+
 </resources>

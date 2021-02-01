@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="activity"
+            type="androidx.fragment.app.FragmentActivity" />
+
+        <variable
+            name="viewModel"
+            type="com.sehatq.test.ui.detailProduct.DetailProductViewModel" />
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            svOverScroll="@{true}"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size_300dp"
+                        android:scaleType="fitXY" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_small">
+
+                        <ImageButton
+                            android:layout_width="@dimen/size_48dp"
+                            android:layout_height="@dimen/size_48dp"
+                            android:background="?selectableItemBackground"
+                            android:onClick="@{() -> activity.onBackPressed()}"
+                            android:src="@drawable/ic_back" />
+
+                        <ImageButton
+                            android:layout_width="@dimen/size_48dp"
+                            android:layout_height="@dimen/size_48dp"
+                            android:layout_gravity="end"
+                            android:background="?selectableItemBackground"
+                            android:onClick="@{() -> viewModel.shareProduct()}"
+                            android:src="@drawable/ic_share" />
+                    </FrameLayout>
+
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_slarge">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_title"
+                            style="@style/TextAppearance.Text.Medium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_small"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:padding="@dimen/padding_xxsmall"
+                            android:text="@{viewModel.product.title}"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_smm"
+                            tools:text="Baju" />
+
+                        <ImageView
+                            android:id="@+id/iv_love"
+                            android:layout_width="@dimen/size_24dp"
+                            android:layout_height="@dimen/size_24dp"
+                            android:layout_gravity="end"
+                            android:layout_margin="@dimen/margin_small"
+                            android:background="?selectableItemBackground"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:onClick="@{}" />
+                        <!--                            app:imageSource="@{viewModel.loved}" />-->
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:includeFontPadding="false"
+                        android:padding="@dimen/padding_xxsmall"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/grey_dark"
+                        android:textSize="@dimen/text_s"
+                        tools:text="Deskripsi" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/margin_smed"
+                android:layout_marginEnd="@dimen/margin_smed"
+                android:layout_marginBottom="@dimen/size_10dp"
+                android:background="@drawable/default_button"
+                android:textAllCaps="false" />
+            <!--                android:onClick="@{() -> viewModel.doBuy()}"-->
+            <!--                android:text="@{viewModel.textButton}"-->
+
+        </FrameLayout>
+    </LinearLayout>
+</layout>
