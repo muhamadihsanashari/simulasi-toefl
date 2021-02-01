@@ -6,86 +6,114 @@
 
     <data>
 
+        <import type="android.view.View" />
+
         <variable
             name="viewModel"
             type="com.sehatq.test.ui.home.HomeViewModel" />
+
+        <variable
+            name="adapterCategory"
+            type="com.sehatq.test.ui.home.adapter.CategoryListAdapter" />
+
+        <variable
+            name="adapterProduct"
+            type="com.sehatq.test.ui.home.adapter.ProductListAdapter" />
     </data>
 
-    <androidx.core.widget.NestedScrollView
-        nestedOverScroll="@{true}"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/abu_abu_sad">
+        android:layout_height="match_parent">
 
-        <LinearLayout
+        <androidx.core.widget.NestedScrollView
+            nestedOverScroll="@{true}"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/abu_abu_sad"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:background="@color/abu_abu_sad">
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
+                android:background="@color/abu_abu_sad"
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:id="@+id/ll_search"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_hsmed"
-                    android:layout_marginTop="@dimen/margin_hs"
-                    android:layout_marginEnd="@dimen/margin_hsmed"
-                    android:background="@drawable/bg_rounded_stroke_grey"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    android:padding="@dimen/padding_small">
+                    android:background="@color/white"
+                    android:orientation="vertical">
 
-                    <EditText
+                    <LinearLayout
+                        android:id="@+id/ll_search"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="?selectableItemBackground"
+                        android:layout_marginStart="@dimen/margin_hsmed"
+                        android:layout_marginTop="@dimen/margin_hs"
+                        android:layout_marginEnd="@dimen/margin_hsmed"
+                        android:background="@drawable/bg_rounded_stroke_grey"
                         android:clickable="true"
-                        android:drawableStart="@drawable/ic_search"
-                        android:drawablePadding="@dimen/size_8dp"
-                        android:focusable="false"
-                        android:gravity="center_vertical"
-                        android:hint="@string/label_hint_search_product"
-                        android:includeFontPadding="false"
-                        android:onClick="@{}"
-                        android:textSize="@dimen/text_ms"
-                        tools:ignore="KeyboardInaccessibleWidget" />
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_small">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?selectableItemBackground"
+                            android:clickable="true"
+                            android:drawableStart="@drawable/ic_search"
+                            android:drawablePadding="@dimen/size_8dp"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:hint="@string/label_hint_search_product"
+                            android:includeFontPadding="false"
+                            android:onClick="@{() -> viewModel.navigateToSearch()}"
+                            android:textSize="@dimen/text_ms"
+                            tools:ignore="KeyoardInaccessibleWidget" />
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_smlarge"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        app:rvAnimation="@{true}"
+                        app:rvOverScroll="@{true}"
+                        app:setAdapter="@{adapterCategory}"
+                        tools:listitem="@layout/item_category" />
 
                 </LinearLayout>
 
                 <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_list"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:clipToPadding="false"
-                    android:orientation="horizontal"
-                    android:padding="@dimen/padding_smlarge"
+                    android:layout_marginTop="@dimen/margin_smed"
+                    android:layout_marginBottom="@dimen/margin_vxhigh"
+                    android:background="@color/abu_abu_sad"
+                    android:nestedScrollingEnabled="false"
                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                     app:rvAnimation="@{true}"
-                    app:rvOverScroll="@{true}"
-                    tools:listitem="@layout/item_category" />
+                    app:setAdapter="@{adapterProduct}"
+                    tools:ignore="UnusedAttribute"
+                    tools:listitem="@layout/item_product" />
 
             </LinearLayout>
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_list"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_smed"
-                android:layout_marginBottom="@dimen/margin_vxhigh"
-                android:background="@color/abu_abu_sad"
-                android:nestedScrollingEnabled="false"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                app:rvAnimation="@{true}"
-                tools:ignore="UnusedAttribute"
-                tools:listitem="@layout/item_product" />
 
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
+        </androidx.core.widget.NestedScrollView>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="@{viewModel.showLoading ? View.VISIBLE : View.GONE}" />
+
+    </FrameLayout>
 </layout>

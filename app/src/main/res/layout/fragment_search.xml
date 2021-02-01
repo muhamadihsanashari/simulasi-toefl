@@ -12,6 +12,10 @@
         <variable
             name="viewModel"
             type="com.sehatq.test.ui.search.SearchViewModel" />
+
+        <variable
+            name="adapterProduct"
+            type="com.sehatq.test.ui.home.adapter.ProductListAdapter" />
     </data>
 
     <LinearLayout
@@ -53,6 +57,7 @@
                     android:background="@android:color/transparent"
                     android:drawableStart="@drawable/ic_search"
                     android:drawablePadding="@dimen/size_8dp"
+                    android:afterTextChanged="@{viewModel::searchTextChange}"
                     android:gravity="center_vertical"
                     android:hint="@string/label_hint_search_product"
                     android:includeFontPadding="false"
@@ -70,6 +75,7 @@
             android:background="@color/abu_abu_sad"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:rvAnimation="@{true}"
+            app:setAdapter="@{adapterProduct}"
             tools:listitem="@layout/item_product" />
     </LinearLayout>
 </layout>

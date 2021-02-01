@@ -1,9 +1,12 @@
 package com.sehatq.test.core
 
+import android.animation.Animator
+import android.animation.AnimatorListenerAdapter
 import android.view.View
 import android.widget.HorizontalScrollView
 import android.widget.ImageView
 import android.widget.ScrollView
+import androidx.cardview.widget.CardView
 import androidx.core.widget.NestedScrollView
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -130,6 +133,29 @@ object CustomBinding {
                 .fitCenter()
                 .placeholder(R.drawable.loading_image)
                 .into(view)
+        }
+    }
+
+    @JvmStatic
+    @BindingAdapter("appBarVisible")
+    fun bindAppBarVisible(view: CardView, isShow: Boolean) {
+        if (isShow) {
+            view.visibility = View.VISIBLE
+            view.animate()
+                .translationY(0f)
+                .alpha(1.0f)
+                .setListener(object : AnimatorListenerAdapter() {
+                })
+        } else {
+            view.animate()
+                .translationY(100f)
+                .alpha(0.0f)
+                .setListener(object : AnimatorListenerAdapter() {
+                    override fun onAnimationEnd(animation: Animator) {
+                        super.onAnimationEnd(animation)
+                        view.visibility = View.GONE
+                    }
+                })
         }
     }
 

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
 
-        <!--        <variable-->
-        <!--            name="itemViewModel"-->
-        <!--            type="com.sehatq.test.ui.home.adapter.ProductListItemViewModel" />-->
+        <variable
+            name="itemViewModel"
+            type="com.sehatq.test.ui.home.adapter.ProductListItemViewModel" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -17,6 +17,7 @@
         android:clickable="true"
         android:focusable="true"
         android:gravity="center"
+        android:onClick="@{() -> itemViewModel.goDetail()}"
         android:orientation="horizontal"
         android:paddingStart="@dimen/padding_slarge"
         android:paddingEnd="@dimen/padding_slarge">
@@ -33,7 +34,8 @@
                 <ImageView
                     android:id="@+id/iv_image"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    app:imageUrl="@{itemViewModel.image}" />
 
                 <ImageView
                     android:id="@+id/iv_love"
@@ -43,7 +45,8 @@
                     android:layout_margin="@dimen/margin_small"
                     android:background="?selectableItemBackground"
                     android:clickable="true"
-                    android:focusable="true" />
+                    android:focusable="true"
+                    app:imageSource="@{itemViewModel.loved}" />
             </FrameLayout>
 
         </androidx.cardview.widget.CardView>
@@ -72,6 +75,7 @@
                     android:includeFontPadding="false"
                     android:maxLines="1"
                     android:padding="@dimen/padding_xxsmall"
+                    android:text="@{itemViewModel.title}"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="@dimen/text_m"
@@ -91,6 +95,7 @@
                         android:includeFontPadding="false"
                         android:maxLines="2"
                         android:padding="@dimen/padding_xxsmall"
+                        android:text="@{itemViewModel.description}"
                         android:textAlignment="textStart"
                         android:textColor="@color/grey_dark"
                         android:textSize="@dimen/text_xms"
@@ -103,6 +108,7 @@
                         android:includeFontPadding="false"
                         android:maxLines="1"
                         android:padding="@dimen/padding_xxsmall"
+                        android:text="@{itemViewModel.price}"
                         android:textAlignment="center"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="@dimen/text_s"

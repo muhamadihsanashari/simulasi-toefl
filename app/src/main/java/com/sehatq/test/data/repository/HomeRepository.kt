@@ -4,5 +4,5 @@ import com.sehatq.test.data.remote.response.ResponseHome
 import com.sehatq.test.utils.AppResult
 
 interface HomeRepository {
-    suspend fun getHome() : AppResult<ResponseHome>
+    suspend fun getHome() : AppResult<List<ResponseHome>>
 }

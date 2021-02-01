@@ -23,6 +23,7 @@
             app:navGraph="@navigation/menu_graph" />
 
         <androidx.cardview.widget.CardView
+            appBarVisible="@{viewModel.showAppBar}"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"

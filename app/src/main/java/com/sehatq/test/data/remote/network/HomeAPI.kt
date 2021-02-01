@@ -8,5 +8,5 @@ import retrofit2.http.GET
 
 interface HomeAPI {
     @GET("https://private-4639ce-ecommerce56.apiary-mock.com/home")
-    fun getHomeData(): Response<ResponseHome>
+    suspend fun getHomeData(): Response<List<ResponseHome>>
 }

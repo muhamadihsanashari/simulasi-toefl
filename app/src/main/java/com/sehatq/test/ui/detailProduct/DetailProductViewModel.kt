@@ -1,6 +1,6 @@
 package com.sehatq.test.ui.detailProduct
 
-import androidx.lifecycle.ViewModel
+import com.sehatq.test.core.BaseViewModel
 
-class DetailProductViewModel : ViewModel() {
+class DetailProductViewModel : BaseViewModel() {
 }

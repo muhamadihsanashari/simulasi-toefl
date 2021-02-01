@@ -1,6 +1,6 @@
 package com.sehatq.test.ui.feed
 
-import androidx.lifecycle.ViewModel
+import com.sehatq.test.core.BaseViewModel
 
-class FeedViewModel : ViewModel() {
+class FeedViewModel : BaseViewModel() {
 }

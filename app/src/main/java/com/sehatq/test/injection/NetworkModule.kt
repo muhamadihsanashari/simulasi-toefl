@@ -30,6 +30,6 @@ val networkModule = module {
 
     single { provideHttpClient() }
     single {
-        provideRetrofit(get(), "")
+        provideRetrofit(get(), "https://reqres.in/")
     }
 }

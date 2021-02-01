@@ -1,6 +1,6 @@
 package com.sehatq.test.ui.cart
 
-import androidx.lifecycle.ViewModel
+import com.sehatq.test.core.BaseViewModel
 
-class CartViewModel : ViewModel() {
+class CartViewModel : BaseViewModel() {
 }

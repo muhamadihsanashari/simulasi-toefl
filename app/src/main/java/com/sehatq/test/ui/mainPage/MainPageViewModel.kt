@@ -1,6 +1,6 @@
 package com.sehatq.test.ui.mainPage
 
-import androidx.lifecycle.ViewModel
+import com.sehatq.test.core.BaseViewModel
 
-class MainPageViewModel : ViewModel() {
+class MainPageViewModel : BaseViewModel() {
 }

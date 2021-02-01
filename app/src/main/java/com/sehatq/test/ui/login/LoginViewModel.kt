@@ -4,7 +4,6 @@ import android.content.Intent
 import android.text.Editable
 import androidx.databinding.ObservableField
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import com.facebook.CallbackManager
 import com.facebook.FacebookCallback
 import com.facebook.FacebookException
@@ -15,12 +14,13 @@ import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.Task
 import com.sehatq.test.R
+import com.sehatq.test.core.BaseViewModel
 import com.sehatq.test.utils.SingleLiveEvent
 import com.sehatq.test.utils.Validator.isEmailValid
 import com.sehatq.test.utils.Validator.isPasswordValid
 
 
-class LoginViewModel : ViewModel() {
+class LoginViewModel : BaseViewModel() {
 
 
     private var email = ObservableField<String>()

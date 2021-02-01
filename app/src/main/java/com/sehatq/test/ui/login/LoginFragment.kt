@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import com.facebook.login.LoginManager
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -82,7 +83,7 @@ class LoginFragment : Fragment() {
             }
 
             if (loginResult.success != null) {
-                Toast.makeText(context, getString(loginResult.success), Toast.LENGTH_SHORT).show()
+                findNavController().navigate(R.id.action_loginFragment_to_mainFragment)
             }
         })
     }

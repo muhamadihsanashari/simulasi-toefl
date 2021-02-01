@@ -10,7 +10,7 @@ class HomeRepositoryImpl(
     private val homeAPI: HomeAPI
 ) : HomeRepository {
 
-    override suspend fun getHome(): AppResult<ResponseHome> {
+    override suspend fun getHome(): AppResult<List<ResponseHome> >{
         val response = homeAPI.getHomeData()
         return try {
             if (response.isSuccessful) {

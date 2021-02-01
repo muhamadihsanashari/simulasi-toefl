@@ -3,9 +3,9 @@
 
     <data>
 
-<!--        <variable-->
-<!--            name="itemViewModel"-->
-<!--            type="com.sehatq.test.ui.home.adapter.CategoryListItemViewModel" />-->
+        <variable
+            name="itemViewModel"
+            type="com.sehatq.test.ui.home.adapter.CategoryListItemViewModel" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -28,6 +28,7 @@
             android:padding="@dimen/padding_xxsmall">
 
             <ImageView
+                app:circleImageUrl="@{itemViewModel.image}"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
         </FrameLayout>
@@ -40,6 +41,7 @@
             android:includeFontPadding="false"
             android:lines="2"
             android:padding="@dimen/padding_xxsmall"
+            android:text="@{itemViewModel.title}"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="@dimen/text_xms"
