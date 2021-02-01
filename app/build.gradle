@@ -95,5 +95,8 @@ dependencies {
     //facebook
     implementation "com.facebook.android:facebook-android-sdk:$rootProject.facebook_auth_version"
 
+    //google
+    implementation "com.google.android.gms:play-services-auth:$rootProject.google_service_version"
+
 
 }

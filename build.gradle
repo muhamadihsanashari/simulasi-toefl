@@ -48,6 +48,9 @@ ext {
     //facebook
     facebook_auth_version='[5,6)'
 
+    //login google
+    google_service_version = '19.0.0'
+
 }
 
 allprojects {

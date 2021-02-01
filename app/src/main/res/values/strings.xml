@@ -18,4 +18,5 @@
     <string name="login_failed">Login failed, please check your email and password</string>
     <string name="login_success">Login Success</string>
     <string name="login_facebook_cancel">Facebook Login cancel</string>
+    <string name="login_google_failed">Google Login failed</string>
 </resources>

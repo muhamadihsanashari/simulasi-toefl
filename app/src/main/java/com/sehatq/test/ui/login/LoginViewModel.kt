@@ -1,5 +1,6 @@
 package com.sehatq.test.ui.login
 
+import android.content.Intent
 import android.text.Editable
 import androidx.databinding.ObservableField
 import androidx.lifecycle.MutableLiveData
@@ -9,10 +10,15 @@ import com.facebook.FacebookCallback
 import com.facebook.FacebookException
 import com.facebook.login.LoginManager
 import com.facebook.login.LoginResult
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount
+import com.google.android.gms.common.api.ApiException
+import com.google.android.gms.tasks.Task
 import com.sehatq.test.R
 import com.sehatq.test.utils.SingleLiveEvent
 import com.sehatq.test.utils.Validator.isEmailValid
 import com.sehatq.test.utils.Validator.isPasswordValid
+
 
 class LoginViewModel : ViewModel() {
 
@@ -83,6 +89,20 @@ class LoginViewModel : ViewModel() {
             loginFormState.value = LoginFormState(passwordError = R.string.invalid_password)
         } else {
             loginFormState.value = LoginFormState(isDataValid = true)
+        }
+    }
+
+    fun handleIntent(data: Intent?) {
+        val task: Task<GoogleSignInAccount> = GoogleSignIn.getSignedInAccountFromIntent(data)
+        handleSignInResult(task)
+    }
+
+    private fun handleSignInResult(completedTask: Task<GoogleSignInAccount>) {
+        try {
+            val account = completedTask.getResult(ApiException::class.java)
+            loginResultState.value = LoginResultState(success = R.string.login_success)
+        } catch (e: ApiException) {
+            loginResultState.value = LoginResultState(error = R.string.login_google_failed)
         }
     }
 
