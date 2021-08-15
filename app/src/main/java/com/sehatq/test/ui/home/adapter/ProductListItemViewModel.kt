@@ -1,6 +1,7 @@
 package com.sehatq.test.ui.home.adapter
 
 
+import android.graphics.drawable.Drawable
 import androidx.core.view.ViewCompat
 import androidx.databinding.ObservableField
 import com.sehatq.test.R
@@ -15,7 +16,7 @@ class ProductListItemViewModel(
 ) : Observable() {
 
     val title = ObservableField<String>()
-    val image = ObservableField<String>()
+    val image = ObservableField<Int>()
     val description = ObservableField<String>()
     val price = ObservableField<String>()
     val loved = ObservableField<Int>()
@@ -24,8 +25,8 @@ class ProductListItemViewModel(
 
     init {
         title.set(data?.title)
-        image.set(data?.imageUrl)
         description.set(data?.description)
+        image.set(R.raw.truck)
         price.set(data?.price)
         if (data?.loved == 1) loved.set(R.drawable.ic_heart_filled) else loved.set(R.drawable.ic_heart)
     }

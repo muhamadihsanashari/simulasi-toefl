@@ -1,4 +1,4 @@
-package com.sehatq.test.injection
+package com.sehatq.test.di
 
 import android.app.Application
 import androidx.room.Room

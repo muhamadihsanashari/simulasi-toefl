@@ -22,8 +22,12 @@ class ProductRepositoryImpl(private val productDao: ProductDao) : ProductReposit
         return result
     }
 
-    override fun getAll(): LiveData<List<Product>> {
-        return productDao.getAllProduct()
+    override suspend fun getAll(): List<Product>{
+        var result: List<Product>
+        withContext(Dispatchers.IO) {
+            result = productDao.getAllProduct()
+        }
+        return result
     }
 
 

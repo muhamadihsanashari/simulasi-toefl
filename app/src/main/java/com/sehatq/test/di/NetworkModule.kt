@@ -1,4 +1,4 @@
-package com.sehatq.test.injection
+package com.sehatq.test.di
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

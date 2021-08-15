@@ -35,7 +35,7 @@ class ProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupView()
-        profileViewModel.products.observe(viewLifecycleOwner, Observer {
+        profileViewModel.productLiveData.observe(viewLifecycleOwner, Observer {
             val products = it ?: return@Observer
             if (products.isNotEmpty()) {
                 profileViewModel.emptyShow.set(false)
@@ -49,9 +49,10 @@ class ProfileFragment : Fragment() {
     private fun setupView() {
         adapterProduct = PurchaseListAdapter(ArrayList(), ::seeDetailProduct)
         binding.adapter = adapterProduct
+        profileViewModel.getProducts()
     }
 
-    fun seeDetailProduct(product: Product, itemPurchaseBinding: ItemPurchaseBinding) {
+    private fun seeDetailProduct(product: Product, itemPurchaseBinding: ItemPurchaseBinding) {
         val bundle = Bundle()
         bundle.putSerializable("data", product)
         val extras = FragmentNavigatorExtras(

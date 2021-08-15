@@ -123,6 +123,15 @@ object CustomBinding {
     }
 
     @JvmStatic
+    @BindingAdapter("gifImage")
+    fun gifSourceDrawable(view: ImageView, drawable: Int) {
+        GlideApp.with(view.context)
+            .asGif()
+            .load(drawable)
+            .into(view)
+    }
+
+    @JvmStatic
     @BindingAdapter("imageUrl")
     fun imageSourceUrl(view: ImageView, url: String) {
         if (url.isNullOrEmpty()) {

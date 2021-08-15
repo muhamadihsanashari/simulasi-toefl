@@ -1,4 +1,4 @@
-package com.sehatq.test.injection
+package com.sehatq.test.di
 
 import android.content.Context
 import com.sehatq.test.data.local.database.dao.ProductDao
@@ -19,7 +19,7 @@ val repositoryModule = module {
     }
 
     single {
-        providehomeRepositoryModule(get(), androidContext())
+        HomeRepositoryImpl(get(), androidContext())
     }
 
     single {

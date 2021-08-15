@@ -1,4 +1,4 @@
-package com.sehatq.test.injection
+package com.sehatq.test.di
 
 import com.sehatq.test.data.remote.network.HomeAPI
 import org.koin.dsl.module

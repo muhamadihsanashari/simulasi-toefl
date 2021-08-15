@@ -5,5 +5,5 @@ import com.sehatq.test.data.local.model.Product
 
 interface ProductRepository {
     suspend fun insertProduct(product: Product): Int
-    fun getAll(): LiveData<List<Product>>
+    suspend fun getAll(): List<Product>
 }

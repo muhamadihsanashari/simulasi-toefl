@@ -1,4 +1,4 @@
-package com.sehatq.test.injection
+package com.sehatq.test.di
 
 import com.sehatq.test.ui.cart.CartViewModel
 import com.sehatq.test.ui.detailProduct.DetailProductViewModel
