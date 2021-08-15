@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.sehatq.test.ui.login.LoginFragment"
+        android:name="com.nalandya.base.ui.login.LoginFragment"
         android:label="Login Page"
         tools:layout="@layout/fragment_login">
 
@@ -22,7 +22,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.sehatq.test.ui.mainPage.MainPageFragment"
+        android:name="com.nalandya.base.ui.mainPage.MainPageFragment"
         android:label="Main Page"
         tools:layout="@layout/fragment_main_page">
 

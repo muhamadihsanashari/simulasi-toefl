@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">sehatq-apps-test</string>
+    <string name="app_name">base-mvvm</string>
     <string name="facebook_app_id">184515390095334</string>
     <string name="fb_login_protocol_scheme">fb184515390095334</string>
     <string name="sehat">Sehat</string>

@@ -8,7 +8,7 @@
 
         <variable
             name="viewModel"
-            type="com.sehatq.test.ui.login.LoginViewModel" />
+            type="com.nalandya.base.ui.login.LoginViewModel" />
     </data>
 
     <ScrollView
