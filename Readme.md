@@ -1,4 +1,4 @@
-SehatQ App Test
+Base MVVM
 
 The list of features that my project has:
  1. Android Data Binding 
