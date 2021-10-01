@@ -8,7 +8,7 @@
 
         <variable
             name="viewModel"
-            type="com.nalandya.base.ui.login.LoginViewModel" />
+            type="com.fastwork.toefl.ui.login.LoginViewModel" />
     </data>
 
     <ScrollView
