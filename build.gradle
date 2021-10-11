@@ -51,6 +51,9 @@ ext {
     //login google
     google_service_version = '19.0.0'
 
+    //worker
+    workVersion = '2.6.0'
+
 }
 
 allprojects {

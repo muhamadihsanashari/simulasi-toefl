@@ -1,21 +1,25 @@
 package com.fastwork.toefl.ui.login
 
+import android.Manifest
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import com.facebook.login.LoginManager
-import com.google.android.gms.auth.api.signin.GoogleSignIn
-import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.fastwork.toefl.R
 import com.fastwork.toefl.databinding.FragmentLoginBinding
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import org.koin.androidx.viewmodel.ext.android.viewModel
+import java.util.*
 
 
 class LoginFragment : Fragment() {
@@ -34,9 +38,39 @@ class LoginFragment : Fragment() {
             inflater, R.layout.fragment_login,
             container, false
         )
+        setupPermission()
         binding.viewModel = loginViewModel
         binding.lifecycleOwner = this
         return binding.root
+    }
+
+
+    private fun setupPermission() {
+        val readStoragePermission = ContextCompat.checkSelfPermission(
+            requireContext(),
+            Manifest.permission.READ_EXTERNAL_STORAGE
+        )
+        val writeStoragePermission = ContextCompat.checkSelfPermission(
+            requireContext(),
+            Manifest.permission.WRITE_EXTERNAL_STORAGE
+        )
+        val listPermissionsNeeded = ArrayList<String>()
+
+        if (readStoragePermission != PackageManager.PERMISSION_GRANTED) {
+            listPermissionsNeeded.add(Manifest.permission.READ_EXTERNAL_STORAGE)
+        }
+        if (writeStoragePermission != PackageManager.PERMISSION_GRANTED) {
+            listPermissionsNeeded.add(Manifest.permission.WRITE_EXTERNAL_STORAGE)
+        }
+        if (listPermissionsNeeded.isNotEmpty()) {
+            requestPermissions(
+                arrayOf(
+                    Manifest.permission.READ_EXTERNAL_STORAGE,
+                    Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                ), 1
+            )
+            return
+        }
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -70,7 +104,8 @@ class LoginFragment : Fragment() {
                 binding.edtEmail.error = getString(loginFormState.emailError)
             }
 
-            if (loginFormState.passwordError != null) { binding.edtPassword.error = getString(loginFormState.passwordError)
+            if (loginFormState.passwordError != null) {
+                binding.edtPassword.error = getString(loginFormState.passwordError)
             }
         })
 
@@ -92,7 +127,7 @@ class LoginFragment : Fragment() {
         if (loginViewModel.mCallbackManager.onActivityResult(requestCode, resultCode, data)) {
             return
         }
-        if (requestCode == RC_SIGN_IN){
+        if (requestCode == RC_SIGN_IN) {
             loginViewModel.handleIntent(data)
         }
     }

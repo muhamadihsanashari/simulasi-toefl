@@ -10,7 +10,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.nalandya.baseB"
+        applicationId "com.faswork.toefl"
         minSdkVersion 19
         targetSdkVersion 30
         versionCode 1
@@ -100,6 +100,12 @@ dependencies {
     //google
     implementation "com.google.android.gms:play-services-auth:$rootProject.google_service_version"
     implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    //kotlin json
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:1.0.1"
+
+    //worker
+    implementation "androidx.work:work-runtime-ktx:$rootProject.workVersion"
 
 
 }

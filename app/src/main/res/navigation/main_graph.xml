@@ -22,9 +22,9 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.fastwork.toefl.ui.mainPage.MainPageFragment"
+        android:name="com.fastwork.toefl.ui.main.MainPageFragment"
         android:label="Main Page"
-        tools:layout="@layout/fragment_main_page">
+        tools:layout="@layout/fragment_main">
 
     </fragment>
 
