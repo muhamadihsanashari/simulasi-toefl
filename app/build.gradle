@@ -91,6 +91,7 @@ dependencies {
 
     //room
     implementation "androidx.room:room-ktx:$rootProject.room_version"
+    kapt "org.xerial:sqlite-jdbc:3.34.0"
     kapt "androidx.room:room-compiler:$rootProject.room_version"
 
     //facebook

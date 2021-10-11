@@ -10,7 +10,8 @@ import org.koin.dsl.module
 val databaseModule = module {
 
     fun provideDatabase(application: Application): AppDatabase {
-        return Room.databaseBuilder(application, AppDatabase::class.java, "sehatq")
+        return Room.databaseBuilder(application, AppDatabase::class.java, "toefl")
+            .addCallback()
             .fallbackToDestructiveMigration()
             .build()
     }
