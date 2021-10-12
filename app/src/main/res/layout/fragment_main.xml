@@ -4,6 +4,10 @@
 
     <data>
 
+        <variable
+            name="viewModel"
+            type="com.fastwork.toefl.ui.main.MainViewModel" />
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -98,6 +102,7 @@
                     android:id="@+id/btn_practice"
                     android:layout_width="0dp"
                     android:layout_height="72dp"
+                    android:onClick="@{() -> viewModel.onPracticeClicked()}"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="5dp"
                     android:background="@drawable/bg_purple_light"

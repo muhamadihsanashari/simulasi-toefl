@@ -2,10 +2,13 @@ package com.fastwork.toefl.core
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
+import android.os.Build
+import android.text.Html
 import android.view.View
 import android.widget.HorizontalScrollView
 import android.widget.ImageView
 import android.widget.ScrollView
+import androidx.appcompat.widget.AppCompatTextView
 import androidx.cardview.widget.CardView
 import androidx.core.widget.NestedScrollView
 import androidx.databinding.BindingAdapter
@@ -19,6 +22,9 @@ import me.everything.android.ui.overscroll.IOverScrollDecor
 import me.everything.android.ui.overscroll.IOverScrollUpdateListener
 import me.everything.android.ui.overscroll.OverScrollDecoratorHelper
 import me.everything.android.ui.overscroll.VerticalOverScrollBounceEffectDecorator
+import android.text.Spanned
+import okhttp3.internal.format
+
 
 object CustomBinding {
 
@@ -165,6 +171,21 @@ object CustomBinding {
                         view.visibility = View.GONE
                     }
                 })
+        }
+    }
+
+    @JvmStatic
+    @BindingAdapter("htmlText")
+    fun htmlText(view:AppCompatTextView,string:String){
+        val text = format(string)
+        view.text = getSpannedText(text)
+    }
+
+    private fun getSpannedText(text: String): Spanned? {
+        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            Html.fromHtml(text, Html.FROM_HTML_MODE_COMPACT)
+        } else {
+            Html.fromHtml(text)
         }
     }
 
