@@ -78,19 +78,6 @@
     "difficulty": "easy"
   },
   {
-    "question": "Which of the following best expresses the subject of the passage?",
-    "optionAnswer": [
-      "The history of wheat and rice",
-      "How today's world eats",
-      "Which crops feed today's world",
-      "The origin of today's crops"
-    ],
-    "answer": 4,
-    "paragraphId": 1,
-    "paragraph": "A number of staple crops are today quite commonplace in much of the world and feed much of today's population.  These staple crops of today originated in different eras and in different parts of the world before spreading throughout the rest of the globe.|Wheat was probably the earliest cereal to have been grown and most likely was a hybrid of wild grasses rather than a single wild grass.  It is known to have been cultivated by Mediterranean civilizations 10,000 years ago and was being used as a primary ingredient in baked goods in Mesopotamia as early as 8000 B.C.|Beans are a diverse family of plants that have been cultivated for 8,000 years.  Certain types of beans, such as mung and soy, were first cultivated in Asia, while other types of beans, such as string and lima, are thought to have originated in the Americas.|Other crops that originated in the Americas are potatoes and maize, a relative of corn; maize was used extensively beginning around 5000 B.C. in civilizations in what is today Mexico, while the cultivation of the potato developed in civilizations in the Andes at least as early as 100 B.C.  Maize and potatoes were staples of the diets of their respective cultures long before they were introduced to Europe in the sixteenth century by European explorers who had discovered them in the Americas.|The cultivation of rice is not as old as the cultivation of wheat, beans, and maize.  Rice was first known to have been cultivated in India around 3000 B.C.  From there, it later spread to China, Japan, and various countries in Southeast Asia, which are today major producers of the crop.",
-    "difficulty": "easy"
-  },
-  {
     "question": "Which of the following best expresses the title of the passage?",
     "optionAnswer": [
       "Doc Bradham's Cola Creation",
@@ -112,19 +99,6 @@
       "enjoyed making up new drink combinations"
     ],
     "answer": 4,
-    "paragraphId": 2,
-    "paragraph": "Caleb Bradham, called \"Doc\" Bradham by friends and acquaintances, was the owner of a pharmacy at the end of the nineteenth century.  In his pharmacy, Doc Bradham had a soda fountain, as was customary in pharmacies of the time.  He took great pleasure in creating new and unusual mixtures of drinks for customers at the fountain.|Like many other entrepreneurs of the era, Doc Bradham wanted to create a cola drink to rival Coca-Cola.  By 1895, Coca-Cola was a commercial success throughout the United States, and numerous innovators were trying to come up with their own products to cash in on the success that Coca-Cola was beginning to experience.  In his pharmacy, Doc Bradham developed his own version of a cola drink, and Doc's drink became quite popular at his soda fountain.  The drink he created was made with a syrup consisting of sugar, essence of vanilla, cola nuts, and other flavorings.  The syrup was mixed at the soda fountain with carbonated water before it was served.|The drink that Doc Bradham created was originally called \"Brad's drink\" by those in his hometown of New Bern who visited the soda fountain and sampled his product.  Those who tasted the drink claimed not only that it had a refreshing and invigorating quality but also that it had a medicinal value by providing relief from dyspepsia, or upset stomach.  From this reputed ability to relieve dyspepsia, Doc Bradham created the name of Pepsi-Cola for his drink.  Doc Bradham eventually made the decision to mass market his product, and in 1902 he founded the Pepsi-Cola Company.  The advertising for this new product, of course, touted the drink as an \"invigorating drink\" that \"aids digestion.",
-    "difficulty": "easy"
-  },
-  {
-    "question": "Look at the word rival in paragraph 2.  This word could best be replaced by which of the following?",
-    "optionAnswer": [
-      "Yield to",
-      "Compete with",
-      "Forget about",
-      "Join up with"
-    ],
-    "answer": 2,
     "paragraphId": 2,
     "paragraph": "Caleb Bradham, called \"Doc\" Bradham by friends and acquaintances, was the owner of a pharmacy at the end of the nineteenth century.  In his pharmacy, Doc Bradham had a soda fountain, as was customary in pharmacies of the time.  He took great pleasure in creating new and unusual mixtures of drinks for customers at the fountain.|Like many other entrepreneurs of the era, Doc Bradham wanted to create a cola drink to rival Coca-Cola.  By 1895, Coca-Cola was a commercial success throughout the United States, and numerous innovators were trying to come up with their own products to cash in on the success that Coca-Cola was beginning to experience.  In his pharmacy, Doc Bradham developed his own version of a cola drink, and Doc's drink became quite popular at his soda fountain.  The drink he created was made with a syrup consisting of sugar, essence of vanilla, cola nuts, and other flavorings.  The syrup was mixed at the soda fountain with carbonated water before it was served.|The drink that Doc Bradham created was originally called \"Brad's drink\" by those in his hometown of New Bern who visited the soda fountain and sampled his product.  Those who tasted the drink claimed not only that it had a refreshing and invigorating quality but also that it had a medicinal value by providing relief from dyspepsia, or upset stomach.  From this reputed ability to relieve dyspepsia, Doc Bradham created the name of Pepsi-Cola for his drink.  Doc Bradham eventually made the decision to mass market his product, and in 1902 he founded the Pepsi-Cola Company.  The advertising for this new product, of course, touted the drink as an \"invigorating drink\" that \"aids digestion.",
     "difficulty": "easy"
@@ -779,5 +753,4 @@
     "paragraph": "The question of lunar formation has long puzzled astronomers.  It was once theorized that the moon formed alongside the earth as material in a swirling disk coalesced to form both bodies.  However, if both bodies formed simultaneously out of the same substance, we would expect the mean densities to be more or less identical.  In fact, this is not the case at all.  One of the most curious characteristics of the moon is that it is far less dense than the earth.  Compared to the earth's mean density, which is 5.5 times that of water, the density of the moon is a mere 3.3 times that of water.  Most of the earth's mass is located in its dense iron core, while the mantle and crust are composed primarily of lighter silicates.  The moon, on the other hand, is composed entirely of lighter substances.|An alternate explanation, the \"capture theory,\" suggested that  the moon formed far away and was later captured by the earth.  The moon was once wandering in space, like an asteroid, unattached to a planet.  The rogue satellite veered too close to the earth and has since been tethered by the earth's gravitational field.  However, comparison of lunar and terrestrial isotopes has undermined this theory.  Isotopes are atomic indicators that leave a sort of geological fingerprint.  The isotopes from lunar rock samples indicate that both earth and moon came from the same source.|A more recent theory, the \"impact theory\" of lunar formation postulates that a large planet-like object, perhaps twice the mass of Mars, struck the earth at a shallow angle.  The object disintegrated a portion of the earth's crust and mantle, sending a cloud of silicate vapor into orbit around the earth.  In time, most of the material fell back to earth, while the rest coalesced into our moon.|Computer simulations (1997) by Robin Canup and Glen Stewart of the University of Colorado and by Shigeru Ida of the Tokyo Institute of Technology demonstrated that such a scenario is at least theoretically possible.  While the impact theory is attractive in that it explains both why the moon is less dense than the earth and how both bodies could have originated from the same source, it is not without problems. Impact from a Mars-sized body would produce an earth-moon system with twice as much angular momentum as that which is actually observed.  Therefore, although we are closer to resolving the question of lunar formation, the origin of the moon is still shrouded in mystery.",
     "difficulty": "hard"
   }
-
 ]

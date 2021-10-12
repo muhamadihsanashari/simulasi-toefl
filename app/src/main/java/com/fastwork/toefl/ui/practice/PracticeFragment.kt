@@ -58,6 +58,18 @@ class PracticeFragment : Fragment() {
             bundle.putSerializable(TEST_TYPE_KEY, testType)
             findNavController().navigate(R.id.action_to_practice_test, bundle)
         }
+        binding.btnMediumPassage.setOnClickListener {
+            val bundle = Bundle()
+            val testType = TestType(PracticeTestFragment.READING, PracticeTestFragment.READING_MEDIUM)
+            bundle.putSerializable(TEST_TYPE_KEY, testType)
+            findNavController().navigate(R.id.action_to_practice_test, bundle)
+        }
+        binding.btnHardPassage.setOnClickListener {
+            val bundle = Bundle()
+            val testType = TestType(PracticeTestFragment.READING, PracticeTestFragment.READING_HARD)
+            bundle.putSerializable(TEST_TYPE_KEY, testType)
+            findNavController().navigate(R.id.action_to_practice_test, bundle)
+        }
     }
 
     private fun setCategory(category: Int) {
