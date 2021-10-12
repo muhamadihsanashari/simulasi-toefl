@@ -4,6 +4,6 @@ data class Question(
     val message: String? = null,
     val question: String,
     val answer: Int,
-    val userAnswer: Int,
+    var userAnswer: Int,
     val answerOption: List<String>
 )

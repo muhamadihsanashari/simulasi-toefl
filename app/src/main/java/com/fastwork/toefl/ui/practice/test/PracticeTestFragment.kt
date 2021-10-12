@@ -1,10 +1,12 @@
 package com.fastwork.toefl.ui.practice.test
 
+import android.annotation.SuppressLint
 import android.os.Bundle
+import android.text.method.ScrollingMovementMethod
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
+import android.widget.RadioButton
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.fastwork.toefl.R
@@ -19,6 +21,9 @@ class PracticeTestFragment : Fragment() {
     private var testType: TestType? = null
     private lateinit var binding: FragmentTestPracticeBinding
     private val viewModel by viewModel<PracticeTestViewModel>()
+    private val questionData = arrayListOf<Question>()
+    private var currentQuestionPosition: Int = 0
+    private var currentUserAnswer = 0
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -35,6 +40,7 @@ class PracticeTestFragment : Fragment() {
         testType = arguments?.get(TEST_TYPE_KEY) as TestType?
         setupData()
         setupObserver()
+        setupListener()
         return binding.root
     }
 
@@ -47,9 +53,106 @@ class PracticeTestFragment : Fragment() {
     private fun setupObserver() {
         viewModel.readLiveData.observe(viewLifecycleOwner, {
             if (it.isNotEmpty()) {
-
+                for (element in it) {
+                    val question = Question(
+                        element.paragraph,
+                        element.question,
+                        element.answer,
+                        0,
+                        element.optionAnswer
+                    )
+                    questionData.add(question)
+                }
+                setupViewQuestion()
             }
         })
+    }
+
+    private fun setupListener() {
+        binding.btnExit.setOnClickListener {
+            activity?.onBackPressed()
+        }
+        binding.btnNext.setOnClickListener {
+            handleNextQuestion()
+
+        }
+        binding.btnPrevious.setOnClickListener {
+            handlePrevQuestion()
+
+        }
+    }
+
+    private fun handlePrevQuestion() {
+        if (currentQuestionPosition != 0) {
+            if (questionData[currentQuestionPosition].userAnswer == 0) {
+                val questionUpdate = questionData[currentQuestionPosition]
+                questionUpdate.userAnswer = currentUserAnswer
+                questionData[currentQuestionPosition] = questionUpdate
+            }
+            --currentQuestionPosition
+            setupViewQuestion()
+        }
+
+    }
+
+    private fun handleNextQuestion() {
+        if (currentQuestionPosition != questionData.size - 1) {
+            if (questionData[currentQuestionPosition].userAnswer == 0) {
+                val questionUpdate = questionData[currentQuestionPosition]
+                questionUpdate.userAnswer = currentUserAnswer
+                questionData[currentQuestionPosition] = questionUpdate
+            }
+            ++currentQuestionPosition
+            setupViewQuestion()
+        }
+    }
+
+    @SuppressLint("ResourceType")
+    private fun setupViewQuestion() {
+        binding.tvQuestionCount.text = String.format(
+            getString(R.string.format_question_count),
+            currentQuestionPosition + 1,
+            questionData.size
+        )
+        binding.tvPassages.text = questionData[currentQuestionPosition].message
+        binding.tvPassages.movementMethod = ScrollingMovementMethod()
+        binding.tvQuestion.text = questionData[currentQuestionPosition].question
+        val optionAnswerOne = RadioButton(requireContext())
+        optionAnswerOne.id = 1
+        val optionAnswerTwo = RadioButton(requireContext())
+        optionAnswerTwo.id = 2
+        val optionAnswerThree = RadioButton(requireContext())
+        optionAnswerThree.id = 3
+        val optionAnswerFour = RadioButton(requireContext())
+        optionAnswerFour.id = 4
+        optionAnswerOne.text = questionData[currentQuestionPosition].answerOption[0]
+        optionAnswerTwo.text = questionData[currentQuestionPosition].answerOption[1]
+        optionAnswerThree.text = questionData[currentQuestionPosition].answerOption[2]
+        optionAnswerFour.text = questionData[currentQuestionPosition].answerOption[3]
+        if (binding.radioGroup.childCount > 0) {
+            clearRadioGroup()
+        }
+        binding.radioGroup.addView(optionAnswerOne)
+        binding.radioGroup.addView(optionAnswerTwo)
+        binding.radioGroup.addView(optionAnswerThree)
+        binding.radioGroup.addView(optionAnswerFour)
+        binding.radioGroup.clearCheck()
+        if (questionData[currentQuestionPosition].userAnswer != 0) {
+            binding.radioGroup.check(questionData[currentQuestionPosition].userAnswer)
+        }
+        binding.radioGroup.setOnCheckedChangeListener { _, checkedId ->
+            currentUserAnswer = checkedId
+        }
+    }
+
+    private fun clearRadioGroup() {
+        val count = binding.radioGroup.childCount
+        for (i in count - 1 downTo 0) {
+            val o: View = binding.radioGroup.getChildAt(i)
+            if (o is RadioButton) {
+                binding.radioGroup.removeViewAt(i)
+            }
+        }
     }
 
     companion object {

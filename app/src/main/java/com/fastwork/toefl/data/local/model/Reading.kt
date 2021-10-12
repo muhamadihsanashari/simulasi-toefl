@@ -12,6 +12,8 @@ import androidx.room.*
     indices = [Index("paragraph_id")]
 )
 data class Reading(
+    @ColumnInfo(name = "question")
+    val question: String,
     @ColumnInfo(name = "option_answer")
     val optionAnswer: List<String>,
     @ColumnInfo(name = "paragraph_id")
