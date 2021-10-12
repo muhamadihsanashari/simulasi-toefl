@@ -4,9 +4,7 @@ import android.content.Context
 import com.fastwork.toefl.data.local.database.dao.ParagraphDao
 import com.fastwork.toefl.data.local.database.dao.ProductDao
 import com.fastwork.toefl.data.remote.network.HomeAPI
-import com.fastwork.toefl.data.repository.HomeRepository
-import com.fastwork.toefl.data.repository.HomeRepositoryImpl
-import com.fastwork.toefl.data.repository.ProductRepositoryImpl
+import com.fastwork.toefl.data.repository.*
 import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module
 
@@ -31,5 +29,7 @@ val repositoryModule = module {
     single {
         provideProductRepositoryModule(get())
     }
+
+    single<PracticeRepository> { PracticeRepositoryImpl(get(),get()) }
 
 }

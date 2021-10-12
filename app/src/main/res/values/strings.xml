@@ -50,4 +50,8 @@
     <string name="exit_section">Exit Section</string>
     <string name="passage">(PASSAGE)</string>
     <string name="question">Question :</string>
+    <string name="sort_dialog">Sort Dialog</string>
+    <string name="casual_conversation">Casual Conversation</string>
+    <string name="academic_discussion">Academic Discussion</string>
+    <string name="academic_lectures">Academic Lectures</string>
 </resources>

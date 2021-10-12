@@ -236,6 +236,57 @@
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/parent_listening"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@id/parent_type">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_sort_dialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_purple_light"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/sort_dialog"
+                        android:textAllCaps="false" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_casual_discussion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_purple_light"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/casual_conversation"
+                        android:textAllCaps="false" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_academic_discussion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_purple_light"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/academic_discussion"
+                        android:textAllCaps="false" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_academic_lectures"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_purple_light"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/academic_lectures"
+                        android:textAllCaps="false" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

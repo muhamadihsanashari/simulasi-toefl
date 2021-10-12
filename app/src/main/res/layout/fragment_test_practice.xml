@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="com.fastwork.toefl.ui.practice.test.PracticeViewModel" />
+            type="com.fastwork.toefl.ui.practice.test.PracticeTestViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
