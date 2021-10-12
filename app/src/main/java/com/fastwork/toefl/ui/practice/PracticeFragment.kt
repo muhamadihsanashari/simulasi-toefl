@@ -41,6 +41,9 @@ class PracticeFragment : Fragment() {
             category = STURCTURE
             setCategory(category)
         }
+        binding.back.setOnClickListener {
+            activity?.onBackPressed()
+        }
     }
 
     private fun setCategory(category: Int) {

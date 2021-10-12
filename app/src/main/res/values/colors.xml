@@ -21,4 +21,5 @@
     <color name="grey_dark">#8e8e93</color>
     <color name="loading_transparent">#ab606060</color>
     <color name="purple_light">#D7DAFB</color>
+    <color name="orange">#F84B20</color>
 </resources>

@@ -47,4 +47,7 @@
     <string name="more_multiple_clauses">More Multiple Clauses</string>
     <string name="reduced_clause">Reduced Clause</string>
     <string name="inverted_subject_and_verb">Inverted Subject and Verb</string>
+    <string name="exit_section">Exit Section</string>
+    <string name="passage">(PASSAGE)</string>
+    <string name="question">Question :</string>
 </resources>
