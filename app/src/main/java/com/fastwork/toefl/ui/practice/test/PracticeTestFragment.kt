@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.fastwork.toefl.R
+import com.fastwork.toefl.data.local.model.Question
 import com.fastwork.toefl.data.local.model.TestType
 import com.fastwork.toefl.databinding.FragmentTestPracticeBinding
 import com.fastwork.toefl.utils.TEST_TYPE_KEY
@@ -46,7 +47,7 @@ class PracticeTestFragment : Fragment() {
     private fun setupObserver() {
         viewModel.readLiveData.observe(viewLifecycleOwner, {
             if (it.isNotEmpty()) {
-                Toast.makeText(context, "test", Toast.LENGTH_SHORT).show()
+
             }
         })
     }

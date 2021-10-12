@@ -16,6 +16,8 @@ data class Reading(
     val optionAnswer: List<String>,
     @ColumnInfo(name = "paragraph_id")
     val paragraphId: Int,
+    @ColumnInfo(name = "paragraph")
+    val paragraph: String,
     @ColumnInfo(name = "answer")
     val answer: Int,
     @ColumnInfo(name = "difficulty")
