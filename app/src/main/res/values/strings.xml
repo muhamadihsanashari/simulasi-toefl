@@ -27,4 +27,13 @@
     <string name="label_your_purchase_history">Purchase History</string>
     <string name="you_haven_t_bought_anything_yet">You haven\'t bought anything yet :(</string>
     <string name="no_network_connectivity">No Connectivity</string>
+    <string name="dummy_name">Muhammad Ihsan Ashari</string>
+    <string name="dummy_nim">171011401469</string>
+    <string name="label_about">About</string>
+    <string name="label_practice">PRACTICE</string>
+    <string name="label_testing">Testing</string>
+    <string name="label_pre_test">Pre Test</string>
+    <string name="label_post_test">Post Test</string>
+    <string name="label_download">Download</string>
+    <string name="label_scores">Scores</string>
 </resources>
