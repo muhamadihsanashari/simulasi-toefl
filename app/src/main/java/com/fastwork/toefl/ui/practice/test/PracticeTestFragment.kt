@@ -47,6 +47,13 @@ class PracticeTestFragment : Fragment() {
     private fun setupData() {
         if (testType?.category == READING) {
             testType?.subCategory?.let { viewModel.getReadingQuestion(it) }
+            return
+        }
+        if (testType?.category == STRUCTURE) {
+            testType?.subCategory?.let {
+                viewModel.getStructureQuestion(it)
+            }
+            binding.parentPassage.visibility = View.GONE
         }
     }
 
@@ -60,6 +67,20 @@ class PracticeTestFragment : Fragment() {
                         element.answer,
                         0,
                         element.optionAnswer
+                    )
+                    questionData.add(question)
+                }
+                setupViewQuestion()
+            }
+        })
+        viewModel.structureLiveData.observe(viewLifecycleOwner, {
+            if (it.isNotEmpty()) {
+                for (element in it) {
+                    val question = Question(
+                        question = element.question,
+                        answer = element.answer,
+                        userAnswer = 0,
+                        answerOption = element.optionAnswer
                     )
                     questionData.add(question)
                 }
@@ -109,14 +130,17 @@ class PracticeTestFragment : Fragment() {
 
     @SuppressLint("ResourceType")
     private fun setupViewQuestion() {
+        val data = questionData[currentQuestionPosition]
         binding.tvQuestionCount.text = String.format(
             getString(R.string.format_question_count),
             currentQuestionPosition + 1,
             questionData.size
         )
-        binding.tvPassages.text = questionData[currentQuestionPosition].message
-        binding.tvPassages.movementMethod = ScrollingMovementMethod()
-        binding.tvQuestion.text = questionData[currentQuestionPosition].question
+        data.message.let {
+            binding.tvPassages.text = it
+            binding.tvPassages.movementMethod = ScrollingMovementMethod()
+        }
+        binding.tvQuestion.text = data.question
         val optionAnswerOne = RadioButton(requireContext())
         optionAnswerOne.id = 1
         val optionAnswerTwo = RadioButton(requireContext())
@@ -125,10 +149,10 @@ class PracticeTestFragment : Fragment() {
         optionAnswerThree.id = 3
         val optionAnswerFour = RadioButton(requireContext())
         optionAnswerFour.id = 4
-        optionAnswerOne.text = questionData[currentQuestionPosition].answerOption[0]
-        optionAnswerTwo.text = questionData[currentQuestionPosition].answerOption[1]
-        optionAnswerThree.text = questionData[currentQuestionPosition].answerOption[2]
-        optionAnswerFour.text = questionData[currentQuestionPosition].answerOption[3]
+        optionAnswerOne.text = data.answerOption[0]
+        optionAnswerTwo.text = data.answerOption[1]
+        optionAnswerThree.text = data.answerOption[2]
+        optionAnswerFour.text = data.answerOption[3]
         if (binding.radioGroup.childCount > 0) {
             clearRadioGroup()
         }
@@ -137,8 +161,8 @@ class PracticeTestFragment : Fragment() {
         binding.radioGroup.addView(optionAnswerThree)
         binding.radioGroup.addView(optionAnswerFour)
         binding.radioGroup.clearCheck()
-        if (questionData[currentQuestionPosition].userAnswer != 0) {
-            binding.radioGroup.check(questionData[currentQuestionPosition].userAnswer)
+        if (data.userAnswer != 0) {
+            binding.radioGroup.check(data.userAnswer)
         }
         binding.radioGroup.setOnCheckedChangeListener { _, checkedId ->
             currentUserAnswer = checkedId

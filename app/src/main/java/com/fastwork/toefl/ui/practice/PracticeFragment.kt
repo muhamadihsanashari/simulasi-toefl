@@ -70,6 +70,37 @@ class PracticeFragment : Fragment() {
             bundle.putSerializable(TEST_TYPE_KEY, testType)
             findNavController().navigate(R.id.action_to_practice_test, bundle)
         }
+        binding.btnOneClause.setOnClickListener {
+            val bundle = Bundle()
+            val testType = TestType(PracticeTestFragment.STRUCTURE, PracticeTestFragment.STRUCTURE_ONE_CLAUSE)
+            bundle.putSerializable(TEST_TYPE_KEY, testType)
+            findNavController().navigate(R.id.action_to_practice_test, bundle)
+        }
+        binding.btnMultipleClause.setOnClickListener {
+            val bundle = Bundle()
+            val testType = TestType(PracticeTestFragment.STRUCTURE, PracticeTestFragment.STRUCTURE_MULTIPLE_CLAUSES)
+            bundle.putSerializable(TEST_TYPE_KEY, testType)
+            findNavController().navigate(R.id.action_to_practice_test, bundle)
+        }
+        binding.btnMoreMultipleClause.setOnClickListener {
+            val bundle = Bundle()
+            val testType = TestType(PracticeTestFragment.STRUCTURE, PracticeTestFragment.STRUCTURE_MORE_MULTIPLE_CLAUSE)
+            bundle.putSerializable(TEST_TYPE_KEY, testType)
+            findNavController().navigate(R.id.action_to_practice_test, bundle)
+        }
+        binding.btnReduceClauses.setOnClickListener {
+            val bundle = Bundle()
+            val testType = TestType(PracticeTestFragment.STRUCTURE, PracticeTestFragment.STRUCTURE_REDUCED_CLAUSES)
+            bundle.putSerializable(TEST_TYPE_KEY, testType)
+            findNavController().navigate(R.id.action_to_practice_test, bundle)
+        }
+        binding.btnInvertedSubjectVerb.setOnClickListener {
+            val bundle = Bundle()
+            val testType = TestType(PracticeTestFragment.STRUCTURE, PracticeTestFragment.STRUCTURE_INVERTED_SUBJECT_AND_VERB)
+            bundle.putSerializable(TEST_TYPE_KEY, testType)
+            findNavController().navigate(R.id.action_to_practice_test, bundle)
+        }
+
     }
 
     private fun setCategory(category: Int) {

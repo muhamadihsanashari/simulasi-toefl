@@ -3,8 +3,8 @@ package com.fastwork.toefl.data.repository
 
 import com.fastwork.toefl.data.local.database.dao.ReadingDao
 import com.fastwork.toefl.data.local.database.dao.StructureDao
-import com.fastwork.toefl.data.local.model.ParagraphAndReading
 import com.fastwork.toefl.data.local.model.Reading
+import com.fastwork.toefl.data.local.model.Structure
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import timber.log.Timber
@@ -20,6 +20,18 @@ class PracticeRepositoryImpl(
         withContext(Dispatchers.IO) {
             try {
                 result = readingDao.getAllReading(difficulty)
+            } catch (e: Exception) {
+                Timber.e(e.message.toString())
+            }
+        }
+        return result
+    }
+
+    override suspend fun getStructureData(category: String): List<Structure> {
+        var result = listOf<Structure>()
+        withContext(Dispatchers.IO) {
+            try {
+                result = structureDao.getAllStructure(category)
             } catch (e: Exception) {
                 Timber.e(e.message.toString())
             }

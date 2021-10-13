@@ -10,5 +10,5 @@ interface ReadingDao {
     suspend fun insertAll(plants: List<Reading>)
 
     @Query("SELECT * FROM reading WHERE difficulty=:difficulty")
-    fun getAllReading(difficulty: String): List<Reading>
+    suspend fun getAllReading(difficulty: String): List<Reading>
 }

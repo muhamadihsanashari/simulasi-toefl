@@ -43,6 +43,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/parent_passage"
             android:layout_width="match_parent"
+            android:visibility="gone"
             android:layout_height="200dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/bg_white_gray_stroke"
