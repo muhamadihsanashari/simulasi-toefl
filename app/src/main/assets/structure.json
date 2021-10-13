@@ -218,5 +218,807 @@
     ],
     "answer": 4,
     "category": "one clause"
-  }
+  },
+  {
+    "question": "Parent flamingos lose ~their intense pink coloring until _____.\n\n\n",
+    "optionAnswer": [
+      "weaning young",
+      "their youths",
+      "they wean their young",
+      "young"
+    ],
+    "answer": 3,
+    "category": "multiple clauses"
+  },
+  {
+    "question": "Champagne can be purchased by the balthazar, _____ cannot be purchased in this amount.\n\n\n",
+    "optionAnswer": [
+      "brandy",
+      "but",
+      "because brandy",
+      "but brandy"
+    ],
+    "answer": 4,
+    "category": "multiple clauses"
+  },{
+  "question": "_____ has a beautiful red coat, the red panda is called \"hun-ho\" or \"fire fox\" in China.\n\n\n",
+  "optionAnswer": [
+    "It",
+    "Because it",
+    "On it",
+    "As soon as"
+  ],
+  "answer": 2,
+  "category": "multiple clauses"
+},{
+  "question": "_____ long enough, every Down's syndrome individual gets Alzheimer's disease.\n\n\n",
+  "optionAnswer": [
+    "The person lives",
+    "If the person living",
+    "If the person lives",
+    "Because the life"
+  ],
+  "answer": 3,
+  "category": "multiple clauses"
+},{
+  "question": "Although Congress passed an income tax law in 1894, in 1895 _____ the law unconstitutional.\n\n\n",
+  "optionAnswer": [
+    "the ruling of the Supreme Court",
+    "was ruled by the Supreme Court",
+    "if the Supreme Court ruled",
+    "the Supreme Court ruled"
+  ],
+  "answer": 4,
+  "category": "multiple clauses"
+},{
+  "question": "When San Diego's summer heat has withered most flowers, _____ bloom.\n\n\n",
+  "optionAnswer": [
+    "as soon as lilies",
+    "lilies",
+    "of lilies",
+    "by the time lilies start"
+  ],
+  "answer": 2,
+  "category": "multiple clauses"
+},{
+  "question": "_____ dugout canoes where the floodplains have dried into long stretches of dry sand.\n\n\n",
+  "optionAnswer": [
+    "Because oxen pull",
+    "Oxen pull",
+    "For oxen to pull",
+    "Oxen pulling"
+  ],
+  "answer": 2,
+  "category": "multiple clauses"
+},{
+  "question": "Like a mountain, the Empire State Building creates its own updrafts, _____ have been observed to fall up.\n\n\n",
+  "optionAnswer": [
+    "and snow and rain",
+    "snow and rain",
+    "of snow",
+    "but snow"
+  ],
+  "answer": 1,
+  "category": "multiple clauses"
+},{
+  "question": "_____ perceives the color black provided there is a complete lack of stimulation of the retina.\n\n\n",
+  "optionAnswer": [
+    "When a person",
+    "A person will",
+    "If a person",
+    "A person"
+  ],
+  "answer": 4,
+  "category": "multiple clauses"
+},{
+  "question": "Elephant poaching _____ the international ban on ivory was established.\n\n\n",
+  "optionAnswer": [
+    "has diminished since",
+    "it has diminished",
+    "since diminishing",
+    "it has diminished since"
+  ],
+  "answer": 1,
+  "category": "multiple clauses"
+},{
+  "question": "A little fat is essential for humans _____ retain body heat, gives muscles energy, and keeps skin soft.\n\n\n",
+  "optionAnswer": [
+    "as it helps",
+    "although it",
+    "it helps",
+    "in helping"
+  ],
+  "answer": 1,
+  "category": "multiple clauses"
+},{
+  "question": "Gustave Eiffel is famous for building the Eiffel Tower, _____ for designing the framework of the Statue of Liberty.\n\n\n",
+  "optionAnswer": [
+    "he is remembered",
+    "is remembered ",
+    "yet he is seldom remembered",
+    "yet remembered"
+  ],
+  "answer": 3,
+  "category": "multiple clauses"
+},{
+  "question": "Further changes in the celestial constellations _____ the International Astronomical Union has been formed.\n\n\n",
+  "optionAnswer": [
+    "are unlikely now that",
+    "unlikely whenever",
+    "are unlikely ",
+    "they are unlikely"
+  ],
+  "answer": 1,
+  "category": "multiple clauses"
+},{
+  "question": "_____ can consume 30,000 plant species, 90 percent of the human diet consists of only 20 of the available species.\n\n\n",
+  "optionAnswer": [
+    "Humans",
+    "In contrast humans",
+    "Providing for humans",
+    "While humans"
+  ],
+  "answer": 4,
+  "category": "multiple clauses"
+},{
+  "question": "The reservoir created by the Three Gorges Dam will flood almost 1,400 villages, _____ to relocate the villages' nearly two million inhabitants.\n\n\n",
+  "optionAnswer": [
+    "the government plans",
+    "so the governments plans",
+    "so the government plans",
+    "the governments plans"
+  ],
+  "answer": 3,
+  "category": "multiple clauses"
+},{
+  "question": "_____ walking properly and has enough area to walk in, it should wear down the hoof as it regrows.\n\n\n",
+  "optionAnswer": [
+    "If the animal is",
+    "The animal is",
+    "Although the animal",
+    "Although"
+  ],
+  "answer": 1,
+  "category": "multiple clauses"
+},{
+  "question": "Change, both good and bad, can create stress, _____, if sufficiently severe, can lead to illness.\n\n\n",
+  "optionAnswer": [
+    "and stress",
+    "and stressed",
+    "stress",
+    "that stress"
+  ],
+  "answer": 1,
+  "category": "multiple clauses"
+},{
+  "question": "Caffeine is primarily consumed in coffee and tea, ____ also found in cocoa, cola, and other soft drinks.\n\n\n",
+  "optionAnswer": [
+    "but",
+    "but it",
+    "but it is",
+    "it is"
+  ],
+  "answer": 3,
+  "category": "multiple clauses"
+},{
+  "question": "_____ farmers extra hours of light by which to harvest crops before frost and winter come.\n\n\n",
+  "optionAnswer": [
+    "The harvest moon",
+    "Whenever the harvest moon allows",
+    "During the harvest moon",
+    "The harvest moon gives"
+  ],
+  "answer": 4,
+  "category": "multiple clauses"
+},{
+  "question": "_____ built in 1931, the Empire State Building has actually shrunk six inches.\n\n\n",
+  "optionAnswer": [
+    "It was",
+    "Because it ",
+    "Until it was",
+    "Since it was"
+  ],
+  "answer": 4,
+  "category": "multiple clauses"
+},{
+  "question": "For every disease-carrying toxin, there is an antitoxin which _____ out the affect of the toxin.\n\n\n",
+  "optionAnswer": [
+    "cancels",
+    "the cancellation",
+    "to cancel",
+    "cancelling"
+  ],
+  "answer": 1,
+  "category": "more multiple clauses"
+},{
+  "question": "Galileo's observations ~of the phases of Venus proved _____ formed the center of the planetary system.\n\n\n",
+  "optionAnswer": [
+    "that the sun",
+    "the sun is",
+    "it is the sun",
+    "what is the sun"
+  ],
+  "answer": 1,
+ "category": "more multiple clauses"
+},{
+  "question": "Skin color is determined ~by a chemical called melanin, _____ in greater or lesser amounts.\n\n\n",
+  "optionAnswer": [
+    "which human skin contains~",
+    "human skin contains",
+    "in human skin contains",
+    "there is in human skin"
+  ],
+  "answer": 1,
+ "category": "more multiple clauses"
+},{
+  "question": "Environmentalists are earnestly trying to determine _____ of the ozone layer over the poles.\n\n\n",
+  "optionAnswer": [
+    "is causing the deterioration",
+    "what the cause of the deterioration",
+    "what is causing the deterioration",
+    "the deterioration is causing"
+  ],
+  "answer": 3,
+ "category": "more multiple clauses"
+},{
+  "question": "Historical records _____ were used in China for centuries before spreading to Europe.\n\n\n",
+  "optionAnswer": [
+    "suggesting that fireworks",
+    "fireworks",
+    "that fireworks",
+    "suggest that fireworks"
+  ],
+  "answer": 4,
+ "category": "more multiple clauses"
+},{
+  "question": "The first mention of the cultivation of tea _____ in a Chinese dictionary which dates about the year 350.\n\n\n",
+  "optionAnswer": [
+    "finding",
+    "to be found",
+    "it is found",
+    "can be found"
+  ],
+  "answer": 4,
+ "category": "more multiple clauses"
+},{
+  "question": "The anteater has a long sticky tongue, _____ capture ants and termites from their nests.\n\n\n",
+  "optionAnswer": [
+    "which the use",
+    "uses it to",
+    "it is used",
+    "which it uses to"
+  ],
+  "answer": 4,
+ "category": "more multiple clauses"
+},{
+  "question": "_____ global climate is warming has been well documented.\n\n\n",
+  "optionAnswer": [
+    "There is the",
+    "It is the",
+    "The",
+    "That the"
+  ],
+  "answer": 4,
+ "category": "more multiple clauses"
+},{
+  "question": "Bank employees collect worn-out dollar bills, _____ to a central office to be destroyed in a furnace.\n\n\n",
+  "optionAnswer": [
+    "who send them",
+    "which are sent",
+    "who are sent",
+    "are sent"
+  ],
+  "answer": 2,
+ "category": "more multiple clauses"
+},{
+  "question": "_____ such a challenging science is that all theory is based on observations that cannot be replicated in a controlled environment.\n\n\n",
+  "optionAnswer": [
+    "It is astronomy",
+    "Astronomy is",
+    "What makes astronomy",
+    "Why is astronomy"
+  ],
+  "answer": 3,
+ "category": "more multiple clauses"
+},{
+  "question": "The blue-ringed octopus, _____ found in tropical lagoons, is so venomous that it can paralyze or kill a person in a matter of minutes.\n\n\n",
+  "optionAnswer": [
+    "is",
+    "who is",
+    "that ",
+    "which is"
+  ],
+  "answer": 4,
+ "category": "more multiple clauses"
+},{
+  "question": "_____ floats or sinks is determined by its density rather than its weight.\n\n\n",
+  "optionAnswer": [
+    "Whether an object",
+    "An object if it",
+    "Because an object",
+    "An object"
+  ],
+  "answer": 1,
+ "category": "more multiple clauses"
+},{
+  "question": "Edmund Halley, who had discovered Halley's comet in 1682, _____ before he could again see the comet whose return he had accurately predicted.~\n\n\n",
+  "optionAnswer": [
+    "died",
+    "dying",
+    "on his death",
+    "to die"
+  ],
+  "answer": 1,
+ "category": "more multiple clauses"
+},{
+  "question": "Bees perform a complex dance _____ other bees about the location of a good source of nectar.\n\n\n",
+  "optionAnswer": [
+    "tells",
+    "tell",
+    "it tells",
+    "that tells"
+  ],
+  "answer": 4,
+ "category": "more multiple clauses"
+},{
+  "question": "Some radioisotopes which _____ as radioactive waste are now being used in experimental cancer therapies.\n\n\n",
+  "optionAnswer": [
+    "once discarded by scientists",
+    "scientists discarded",
+    "to discard by scientists",
+    "were discarded scientists"
+  ],
+  "answer": 2,
+ "category": "more multiple clauses"
+},{
+  "question": "Although seismologists know _____ , they are unable to predict with accuracy when or where a tremor might occur.\n\n\n",
+  "optionAnswer": [
+    "what causes earthquakes",
+    "what earthquakes",
+    "causes earthquakes",
+    "that the quaking of the Earth"
+  ],
+  "answer": 1,
+ "category": "more multiple clauses"
+},{
+  "question": "The abundant grain harvests of North America can be credited to Norman Borlag, a little-known scientist _____ modern strains of high-yield wheat.\n\n\n",
+  "optionAnswer": [
+    "which cultivated",
+    "cultivated",
+    "who cultivated",
+    "the cultivation of"
+  ],
+  "answer": 3,
+ "category": "more multiple clauses"
+},{
+  "question": "_____ in the atmosphere is the temperature falling below freezing.\n\n\n",
+  "optionAnswer": [
+    "Frost is produced",
+    "Frost produces",
+    "What produces frost",
+    "What is frost"
+  ],
+  "answer": 3,
+ "category": "more multiple clauses"
+},{
+  "question": "Subduction is the process _____ the ocean floor recycles itself.\n\n\n",
+  "optionAnswer": [
+    "that",
+    "which is",
+    "by which",
+    "how"
+  ],
+  "answer": 3,
+ "category": "more multiple clauses"
+},{
+  "question": "_____ in so perfectly with their environment is what makes Frank Lloyd Wright's architecture so distinctive.\n\n\n",
+  "optionAnswer": [
+    "That the buildings blend",
+    "The buildings blend",
+    "Since the buildings blend",
+    "Build and blend"
+  ],
+  "answer": 1,
+ "category": "more multiple clauses"
+},{
+  "question": "~The surgeon operating without delay on an inflamed appendix _____ a far more serious complication, which is the rupture of a germ-laden appendix.\n\n\n",
+  "optionAnswer": [
+    "which prevents",
+    "preventing",
+    "prevents",
+    "prevention"
+  ],
+  "answer": 3,
+ "category": "reduced clauses"
+},{
+  "question": "Unless _____ as injury-free as possible, older athletes can have their activity and quality of life affected.\n\n\n",
+  "optionAnswer": [
+    "the remnants of",
+    "to remain",
+    "remaining",
+    "remain"
+  ],
+  "answer": 3,
+ "category": "reduced clauses"
+},{
+  "question": "_____ famous civil rights leader, Martin Luther King, Jr. was named winner of the Nobel Peace Prize in 1964.\n\n\n",
+  "optionAnswer": [
+    "A",
+    "Which was",
+    "He was a",
+    "Was a"
+  ],
+  "answer": 1,
+ "category": "reduced clauses"
+},{
+  "question": "The four-character drama Who's Afraid of Virginia Woolf?, _____ by Edward Albee, opened on Broadway.\n\n\n",
+  "optionAnswer": [
+    "it was written",
+    "who was written",
+    "written",
+    "was written"
+  ],
+  "answer": 3,
+ "category": "reduced clauses"
+},{
+  "question": "After _____ seven years to journey to Saturn, the spacecraft Cassini will spend four years exploring Saturn, its rings, and its icy moons.\n\n\n",
+  "optionAnswer": [
+    "takes",
+    "taken",
+    "was taken",
+    "taking"
+  ],
+  "answer": 4,
+ "category": "reduced clauses"
+},{
+  "question": "Although applied for in October of 1793, Eli Whitney's patent for his cotton gin _____ until March of the following year.\n\n\n",
+  "optionAnswer": [
+    "granting",
+    "it was not granted",
+    "to grant",
+    "was not granted"
+  ],
+  "answer": 4,
+ "category": "reduced clauses"
+},{
+  "question": "_____, honoring the African tradition of celebrating the harvest, is held December 16 through January 1 in the United States.\n\n\n",
+  "optionAnswer": [
+    "For Kwanzaa",
+    "Kwanzaa was celebrated",
+    "Kwanzaa celebrations",
+    "Kwanzaa"
+  ],
+  "answer": 4,
+ "category": "reduced clauses"
+},{
+  "question": "While repositioning, cruise ships _____ passengers for what is called a line voyage.\n\n\n",
+  "optionAnswer": [
+    "the embarkation of",
+    "embark",
+    "embarking",
+    "they embark"
+  ],
+  "answer": 2,
+ "category": "reduced clauses"
+},{
+  "question": "_____ New York and New Jersey, the George Washington Bridge opened to traffic in 1931.\n\n\n",
+  "optionAnswer": [
+    "Connecting",
+    "Which was connected",
+    "Connects",
+    "It connects"
+  ],
+  "answer": 1,
+ "category": "reduced clauses"
+},{
+  "question": "While _____ those who are not working members of the press, press pins provide access to a press box for media members.\n\n\n",
+  "optionAnswer": [
+    "kept out",
+    "keeping out",
+    "the keeper",
+    "was kept out"
+  ],
+  "answer": 2,
+ "category": "reduced clauses"
+},{
+  "question": "Although_____ their jobs, a majority of workers expect to move on to other jobs within five years of starting their current jobs.\n\n\n",
+  "optionAnswer": [
+    "to enjoy",
+    "enjoy",
+    "the enjoyment",
+    "enjoying"
+  ],
+  "answer": 4,
+ "category": "reduced clauses"
+},{
+  "question": "Most adults, including 78 percent of men and 61 percent of women, _____ that gender roles in marriage today are more equal than traditional.\n\n\n",
+  "optionAnswer": [
+    "say",
+    "they say",
+    "saying",
+    "to say"
+  ],
+  "answer": 1,
+ "category": "reduced clauses"
+},{
+  "question": "If introduced into avocado groves, the seed and stem weevils, seed moth, and fruit fly _____ the avocado industry in California.\n\n\n",
+  "optionAnswer": [
+    "the ending",
+    "may end",
+    "to end",
+    "they will end"
+  ],
+  "answer": 2,
+ "category": "reduced clauses"
+},{
+  "question": "_____ Lake Erie and the Hudson River, the Erie Canal opened in upstate New York in 1825.\n\n\n",
+  "optionAnswer": [
+    "Linking",
+    "It was linked",
+    "Have been linking",
+    "They linked"
+  ],
+  "answer": 1,
+ "category": "reduced clauses"
+},{
+  "question": "While _____, Chu developed a way of trapping thousands of gas atoms using lasers.\n\n\n",
+  "optionAnswer": [
+    "to work at Bell Laboratories",
+    "working at Bell Laboratories",
+    "worked at Bell Laboratories",
+    "was working at Bell Laboratories"
+  ],
+  "answer": 2,
+ "category": "reduced clauses"
+},{
+  "question": "Though racing toward the Milky Way galaxy at 300,000 miles an hour, the Andromeda galaxy ____ with the Milky Way for about five billion years.\n\n\n",
+  "optionAnswer": [
+    "colliding",
+    "will not collide",
+    "to collide",
+    "the collision"
+  ],
+  "answer": 2,
+ "category": "reduced clauses"
+},{
+  "question": "On October 28, 1886, the Statue of Liberty, a gift from the people of France, _____ in New York Harbor by President Cleveland.\n\n\n",
+  "optionAnswer": [
+    "to dedicate",
+    "it dedicated",
+    "was dedicated",
+    "was dedicating"
+  ],
+  "answer": 3,
+ "category": "reduced clauses"
+},{
+  "question": "While making the embarrassing mistake of wearing a scarlet garment instead of somber black, _____, the atomic chemist and Quaker, discovered that he was color-blind.\n\n\n",
+  "optionAnswer": [
+    "in John Dalton's laboratory",
+    "John Dalton was",
+    "John Dalton",
+    "John Dalton and"
+  ],
+  "answer": 3,
+ "category": "reduced clauses"
+},{
+  "question": "The birth of swing music can be traced to Battle of the Bands competitions _____ at the Savoy Ballroom in Harlem.\n\n\n",
+  "optionAnswer": [
+    "held",
+    "were held",
+    "the holdings",
+    "to hold"
+  ],
+  "answer": 1,
+ "category": "reduced clauses"
+},{
+  "question": "In the halcyon days of the civil rights movement, a small group of dedicated lawyers, mostly black, _____ carefully craft the strategy that led to the destruction of legal segregation.\n\n\n",
+  "optionAnswer": [
+    "which is able to",
+    "was able to",
+    "able to",
+    "were able"
+  ],
+  "answer": 2,
+ "category": "reduced clauses"
+},{
+  "question": "Scientists now know that the lack of an embryonic thumb in birds is why _____ almost impossible for birds and dinosaurs to be related.\n\n\n",
+  "optionAnswer": [
+    "is",
+    "it is",
+    "is it",
+    "it"
+  ],
+  "answer": 2,
+ "category": "inverted subject and verb"
+},{
+  "question": "There _____ launched in 1958 that fell back to Earth and burned up in the atmosphere.\n\n\n",
+  "optionAnswer": [
+    "a lunar probe was",
+    "was a lunar probe",
+    "a lunar probe",
+    "with a lunar probe"
+  ],
+  "answer": 2,
+ "category": "inverted subject and verb"
+},{
+  "question": "Rarely _____ now used for battle purposes.\n\n\n",
+  "optionAnswer": [
+    "in the band",
+    "military bands are",
+    "banded",
+    "are military bands"
+  ],
+  "answer": 4,
+ "category": "inverted subject and verb"
+},{
+  "question": "In addition to quitting smoking and controlling blood pressure and diet, people need to think about how _____ stress to avert potentially fatal heart problems.\n\n\n",
+  "optionAnswer": [
+    "can they manage",
+    "the management",
+    "they manage",
+    "managing"
+  ],
+  "answer": 3,
+ "category": "inverted subject and verb"
+},{
+  "question": "Only recently _____ popular all over the country.\n\n\n",
+  "optionAnswer": [
+    "have indoor climbing gyms become",
+    "in becoming indoor climbing gyms",
+    "indoor climbing gyms have become",
+    "indoor climbing gyms"
+  ],
+  "answer": 1,
+ "category": "inverted subject and verb"
+},{
+  "question": "A motionless atom is colder than _____.\n\n\n",
+  "optionAnswer": [
+    "in the movement",
+    "to be moved",
+    "the atom moving",
+    "is a moving atom"
+  ],
+  "answer": 4,
+ "category": "inverted subject and verb"
+},{
+  "question": "In the sand off the northern California coast _____ San Agustin, which is said to be loaded with gold.\n\n\n",
+  "optionAnswer": [
+    "the galleon is lying",
+    "lies the galleon",
+    "the galleon",
+    "the galleon which lies"
+  ],
+  "answer": 2,
+ "category": "inverted subject and verb"
+},{
+  "question": "According to a recent survey, were _____ of telecommuters to lose their jobs, they would look for other telecommuting positions.\n\n\n",
+  "optionAnswer": [
+    "to major",
+    "if a majority",
+    "a majority",
+    "in the major"
+  ],
+  "answer": 3,
+ "category": "inverted subject and verb"
+},{
+  "question": "When _____ chest pain, some doctors recommend that they take one full 325-milligram aspirin.\n\n\n",
+  "optionAnswer": [
+    "patients feel",
+    "feel impatient",
+    "do patients feel",
+    "as patients feel"
+  ],
+  "answer": 1,
+ "category": "inverted subject and verb"
+},{
+  "question": "There _____ called Epstein-Barr which leaves people feeling chronically fatigued and feeling as if they have a recurring case of the flu.\n\n\n",
+  "optionAnswer": [
+    "a viral",
+    "in a disease",
+    "a virus is",
+    "is a virus"
+  ],
+  "answer": 4,
+ "category": "inverted subject and verb"
+},{
+  "question": "Only in the Civil War _____ killed or wounded.\n\n\n",
+  "optionAnswer": [
+    "soldiers in America",
+    "were so many American soldiers",
+    "many in America",
+    "so many American soldiers were"
+  ],
+  "answer": 2,
+ "category": "inverted subject and verb"
+},{
+  "question": "Lifestyle is more important _____ in a person's lifespan.\n\n\n",
+  "optionAnswer": [
+    "as genetics are",
+    "with genes",
+    "genetically",
+    "than are genetics"
+  ],
+  "answer": 4,
+ "category": "inverted subject and verb"
+},{
+  "question": "A collision with another galaxy may be what _____, the Milky Way, may experience.\n\n\n",
+  "optionAnswer": [
+    "Earth's galaxy is",
+    "is Earth's galaxy",
+    "Earth's galaxy",
+    "for Earth's galaxy"
+  ],
+  "answer": 3,
+ "category": "inverted subject and verb"
+},{
+  "question": "Should _____ help keeping their weight, blood pressure, pulse, and cholesterol down, swimming is an excellent activity.\n\n\n",
+  "optionAnswer": [
+    "adults need",
+    "needy adults",
+    "to need",
+    "need adults"
+  ],
+  "answer": 1,
+ "category": "inverted subject and verb"
+},{
+  "question": "In the vessels of the vascular system of the giraffe _____ of valves that ensures a needed supply of blood to the head.\n\n\n",
+  "optionAnswer": [
+    "are series",
+    "is serious",
+    "is a series",
+    "a series is"
+  ],
+  "answer": 3,
+ "category": "inverted subject and verb"
+},{
+  "question": "There has been a string of recent technology advances aimed at building new engines which are more clean and efficient than _____.\n\n\n",
+  "optionAnswer": [
+    "to engineer",
+    "are current engines",
+    "in engines currently",
+    "current"
+  ],
+  "answer": 2,
+ "category": "inverted subject and verb"
+},{
+  "question": "Daylight saving time seems to reduce people's exposure to crime, so were people to get home from work and school and complete more errands and chores in daylight, _____ safer.\n\n\n",
+  "optionAnswer": [
+    "for being",
+    "to be",
+    "they",
+    "they would be"
+  ],
+  "answer": 4,
+ "category": "inverted subject and verb"
+},{
+  "question": "Scarcely _____ started building his theme park when he launched his first television program titled Disneyland.\n\n\n",
+  "optionAnswer": [
+    "Walt Disney",
+    "Walt Disney had",
+    "had Walt Disney",
+    "Walt Disney was"
+  ],
+  "answer": 3,
+ "category": "inverted subject and verb"
+},{
+  "question": "Orthopedic and sports medicine specialists now realize that _____ people to get prolonged bed rest for acute and chronic back problems, they would heal ~less quickly.\n\n\n",
+  "optionAnswer": [
+    "were",
+    "if",
+    "the",
+    "of"
+  ],
+  "answer": 1,
+ "category": "inverted subject and verb"
+},{
+  "question": "The hunting season for firearms is more restricted than _____ because hunting with firearms is more dangerous and less challenging.\n\n\n",
+  "optionAnswer": [
+    "to season",
+    "is the archery season",
+    "for archery",
+    "is seasoning"
+  ],
+  "answer": 2,
+ "category": "inverted subject and verb"
+}
 ]
