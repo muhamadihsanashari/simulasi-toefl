@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@+id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.fastwork.toefl.ui.splash.SplashScreen"
+        android:label="Login Page"
+        tools:layout="@layout/fragment_splash">
+
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.fastwork.toefl.ui.main.MainPageFragment"
+        android:label="Main Page"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/toPracticeFragment"
+            app:destination="@id/practiceFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/practiceFragment"
+        android:name="com.fastwork.toefl.ui.practice.PracticeFragment"
+        android:label="Practice Fragment"
+        tools:layout="@layout/fragment_practice">
+
+        <action
+            android:id="@+id/action_to_practice_test"
+            app:destination="@id/practiceTestFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/practiceTestFragment"
+        android:name="com.fastwork.toefl.ui.practice.test.PracticeTestFragment"
+        android:label="Practice Test Fragment"
+        tools:layout="@layout/fragment_test_practice" />
+
+
+</navigation>

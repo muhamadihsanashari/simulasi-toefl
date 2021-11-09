@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_slarge">20dp</dimen>
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="margin_smed">10dp</dimen>
+    <dimen name="margin_hms">16dp</dimen>
+    <dimen name="padding_small">10dp</dimen>
+    <dimen name="size_30dp">30dp</dimen>
+    <dimen name="size_10dp">10dp</dimen>
+    <dimen name="radius_xsmall">4dp</dimen>
+    <dimen name="text_s">12sp</dimen>
+    <dimen name="margin_med">14dp</dimen>
+    <dimen name="radius_high">60dp</dimen>
+    <dimen name="radius_6dp">6dp</dimen>
+    <dimen name="padding_xsmall">5dp</dimen>
+    <dimen name="size_24dp">24dp</dimen>
+    <dimen name="text_ms">14sp</dimen>
+    <dimen name="text_xms">10sp</dimen>
+    <dimen name="margin_hsmed">15dp</dimen>
+    <dimen name="margin_hs">20dp</dimen>
+    <dimen name="radius_medium">40dp</dimen>
+    <dimen name="size_8dp">8dp</dimen>
+    <dimen name="padding_smlarge">15dp</dimen>
+    <dimen name="size_58dp">58dp</dimen>
+    <dimen name="size_1dp">1dp</dimen>
+    <dimen name="size_2dp">2dp</dimen>
+    <dimen name="padding_xxsmall">3dp</dimen>
+    <dimen name="margin_vxhigh">90dp</dimen>
+    <dimen name="text_m">13sp</dimen>
+    <dimen name="text_smm">16sp</dimen>
+    <dimen name="size_48dp">48dp</dimen>
+    <dimen name="size_300dp">300dp</dimen>
+</resources>
