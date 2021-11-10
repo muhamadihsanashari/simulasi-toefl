@@ -30,4 +30,7 @@
     <dimen name="text_smm">16sp</dimen>
     <dimen name="size_48dp">48dp</dimen>
     <dimen name="size_300dp">300dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="dimen_23">23dp</dimen>
+    <dimen name="dimen_11">11dp</dimen>
 </resources>

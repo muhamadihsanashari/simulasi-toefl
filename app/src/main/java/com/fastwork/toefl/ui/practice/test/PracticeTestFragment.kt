@@ -1,12 +1,14 @@
 package com.fastwork.toefl.ui.practice.test
 
 import android.annotation.SuppressLint
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.RadioButton
+import android.widget.SeekBar
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.fastwork.toefl.R
@@ -14,6 +16,7 @@ import com.fastwork.toefl.data.local.model.Question
 import com.fastwork.toefl.data.local.model.TestType
 import com.fastwork.toefl.databinding.FragmentTestPracticeBinding
 import com.fastwork.toefl.utils.TEST_TYPE_KEY
+import kotlinx.coroutines.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class PracticeTestFragment : Fragment() {
@@ -24,6 +27,12 @@ class PracticeTestFragment : Fragment() {
     private val questionData = arrayListOf<Question>()
     private var currentQuestionPosition: Int = 0
     private var currentUserAnswer = 0
+
+    private lateinit var mp: MediaPlayer
+    private var totalTime: Int = 0
+
+    private val period: Long = 1000
+    private var job = CoroutineScope(Dispatchers.Main).launchPeriodicAsync(period) {}
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -38,10 +47,82 @@ class PracticeTestFragment : Fragment() {
             lifecycleOwner = this@PracticeTestFragment
         }
         testType = arguments?.get(TEST_TYPE_KEY) as TestType?
+        setupAudio()
         setupData()
         setupObserver()
         setupListener()
         return binding.root
+    }
+
+    private fun setupAudio() {
+        val audioFile = resources.getIdentifier("plg101", "raw", activity?.packageName)
+        mp = MediaPlayer.create(context, audioFile)
+        totalTime = mp.duration
+        binding.seekBar.max = totalTime
+        binding.seekBar.setOnSeekBarChangeListener(
+            object : SeekBar.OnSeekBarChangeListener {
+                override fun onProgressChanged(
+                    seekBar: SeekBar?,
+                    progress: Int,
+                    fromUser: Boolean
+                ) {
+                    if (fromUser) {
+                        mp.seekTo(progress)
+                    }
+                }
+
+                override fun onStartTrackingTouch(p0: SeekBar?) {
+                }
+
+                override fun onStopTrackingTouch(p0: SeekBar?) {
+                }
+            }
+        )
+
+        job = CoroutineScope(Dispatchers.Main).launchPeriodicAsync(period) {
+            val currentPosition = mp.currentPosition
+            binding.seekBar.progress = currentPosition
+            val elapsedTime = createTimeLabel(currentPosition)
+            binding.duration.text = elapsedTime
+            val remainingTime = createTimeLabel(totalTime - currentPosition)
+            binding.maxDuration.text =
+                String.format(resources.getString(R.string.format_remaining), remainingTime)
+        }
+    }
+
+    private fun CoroutineScope.launchPeriodicAsync(repeatMillis: Long, action: () -> Unit) = async {
+        if (repeatMillis > 0) {
+            while (true) {
+                action()
+                delay(period)
+            }
+        } else {
+            cancel()
+        }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        job.cancel()
+        mp.release()
+    }
+
+    override fun onPause() {
+        super.onPause()
+        job.cancel()
+        mp.release()
+    }
+
+    private fun createTimeLabel(time: Int): String {
+        var timeLabel: String
+        val min = time / 1000 / 60
+        val sec = time / 1000 % 60
+
+        timeLabel = "$min:"
+        if (sec < 10) timeLabel += "0"
+        timeLabel += sec
+
+        return timeLabel
     }
 
     private fun setupData() {
@@ -96,11 +177,19 @@ class PracticeTestFragment : Fragment() {
         }
         binding.btnNext.setOnClickListener {
             handleNextQuestion()
-
         }
         binding.btnPrevious.setOnClickListener {
             handlePrevQuestion()
+        }
+        binding.play.setOnClickListener {
+            if (mp.isPlaying) {
+                mp.pause()
+                binding.play.setBackgroundResource(R.drawable.ic_baseline_play_arrow_24)
 
+            } else {
+                mp.start()
+                binding.play.setBackgroundResource(R.drawable.ic_baseline_pause_24)
+            }
         }
     }
 

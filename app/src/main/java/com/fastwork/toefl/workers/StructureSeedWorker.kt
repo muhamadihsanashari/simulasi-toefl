@@ -6,7 +6,6 @@ import android.util.Log
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
 import com.fastwork.toefl.data.local.database.AppDatabase
-import com.fastwork.toefl.data.local.model.Reading
 import com.fastwork.toefl.data.local.model.Structure
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
