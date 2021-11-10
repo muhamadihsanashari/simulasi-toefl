@@ -47,7 +47,7 @@ class PracticeTestFragment : Fragment() {
             lifecycleOwner = this@PracticeTestFragment
         }
         testType = arguments?.get(TEST_TYPE_KEY) as TestType?
-        setupAudio()
+//        setupAudio()
         setupData()
         setupObserver()
         setupListener()
