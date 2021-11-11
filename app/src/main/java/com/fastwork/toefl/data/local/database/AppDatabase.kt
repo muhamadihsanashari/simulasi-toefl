@@ -10,24 +10,16 @@ import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
 import androidx.work.WorkRequest
 import androidx.work.workDataOf
-import com.fastwork.toefl.data.local.database.dao.ParagraphDao
-import com.fastwork.toefl.data.local.database.dao.ProductDao
-import com.fastwork.toefl.data.local.database.dao.ReadingDao
-import com.fastwork.toefl.data.local.database.dao.StructureDao
-import com.fastwork.toefl.data.local.model.ParagraphReading
-import com.fastwork.toefl.data.local.model.Product
-import com.fastwork.toefl.data.local.model.Reading
-import com.fastwork.toefl.data.local.model.Structure
-import com.fastwork.toefl.utils.DATABASE_NAME
-import com.fastwork.toefl.utils.PARAGRAPH_FILE_DATA_NAME
-import com.fastwork.toefl.utils.READING_FILE_DATA_NAME
-import com.fastwork.toefl.utils.STRUCTURE_FILE_DATA_NAME
+import com.fastwork.toefl.data.local.database.dao.*
+import com.fastwork.toefl.data.local.model.*
+import com.fastwork.toefl.utils.*
+import com.fastwork.toefl.workers.ListeningSeedWorker
 import com.fastwork.toefl.workers.ParagraphSeedWorker
 import com.fastwork.toefl.workers.ReadingSeedWorker
 import com.fastwork.toefl.workers.StructureSeedWorker
 
 @Database(
-    entities = [Product::class, ParagraphReading::class, Reading::class, Structure::class],
+    entities = [Product::class, ParagraphReading::class, Reading::class, Structure::class, Listening::class],
     version = 1,
     exportSchema = false
 )
@@ -38,6 +30,7 @@ abstract class AppDatabase() : RoomDatabase() {
     abstract fun paragraphDao(): ParagraphDao
     abstract fun readingDao(): ReadingDao
     abstract fun structureDao(): StructureDao
+    abstract fun listeningDao(): ListeningDao
 
     companion object {
         @Volatile
@@ -67,9 +60,14 @@ abstract class AppDatabase() : RoomDatabase() {
                                 OneTimeWorkRequestBuilder<StructureSeedWorker>()
                                     .setInputData(workDataOf(StructureSeedWorker.KEY_FILENAME to STRUCTURE_FILE_DATA_NAME))
                                     .build()
+                            val requestSeedListening =
+                                OneTimeWorkRequestBuilder<ListeningSeedWorker>()
+                                    .setInputData(workDataOf(ListeningSeedWorker.KEY_FILENAME to LISTENING_FILE_DATA_NAME))
+                                    .build()
                             listRequest.add(requestSeedParagraph)
                             listRequest.add(requestSeedReading)
                             listRequest.add(requestSeedStucture)
+                            listRequest.add(requestSeedListening)
                             WorkManager.getInstance(context).enqueue(listRequest)
                         }
                     }

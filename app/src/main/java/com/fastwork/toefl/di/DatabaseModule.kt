@@ -1,10 +1,7 @@
 package com.fastwork.toefl.di
 
 import com.fastwork.toefl.data.local.database.AppDatabase
-import com.fastwork.toefl.data.local.database.dao.ParagraphDao
-import com.fastwork.toefl.data.local.database.dao.ProductDao
-import com.fastwork.toefl.data.local.database.dao.ReadingDao
-import com.fastwork.toefl.data.local.database.dao.StructureDao
+import com.fastwork.toefl.data.local.database.dao.*
 import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module
 
@@ -26,6 +23,10 @@ val databaseModule = module {
         return database.structureDao()
     }
 
+    fun provideListeningDao(database: AppDatabase):ListeningDao{
+        return database.listeningDao()
+    }
+
 
     single {
         AppDatabase.getInstance(androidContext())
@@ -40,5 +41,7 @@ val databaseModule = module {
     single { provideReadingDao(get()) }
 
     single { provideStuctureDao(get()) }
+
+    single { provideListeningDao(get()) }
 
 }

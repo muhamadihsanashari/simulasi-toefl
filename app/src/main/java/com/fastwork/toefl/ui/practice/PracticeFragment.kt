@@ -60,7 +60,8 @@ class PracticeFragment : Fragment() {
         }
         binding.btnMediumPassage.setOnClickListener {
             val bundle = Bundle()
-            val testType = TestType(PracticeTestFragment.READING, PracticeTestFragment.READING_MEDIUM)
+            val testType =
+                TestType(PracticeTestFragment.READING, PracticeTestFragment.READING_MEDIUM)
             bundle.putSerializable(TEST_TYPE_KEY, testType)
             findNavController().navigate(R.id.action_to_practice_test, bundle)
         }
@@ -72,31 +73,61 @@ class PracticeFragment : Fragment() {
         }
         binding.btnOneClause.setOnClickListener {
             val bundle = Bundle()
-            val testType = TestType(PracticeTestFragment.STRUCTURE, PracticeTestFragment.STRUCTURE_ONE_CLAUSE)
+            val testType =
+                TestType(PracticeTestFragment.STRUCTURE, PracticeTestFragment.STRUCTURE_ONE_CLAUSE)
             bundle.putSerializable(TEST_TYPE_KEY, testType)
             findNavController().navigate(R.id.action_to_practice_test, bundle)
         }
         binding.btnMultipleClause.setOnClickListener {
             val bundle = Bundle()
-            val testType = TestType(PracticeTestFragment.STRUCTURE, PracticeTestFragment.STRUCTURE_MULTIPLE_CLAUSES)
+            val testType = TestType(
+                PracticeTestFragment.STRUCTURE,
+                PracticeTestFragment.STRUCTURE_MULTIPLE_CLAUSES
+            )
             bundle.putSerializable(TEST_TYPE_KEY, testType)
             findNavController().navigate(R.id.action_to_practice_test, bundle)
         }
         binding.btnMoreMultipleClause.setOnClickListener {
             val bundle = Bundle()
-            val testType = TestType(PracticeTestFragment.STRUCTURE, PracticeTestFragment.STRUCTURE_MORE_MULTIPLE_CLAUSE)
+            val testType = TestType(
+                PracticeTestFragment.STRUCTURE,
+                PracticeTestFragment.STRUCTURE_MORE_MULTIPLE_CLAUSE
+            )
             bundle.putSerializable(TEST_TYPE_KEY, testType)
             findNavController().navigate(R.id.action_to_practice_test, bundle)
         }
         binding.btnReduceClauses.setOnClickListener {
             val bundle = Bundle()
-            val testType = TestType(PracticeTestFragment.STRUCTURE, PracticeTestFragment.STRUCTURE_REDUCED_CLAUSES)
+            val testType = TestType(
+                PracticeTestFragment.STRUCTURE,
+                PracticeTestFragment.STRUCTURE_REDUCED_CLAUSES
+            )
             bundle.putSerializable(TEST_TYPE_KEY, testType)
             findNavController().navigate(R.id.action_to_practice_test, bundle)
         }
         binding.btnInvertedSubjectVerb.setOnClickListener {
             val bundle = Bundle()
-            val testType = TestType(PracticeTestFragment.STRUCTURE, PracticeTestFragment.STRUCTURE_INVERTED_SUBJECT_AND_VERB)
+            val testType = TestType(
+                PracticeTestFragment.STRUCTURE,
+                PracticeTestFragment.STRUCTURE_INVERTED_SUBJECT_AND_VERB
+            )
+            bundle.putSerializable(TEST_TYPE_KEY, testType)
+            findNavController().navigate(R.id.action_to_practice_test, bundle)
+        }
+        binding.btnSortDialog.setOnClickListener {
+            val bundle = Bundle()
+            val testType =
+                TestType(PracticeTestFragment.LISTENING, PracticeTestFragment.LISTENING_SORT_DIALOG)
+            bundle.putSerializable(TEST_TYPE_KEY, testType)
+            findNavController().navigate(R.id.action_to_practice_test, bundle)
+        }
+        binding.btnCasualDiscussion.setOnClickListener {
+            val bundle = Bundle()
+            val testType =
+                TestType(
+                    PracticeTestFragment.LISTENING,
+                    PracticeTestFragment.LISTENING_CASUAL_CONVERSATION
+                )
             bundle.putSerializable(TEST_TYPE_KEY, testType)
             findNavController().navigate(R.id.action_to_practice_test, bundle)
         }

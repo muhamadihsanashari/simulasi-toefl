@@ -5,5 +5,6 @@ data class Question(
     val question: String,
     val answer: Int,
     var userAnswer: Int,
-    val answerOption: List<String>
+    val answerOption: List<String>,
+    val audioFileName:String?=null
 )

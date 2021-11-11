@@ -19,6 +19,7 @@ import com.fastwork.toefl.utils.TEST_TYPE_KEY
 import kotlinx.coroutines.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
+
 class PracticeTestFragment : Fragment() {
 
     private var testType: TestType? = null
@@ -47,15 +48,14 @@ class PracticeTestFragment : Fragment() {
             lifecycleOwner = this@PracticeTestFragment
         }
         testType = arguments?.get(TEST_TYPE_KEY) as TestType?
-//        setupAudio()
         setupData()
         setupObserver()
         setupListener()
         return binding.root
     }
 
-    private fun setupAudio() {
-        val audioFile = resources.getIdentifier("plg101", "raw", activity?.packageName)
+    private fun setupAudio(audiFileName: String?) {
+        val audioFile = resources.getIdentifier(audiFileName, "raw", activity?.packageName)
         mp = MediaPlayer.create(context, audioFile)
         totalTime = mp.duration
         binding.seekBar.max = totalTime
@@ -87,6 +87,9 @@ class PracticeTestFragment : Fragment() {
             val remainingTime = createTimeLabel(totalTime - currentPosition)
             binding.maxDuration.text =
                 String.format(resources.getString(R.string.format_remaining), remainingTime)
+            if (!mp.isPlaying) {
+                binding.play.setBackgroundResource(R.drawable.ic_baseline_play_arrow_24)
+            }
         }
     }
 
@@ -104,13 +107,17 @@ class PracticeTestFragment : Fragment() {
     override fun onDestroy() {
         super.onDestroy()
         job.cancel()
-        mp.release()
+        if (this::mp.isInitialized) {
+            mp.release()
+        }
     }
 
     override fun onPause() {
         super.onPause()
         job.cancel()
-        mp.release()
+        if (this::mp.isInitialized) {
+            mp.release()
+        }
     }
 
     private fun createTimeLabel(time: Int): String {
@@ -136,6 +143,12 @@ class PracticeTestFragment : Fragment() {
                 viewModel.getStructureQuestion(it)
             }
             binding.parentPassage.visibility = View.GONE
+        }
+        if (testType?.category == LISTENING) {
+            testType?.subCategory?.let {
+                binding.parentAudio.visibility = View.VISIBLE
+                viewModel.getListeningQuestion(it)
+            }
         }
     }
 
@@ -169,6 +182,21 @@ class PracticeTestFragment : Fragment() {
                 setupViewQuestion()
             }
         })
+        viewModel.listeningLiveData.observe(viewLifecycleOwner, {
+            if (it.isNotEmpty()) {
+                for (element in it) {
+                    val question = Question(
+                        question = element.question,
+                        answer = element.answer,
+                        userAnswer = 0,
+                        answerOption = element.optionAnswer,
+                        audioFileName = element.audioFileName
+                    )
+                    questionData.add(question)
+                }
+                setupViewQuestion()
+            }
+        })
     }
 
     private fun setupListener() {
@@ -194,6 +222,11 @@ class PracticeTestFragment : Fragment() {
     }
 
     private fun handlePrevQuestion() {
+        if (this::mp.isInitialized) {
+            if (mp.isPlaying) {
+                mp.stop()
+            }
+        }
         if (currentQuestionPosition != 0) {
             if (questionData[currentQuestionPosition].userAnswer == 0) {
                 val questionUpdate = questionData[currentQuestionPosition]
@@ -207,6 +240,11 @@ class PracticeTestFragment : Fragment() {
     }
 
     private fun handleNextQuestion() {
+        if (this::mp.isInitialized) {
+            if (mp.isPlaying) {
+                mp.stop()
+            }
+        }
         if (currentQuestionPosition != questionData.size - 1) {
             if (questionData[currentQuestionPosition].userAnswer == 0) {
                 val questionUpdate = questionData[currentQuestionPosition]
@@ -221,6 +259,9 @@ class PracticeTestFragment : Fragment() {
     @SuppressLint("ResourceType")
     private fun setupViewQuestion() {
         val data = questionData[currentQuestionPosition]
+        data.audioFileName?.let {
+            setupAudio(it.lowercase())
+        }
         binding.tvQuestionCount.text = String.format(
             getString(R.string.format_question_count),
             currentQuestionPosition + 1,
@@ -276,7 +317,7 @@ class PracticeTestFragment : Fragment() {
         const val READING_EASY = "easy"
         const val READING_MEDIUM = "medium"
         const val READING_HARD = "hard"
-        const val LISTENING_SORT_DIALOG = "sort dialog"
+        const val LISTENING_SORT_DIALOG = "sort dialogues"
         const val LISTENING_CASUAL_CONVERSATION = "casual conversation"
         const val LISTENING_ACADEMIC_DISCUSSION = "academic discussion"
         const val LISTENING_ACADEMIC_LECTURES = "academic lectures"

@@ -30,6 +30,6 @@ val repositoryModule = module {
         provideProductRepositoryModule(get())
     }
 
-    single<PracticeRepository> { PracticeRepositoryImpl(get(),get()) }
+    single<PracticeRepository> { PracticeRepositoryImpl(get(),get(),get()) }
 
 }
