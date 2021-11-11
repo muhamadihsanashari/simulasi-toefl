@@ -478,5 +478,3005 @@
     ],
     "answer": 3,
     "category": "casual conversation"
+  },
+  {
+    "question": "What does the man mean?",
+    "audioFileName": "PLG101",
+    "optionAnswer": [
+      "It was too cloudy to hold a concert.",
+      "The audience was too noisy.",
+      "She did not really go to the concert.",
+      "There were too many people."
+    ],
+    "answer": 4,
+    "category": "pretest"
+  },
+  {
+    "question": "What does the man say about the paper?",
+    "audioFileName": "PLG102",
+    "optionAnswer": [
+      "He's not in a hurry.",
+      "He's been doing the paper for several weeks.",
+      "He's rushing to finish the paper.",
+      "The paper has been overdue for a week."
+    ],
+    "answer": 1,
+    "category": "pretest"
+  },
+  {
+    "question": "What does the man say about the sweater?",
+    "audioFileName": "PLG201",
+    "optionAnswer": [
+      "Someone put it somewhere else.",
+      "He hasn't seen it.",
+      "It is sitting on the chair.",
+      "He saw someone move it."
+    ],
+    "answer": 1,
+    "category": "pretest"
+  },
+  {
+    "question": "What will the man and woman probably do next?",
+    "audioFileName": "PLG202",
+    "optionAnswer": [
+      "Continue working",
+      "Quit their jobs",
+      "Review for the exam",
+      "Stop studying"
+    ],
+    "answer": 4,
+    "category": "pretest"
+  },
+  {
+    "question": "What does the woman say about the physics exam?",
+    "audioFileName": "PLG301",
+    "optionAnswer": [
+      "She found it just as hard as the previous test.",
+      "It was more difficult than the last test.",
+      "She was the last one to finish it.",
+      "It was only slightly easier than an earlier test."
+    ],
+    "answer": 4,
+    "category": "pretest"
+  },
+  {
+    "question": "What does the woman say about Dr. Martinez?",
+    "audioFileName": "PLG302",
+    "optionAnswer": [
+      "He doesn't usually appear before large groups.",
+      "This is the largest audience he has ever addressed.",
+      "He doesn't do very much public speaking.",
+      "He has never spoken to a large audience."
+    ],
+    "answer": 1,
+    "category": "pretest"
+  },
+  {
+    "question": "What does the woman mean?",
+    "audioFileName": "PLG401",
+    "optionAnswer": [
+      "She agrees with the man.",
+      "She thinks the quizzes are too short.",
+      "She doesn't like biology.",
+      "She thinks the quizzes aren't tricky."
+    ],
+    "answer": 1,
+    "category": "pretest"
+  },
+  {
+    "question": "What does the woman suggest to the man?",
+    "audioFileName": "PLG402",
+    "optionAnswer": [
+      "Trying to get hold of Martin immediately",
+      "Mailing a short letter to Martin",
+      "Postponing his call to Martin",
+      "Leaving a message for Martin"
+    ],
+    "answer": 3,
+    "category": "pretest"
+  },
+  {
+    "question": "What does the woman mean?",
+    "audioFileName": "PLG501",
+    "optionAnswer": [
+      "She isn't certain the man is qualified.",
+      "The position hasn't been filled.",
+      "There were more openings than needed.",
+      "There are not enough teaching assistant jobs available."
+    ],
+    "answer": 4,
+    "category": "pretest"
+  },
+  {
+    "question": "What does the man mean?",
+    "audioFileName": "PLG502",
+    "optionAnswer": [
+      "He used his card to get an article.",
+      "He needs to check on an article.",
+      "He left his card in the library.",
+      "He does not have his library card with him."
+    ],
+    "answer": 4,
+    "category": "pretest"
+  },
+  {
+    "question": "What is the man trying to do?",
+    "audioFileName": "PLG601",
+    "optionAnswer": [
+      "Learn to relax",
+      "Get his spending under control",
+      "Achieve success",
+      "Head for home"
+    ],
+    "answer": 3,
+    "category": "pretest"
+  },
+  {
+    "question": "What does the woman mean?",
+    "audioFileName": "PLG602",
+    "optionAnswer": [
+      "They will soon be taking a trip by boat.",
+      "Everyone is in the same situation.",
+      "The professor has made everyone happy.",
+      "They are going to math class in a few hours."
+    ],
+    "answer": 2,
+    "category": "pretest"
+  },
+  {
+    "question": "What does the man suggest that they try?",
+    "audioFileName": "PLG603",
+    "optionAnswer": [
+      "Cutting off their telephone service",
+      "Destroying their budget",
+      "Reducing the number of calls",
+      "Making cuts in their budget"
+    ],
+    "answer": 3,
+    "category": "pretest"
+  },
+  {
+    "question": "Why is the man unhappy?",
+    "audioFileName": "PLN101",
+    "optionAnswer": [
+      "His boss told him he couldn't get off early.",
+      "The game this weekend is not a home game.",
+      "He can't find a parking place.",
+      "He can't get off work to watch the game from start to finish."
+    ],
+    "answer": 4,
+    "category": "pretest"
+  },
+  {
+    "question": "What does the woman offer to do?",
+    "audioFileName": "PLN101",
+    "optionAnswer": [
+      "Ask the man's employer if he can get off early",
+      "Put in some extra hours for him",
+      "Save seats for the two of them",
+      "Drive him to the game immediately"
+    ],
+    "answer": 3,
+    "category": "pretest"
+  },
+  {
+    "question": "What is the woman doing?",
+    "audioFileName": "PLN102",
+    "optionAnswer": [
+      "Working on schoolwork",
+      "Writing a letter",
+      "Making a promise",
+      "Dealing with a problem"
+    ],
+    "answer": 2,
+    "category": "pretest"
+  },
+  {
+    "question": "How has the man been keeping in touch with his parents?",
+    "audioFileName": "PLN102",
+    "optionAnswer": [
+      "He gives them a call once in a while.",
+      "He writes to them once a week.",
+      "He never contacts them.",
+      "He doesn't say much when he writes."
+    ],
+    "answer": 1,
+    "category": "pretest"
+  },
+  {
+    "question": "In which class does the woman say she's going to have fun?",
+    "audioFileName": "PLN103",
+    "optionAnswer": [
+      "Science",
+      "History",
+      "Spanish grammar",
+      "Microeconomics"
+    ],
+    "answer": 1,
+    "category": "pretest"
+  },
+  {
+    "question": "Why did the man like having Mrs. Aguilar as a Spanish teacher?",
+    "audioFileName": "PLN103",
+    "optionAnswer": [
+      "She discusses real-life situations.",
+      "She emphasizes the ability to converse in Spanish.",
+      "She focuses on vocabulary and grammar.",
+      "She speaks the language."
+    ],
+    "answer": 2,
+    "category": "pretest"
+  },
+  {
+    "question": "What makes this performance of The Magic Flute so well done?",
+    "audioFileName": "PLN104",
+    "optionAnswer": [
+      "The voices of all the performers",
+      "The last nine scenes",
+      "The portrayal of the characters",
+      "The overall storyline"
+    ],
+    "answer": 3,
+    "category": "pretest"
+  },
+  {
+    "question": "What does the man hope will be better during the second half of the opera?",
+    "audioFileName": "PLN104",
+    "optionAnswer": [
+      "The astuteness of the lead characters",
+      "The voice of the Queen of the Night",
+      "Monostatos' acting",
+      "The singing of the comic villain"
+    ],
+    "answer": 4,
+    "category": "pretest"
+  },
+  {
+    "question": "To what does the man compare the food at this private university?",
+    "audioFileName": "PLN201",
+    "optionAnswer": [
+      "The food his mother used to make",
+      "The food his mother used to make",
+      "A thousand-dollar meal",
+      "The food in the student cafeteria at his former college"
+    ],
+    "answer": 4,
+    "category": "pretest"
+  },
+  {
+    "question": "How does the man feel about the food at this private university?",
+    "audioFileName": "PLN201",
+    "optionAnswer": [
+      "It isn't great.",
+      "He's unable to make a judgement.",
+      "It compares favorably to what he's used to.",
+      "It's not as good as he expected it to be."
+    ],
+    "answer": 3,
+    "category": "pretest"
+  },
+  {
+    "question": "Where had the man expected the woman to be this morning?",
+    "audioFileName": "PLN202",
+    "optionAnswer": [
+      "In German class",
+      "With her father's uncle",
+      "On vacation in Germany",
+      "In French class"
+    ],
+    "answer": 4,
+    "category": "pretest"
+  },
+  {
+    "question": "Why has the woman decided to study German?",
+    "audioFileName": "PLN202",
+    "optionAnswer": [
+      "German class does not meet in the morning.",
+      "German will be more useful.",
+      "She can study French during summer vacation.",
+      "Her father's uncle is coming from Germany for a visit."
+    ],
+    "answer": 2,
+    "category": "pretest"
+  },
+  {
+    "question": "Why is the man tired?",
+    "audioFileName": "PLN203",
+    "optionAnswer": [
+      "He has a full-time job and a full work load at school.",
+      "He hasn't slept for a week.",
+      "He has a part-time job and a part-time schedule at school.",
+      "He is trying to get his degree this quarter."
+    ],
+    "answer": 1,
+    "category": "pretest"
+  },
+  {
+    "question": "What does the man mean?",
+    "audioFileName": "PLG103",
+    "optionAnswer": [
+      "That the man should review more carefully",
+      "That they should study together",
+      "That the man needs to master the subject",
+      "That there is too much information to cover"
+    ],
+    "answer": 2,
+    "category": "pretest"
+  },
+  {
+    "question": "What does the man say about Barbara?",
+    "audioFileName": "PLG104",
+    "optionAnswer": [
+      "She quit her job.",
+      "She took some time off.",
+      "She lost her job.",
+      "She moved to a company downtown."
+    ],
+    "answer": 3,
+    "category": "pretest"
+  },
+  {
+    "question": "What does the woman say about Cindy?",
+    "audioFileName": "PLG203",
+    "optionAnswer": [
+      "Cindy does professional work.",
+      "She doesn't know how Cindy made the posters.",
+      "Someone else made the posters.",
+      "She doesn't think Cindy's posters look nice."
+    ],
+    "answer": 3,
+    "category": "pretest"
+  },
+  {
+    "question": "What can be inferred from this conversation?",
+    "audioFileName": "PLG204",
+    "optionAnswer": [
+      "The tablets were all probably taken.",
+      "The medication is not working.",
+      "The man took some medication.",
+      "The pills were not taken on schedule."
+    ],
+    "answer": 1,
+    "category": "pretest"
+  },
+  {
+    "question": "What does the man imply?",
+    "audioFileName": "PLG303",
+    "optionAnswer": [
+      "He always gets up early.",
+      "It was a bit inconvenient.",
+      "The call didn't bother him.",
+      "He had some trouble this morning."
+    ],
+    "answer": 3,
+    "category": "pretest"
+  },
+  {
+    "question": "What does the woman mean?",
+    "audioFileName": "PLG304",
+    "optionAnswer": [
+      "Not a sound was heard.",
+      "She was astonished.",
+      "No one was astounded.",
+      "She was not the only one to be hired."
+    ],
+    "answer": 2,
+    "category": "pretest"
+  },
+  {
+    "question": "What does the woman mean?",
+    "audioFileName": "PLG403",
+    "optionAnswer": [
+      "Arthur has not applied for a job.",
+      "It appears that Arthur has not progressed on the document.",
+      "She does not want to share the information with the man.",
+      "Arthur has not headed his document correctly."
+    ],
+    "answer": 2,
+    "category": "pretest"
+  },
+  {
+    "question": "What had the man assumed about the professor?",
+    "audioFileName": "PLG404",
+    "optionAnswer": [
+      "That she did not have the papers",
+      "That she would not be in her office",
+      "That she was waiting in her office at 3:00",
+      "That she had not graded the paper"
+    ],
+    "answer": 2,
+    "category": "pretest"
+  },
+  {
+    "question": "What does the man mean?",
+    "audioFileName": "PLG503",
+    "optionAnswer": [
+      "He is glad that the wedding is right around the corner.",
+      "He is looking forward to attending the wedding.",
+      "He regrets that he is unable to attend the ceremony.",
+      "He is going to miss his final exams."
+    ],
+    "answer": 3,
+    "category": "pretest"
+  },
+  {
+    "question": "What can be inferred about the woman?",
+    "audioFileName": "PLG504",
+    "optionAnswer": [
+      "She needs to finish some reading.",
+      "The ideas in the chapter are too powerful for her.",
+      "She hasn't reached the middle of the chapter.",
+      "Her head is too full of ideas."
+    ],
+    "answer": 1,
+    "category": "pretest"
+  },
+  {
+    "question": "What does the man suggest?",
+    "audioFileName": "PLG604",
+    "optionAnswer": [
+      "Being careful of the hot iron",
+      "Striking out on her own",
+      "Waiting for another offer to come her way",
+      "Taking the opportunity that has been offered"
+    ],
+    "answer": 4,
+    "category": "pretest"
+  },
+  {
+    "question": "What does the man say about himself?",
+    "audioFileName": "PLG605",
+    "optionAnswer": [
+      "He's coming downstairs now.",
+      "He's feeling rather sick.",
+      "He's certain he can keep going.",
+      "He thinks bad weather is on the way."
+    ],
+    "answer": 2,
+    "category": "pretest"
+  },
+  {
+    "question": "What does the man suggest?",
+    "audioFileName": "PLG606",
+    "optionAnswer": [
+      "Taking a nap",
+      "Leaving it alone for now",
+      "Allowing the dog to sleep",
+      "Discussing it further"
+    ],
+    "answer": 2,
+    "category": "pretest"
+  },
+  {
+    "question": "Why is the man taking the bus to school?",
+    "audioFileName": "PLN204",
+    "optionAnswer": [
+      "He's shopping for a new car.",
+      "The bus is 20 minutes faster than the car.",
+      "His car is being repaired.",
+      "There is too much traffic to drive."
+    ],
+    "answer": 3,
+    "category": "pretest"
+  },
+  {
+    "question": "What does the woman expect the man to do in the future?",
+    "audioFileName": "PLN204",
+    "optionAnswer": [
+      "PLN204",
+      "Become dependent on the bus",
+      "Offer to drive her to school",
+      "Read the newspaper on the way to school"
+    ],
+    "answer": 1,
+    "category": "pretest"
+  },
+  {
+    "question": "Why was the woman late to Professor Trenton's class?",
+    "audioFileName": "PLN301",
+    "optionAnswer": [
+      "She decided to walk to school instead of taking her bicycle.",
+      "Her alarm did not go off.",
+      "She had a problem with her bicycle.",
+      "She overslept and got up late."
+    ],
+    "answer": 3,
+    "category": "pretest"
+  },
+  {
+    "question": "What generally seems to happen when students are late to Professor Trenton's class?",
+    "audioFileName": "PLN301",
+    "optionAnswer": [
+      "Professor Trenton holds them back.",
+      "Professor Trenton has no reaction.",
+      "Professor Trenton accepts excuses.",
+      "Professor Trenton penalizes students."
+    ],
+    "answer": 4,
+    "category": "pretest"
+  },
+  {
+    "question": "How does the man seem to feel about tonight's game?",
+    "audioFileName": "PLN302",
+    "optionAnswer": [
+      "Hopeful of a turn around",
+      "Confident of a success",
+      "Disgusted by the teams record",
+      "Ready to give up on the team"
+    ],
+    "answer": 1,
+    "category": "pretest"
+  },
+  {
+    "question": "How does the woman categorize herself?",
+    "audioFileName": "PLN302",
+    "optionAnswer": [
+      "As someone who never goes to basketball games",
+      "As a strong supporter of the team",
+      "As a fan only when the team is winning",
+      "As someone who is not a sports fan at all"
+    ],
+    "answer": 3,
+    "category": "pretest"
+  },
+  {
+    "question": "What are the man and woman going to do?",
+    "audioFileName": "PLN303",
+    "optionAnswer": [
+      "Work on some reading and writing for astronomy class",
+      "Attend a lecture in astronomy class",
+      "Observe a celestial object",
+      "Meet with a study group of students"
+    ],
+    "answer": 3,
+    "category": "pretest"
+  },
+  {
+    "question": "What time will they probably be finished?",
+    "audioFileName": "PLN303",
+    "optionAnswer": [
+      "At nine o'clock in the morning",
+      "At two o'clock in the afternoon",
+      "At nine o'clock in the evening",
+      "At eleven o'clock in the evening"
+    ],
+    "answer": 4,
+    "category": "pretest"
+  },
+  {
+    "question": "What is true about the tickets for the concert?",
+    "audioFileName": "PLN304",
+    "optionAnswer": [
+      "They are no longer available.",
+      "They are for sale only at the arena.",
+      "They are for reserved seats.",
+      "They have been on sale for only a week."
+    ],
+    "answer": 1,
+    "category": "pretest"
+  },
+  {
+    "question": "What is the man afraid will happen?",
+    "audioFileName": "PLN304",
+    "optionAnswer": [
+      "They will be sitting outside the arena.",
+      "They will not be able to get tickets.",
+      "They will have seats high up in the arena.",
+      "They will lose their reserved seats if they are late."
+    ],
+    "answer": 3,
+    "category": "pretest"
+  },
+  {
+    "question": "What is it necessary to do to go to the art gallery?",
+    "audioFileName": "PLN401",
+    "optionAnswer": [
+      "Prepare a sign",
+      "Put a name on a list",
+      "Sit in the back of the art room",
+      "Attend regularly for four weeks"
+    ],
+    "answer": 2,
+    "category": "pretest"
+  },
+  {
+    "question": "What does the man mean?",
+    "audioFileName": "PLG101",
+    "optionAnswer": [
+      "It was too cloudy to hold a concert.",
+      "The audience was too noisy.",
+      "She did not really go to the concert.",
+      "There were too many people."
+    ],
+    "answer": 4,
+    "category": "posttest"
+  },
+  {
+    "question": "What does the man say about the paper?",
+    "audioFileName": "PLG102",
+    "optionAnswer": [
+      "He's not in a hurry.",
+      "He's been doing the paper for several weeks.",
+      "He's rushing to finish the paper.",
+      "The paper has been overdue for a week."
+    ],
+    "answer": 1,
+    "category": "posttest"
+  },
+  {
+    "question": "What does the man say about the sweater?",
+    "audioFileName": "PLG201",
+    "optionAnswer": [
+      "Someone put it somewhere else.",
+      "He hasn't seen it.",
+      "It is sitting on the chair.",
+      "He saw someone move it."
+    ],
+    "answer": 1,
+    "category": "posttest"
+  },
+  {
+    "question": "What will the man and woman probably do next?",
+    "audioFileName": "PLG202",
+    "optionAnswer": [
+      "Continue working",
+      "Quit their jobs",
+      "Review for the exam",
+      "Stop studying"
+    ],
+    "answer": 4,
+    "category": "posttest"
+  },
+  {
+    "question": "What does the woman say about the physics exam?",
+    "audioFileName": "PLG301",
+    "optionAnswer": [
+      "She found it just as hard as the previous test.",
+      "It was more difficult than the last test.",
+      "She was the last one to finish it.",
+      "It was only slightly easier than an earlier test."
+    ],
+    "answer": 4,
+    "category": "posttest"
+  },
+  {
+    "question": "What does the woman say about Dr. Martinez?",
+    "audioFileName": "PLG302",
+    "optionAnswer": [
+      "He doesn't usually appear before large groups.",
+      "This is the largest audience he has ever addressed.",
+      "He doesn't do very much public speaking.",
+      "He has never spoken to a large audience."
+    ],
+    "answer": 1,
+    "category": "posttest"
+  },
+  {
+    "question": "What does the woman mean?",
+    "audioFileName": "PLG401",
+    "optionAnswer": [
+      "She agrees with the man.",
+      "She thinks the quizzes are too short.",
+      "She doesn't like biology.",
+      "She thinks the quizzes aren't tricky."
+    ],
+    "answer": 1,
+    "category": "posttest"
+  },
+  {
+    "question": "What does the woman suggest to the man?",
+    "audioFileName": "PLG402",
+    "optionAnswer": [
+      "Trying to get hold of Martin immediately",
+      "Mailing a short letter to Martin",
+      "Postponing his call to Martin",
+      "Leaving a message for Martin"
+    ],
+    "answer": 3,
+    "category": "posttest"
+  },
+  {
+    "question": "What does the woman mean?",
+    "audioFileName": "PLG501",
+    "optionAnswer": [
+      "She isn't certain the man is qualified.",
+      "The position hasn't been filled.",
+      "There were more openings than needed.",
+      "There are not enough teaching assistant jobs available."
+    ],
+    "answer": 4,
+    "category": "posttest"
+  },
+  {
+    "question": "What does the man mean?",
+    "audioFileName": "PLG502",
+    "optionAnswer": [
+      "He used his card to get an article.",
+      "He needs to check on an article.",
+      "He left his card in the library.",
+      "He does not have his library card with him."
+    ],
+    "answer": 4,
+    "category": "posttest"
+  },
+  {
+    "question": "What is the man trying to do?",
+    "audioFileName": "PLG601",
+    "optionAnswer": [
+      "Learn to relax",
+      "Get his spending under control",
+      "Achieve success",
+      "Head for home"
+    ],
+    "answer": 3,
+    "category": "posttest"
+  },
+  {
+    "question": "What does the woman mean?",
+    "audioFileName": "PLG602",
+    "optionAnswer": [
+      "They will soon be taking a trip by boat.",
+      "Everyone is in the same situation.",
+      "The professor has made everyone happy.",
+      "They are going to math class in a few hours."
+    ],
+    "answer": 2,
+    "category": "posttest"
+  },
+  {
+    "question": "What does the man suggest that they try?",
+    "audioFileName": "PLG603",
+    "optionAnswer": [
+      "Cutting off their telephone service",
+      "Destroying their budget",
+      "Reducing the number of calls",
+      "Making cuts in their budget"
+    ],
+    "answer": 3,
+    "category": "posttest"
+  },
+  {
+    "question": "Why is the man unhappy?",
+    "audioFileName": "PLN101",
+    "optionAnswer": [
+      "His boss told him he couldn't get off early.",
+      "The game this weekend is not a home game.",
+      "He can't find a parking place.",
+      "He can't get off work to watch the game from start to finish."
+    ],
+    "answer": 4,
+    "category": "posttest"
+  },
+  {
+    "question": "What does the woman offer to do?",
+    "audioFileName": "PLN101",
+    "optionAnswer": [
+      "Ask the man's employer if he can get off early",
+      "Put in some extra hours for him",
+      "Save seats for the two of them",
+      "Drive him to the game immediately"
+    ],
+    "answer": 3,
+    "category": "posttest"
+  },
+  {
+    "question": "What is the woman doing?",
+    "audioFileName": "PLN102",
+    "optionAnswer": [
+      "Working on schoolwork",
+      "Writing a letter",
+      "Making a promise",
+      "Dealing with a problem"
+    ],
+    "answer": 2,
+    "category": "posttest"
+  },
+  {
+    "question": "How has the man been keeping in touch with his parents?",
+    "audioFileName": "PLN102",
+    "optionAnswer": [
+      "He gives them a call once in a while.",
+      "He writes to them once a week.",
+      "He never contacts them.",
+      "He doesn't say much when he writes."
+    ],
+    "answer": 1,
+    "category": "posttest"
+  },
+  {
+    "question": "In which class does the woman say she's going to have fun?",
+    "audioFileName": "PLN103",
+    "optionAnswer": [
+      "Science",
+      "History",
+      "Spanish grammar",
+      "Microeconomics"
+    ],
+    "answer": 1,
+    "category": "posttest"
+  },
+  {
+    "question": "Why did the man like having Mrs. Aguilar as a Spanish teacher?",
+    "audioFileName": "PLN103",
+    "optionAnswer": [
+      "She discusses real-life situations.",
+      "She emphasizes the ability to converse in Spanish.",
+      "She focuses on vocabulary and grammar.",
+      "She speaks the language."
+    ],
+    "answer": 2,
+    "category": "posttest"
+  },
+  {
+    "question": "What makes this performance of The Magic Flute so well done?",
+    "audioFileName": "PLN104",
+    "optionAnswer": [
+      "The voices of all the performers",
+      "The last nine scenes",
+      "The portrayal of the characters",
+      "The overall storyline"
+    ],
+    "answer": 3,
+    "category": "posttest"
+  },
+  {
+    "question": "What does the man hope will be better during the second half of the opera?",
+    "audioFileName": "PLN104",
+    "optionAnswer": [
+      "The astuteness of the lead characters",
+      "The voice of the Queen of the Night",
+      "Monostatos' acting",
+      "The singing of the comic villain"
+    ],
+    "answer": 4,
+    "category": "posttest"
+  },
+  {
+    "question": "To what does the man compare the food at this private university?",
+    "audioFileName": "PLN201",
+    "optionAnswer": [
+      "The food his mother used to make",
+      "The food his mother used to make",
+      "A thousand-dollar meal",
+      "The food in the student cafeteria at his former college"
+    ],
+    "answer": 4,
+    "category": "posttest"
+  },
+  {
+    "question": "How does the man feel about the food at this private university?",
+    "audioFileName": "PLN201",
+    "optionAnswer": [
+      "It isn't great.",
+      "He's unable to make a judgement.",
+      "It compares favorably to what he's used to.",
+      "It's not as good as he expected it to be."
+    ],
+    "answer": 3,
+    "category": "posttest"
+  },
+  {
+    "question": "Where had the man expected the woman to be this morning?",
+    "audioFileName": "PLN202",
+    "optionAnswer": [
+      "In German class",
+      "With her father's uncle",
+      "On vacation in Germany",
+      "In French class"
+    ],
+    "answer": 4,
+    "category": "posttest"
+  },
+  {
+    "question": "Why has the woman decided to study German?",
+    "audioFileName": "PLN202",
+    "optionAnswer": [
+      "German class does not meet in the morning.",
+      "German will be more useful.",
+      "She can study French during summer vacation.",
+      "Her father's uncle is coming from Germany for a visit."
+    ],
+    "answer": 2,
+    "category": "posttest"
+  },
+  {
+    "question": "Why is the man tired?",
+    "audioFileName": "PLN203",
+    "optionAnswer": [
+      "He has a full-time job and a full work load at school.",
+      "He hasn't slept for a week.",
+      "He has a part-time job and a part-time schedule at school.",
+      "He is trying to get his degree this quarter."
+    ],
+    "answer": 1,
+    "category": "posttest"
+  },
+  {
+    "question": "What does the man mean?",
+    "audioFileName": "PLG103",
+    "optionAnswer": [
+      "That the man should review more carefully",
+      "That they should study together",
+      "That the man needs to master the subject",
+      "That there is too much information to cover"
+    ],
+    "answer": 2,
+    "category": "posttest"
+  },
+  {
+    "question": "What does the man say about Barbara?",
+    "audioFileName": "PLG104",
+    "optionAnswer": [
+      "She quit her job.",
+      "She took some time off.",
+      "She lost her job.",
+      "She moved to a company downtown."
+    ],
+    "answer": 3,
+    "category": "posttest"
+  },
+  {
+    "question": "What does the woman say about Cindy?",
+    "audioFileName": "PLG203",
+    "optionAnswer": [
+      "Cindy does professional work.",
+      "She doesn't know how Cindy made the posters.",
+      "Someone else made the posters.",
+      "She doesn't think Cindy's posters look nice."
+    ],
+    "answer": 3,
+    "category": "posttest"
+  },
+  {
+    "question": "What can be inferred from this conversation?",
+    "audioFileName": "PLG204",
+    "optionAnswer": [
+      "The tablets were all probably taken.",
+      "The medication is not working.",
+      "The man took some medication.",
+      "The pills were not taken on schedule."
+    ],
+    "answer": 1,
+    "category": "posttest"
+  },
+  {
+    "question": "What does the man imply?",
+    "audioFileName": "PLG303",
+    "optionAnswer": [
+      "He always gets up early.",
+      "It was a bit inconvenient.",
+      "The call didn't bother him.",
+      "He had some trouble this morning."
+    ],
+    "answer": 3,
+    "category": "posttest"
+  },
+  {
+    "question": "What does the woman mean?",
+    "audioFileName": "PLG304",
+    "optionAnswer": [
+      "Not a sound was heard.",
+      "She was astonished.",
+      "No one was astounded.",
+      "She was not the only one to be hired."
+    ],
+    "answer": 2,
+    "category": "posttest"
+  },
+  {
+    "question": "What does the woman mean?",
+    "audioFileName": "PLG403",
+    "optionAnswer": [
+      "Arthur has not applied for a job.",
+      "It appears that Arthur has not progressed on the document.",
+      "She does not want to share the information with the man.",
+      "Arthur has not headed his document correctly."
+    ],
+    "answer": 2,
+    "category": "posttest"
+  },
+  {
+    "question": "What had the man assumed about the professor?",
+    "audioFileName": "PLG404",
+    "optionAnswer": [
+      "That she did not have the papers",
+      "That she would not be in her office",
+      "That she was waiting in her office at 3:00",
+      "That she had not graded the paper"
+    ],
+    "answer": 2,
+    "category": "posttest"
+  },
+  {
+    "question": "What does the man mean?",
+    "audioFileName": "PLG503",
+    "optionAnswer": [
+      "He is glad that the wedding is right around the corner.",
+      "He is looking forward to attending the wedding.",
+      "He regrets that he is unable to attend the ceremony.",
+      "He is going to miss his final exams."
+    ],
+    "answer": 3,
+    "category": "posttest"
+  },
+  {
+    "question": "What can be inferred about the woman?",
+    "audioFileName": "PLG504",
+    "optionAnswer": [
+      "She needs to finish some reading.",
+      "The ideas in the chapter are too powerful for her.",
+      "She hasn't reached the middle of the chapter.",
+      "Her head is too full of ideas."
+    ],
+    "answer": 1,
+    "category": "posttest"
+  },
+  {
+    "question": "What does the man suggest?",
+    "audioFileName": "PLG604",
+    "optionAnswer": [
+      "Being careful of the hot iron",
+      "Striking out on her own",
+      "Waiting for another offer to come her way",
+      "Taking the opportunity that has been offered"
+    ],
+    "answer": 4,
+    "category": "posttest"
+  },
+  {
+    "question": "What does the man say about himself?",
+    "audioFileName": "PLG605",
+    "optionAnswer": [
+      "He's coming downstairs now.",
+      "He's feeling rather sick.",
+      "He's certain he can keep going.",
+      "He thinks bad weather is on the way."
+    ],
+    "answer": 2,
+    "category": "posttest"
+  },
+  {
+    "question": "What does the man suggest?",
+    "audioFileName": "PLG606",
+    "optionAnswer": [
+      "Taking a nap",
+      "Leaving it alone for now",
+      "Allowing the dog to sleep",
+      "Discussing it further"
+    ],
+    "answer": 2,
+    "category": "posttest"
+  },
+  {
+    "question": "Why is the man taking the bus to school?",
+    "audioFileName": "PLN204",
+    "optionAnswer": [
+      "He's shopping for a new car.",
+      "The bus is 20 minutes faster than the car.",
+      "His car is being repaired.",
+      "There is too much traffic to drive."
+    ],
+    "answer": 3,
+    "category": "posttest"
+  },
+  {
+    "question": "What does the woman expect the man to do in the future?",
+    "audioFileName": "PLN204",
+    "optionAnswer": [
+      "PLN204",
+      "Become dependent on the bus",
+      "Offer to drive her to school",
+      "Read the newspaper on the way to school"
+    ],
+    "answer": 1,
+    "category": "posttest"
+  },
+  {
+    "question": "Why was the woman late to Professor Trenton's class?",
+    "audioFileName": "PLN301",
+    "optionAnswer": [
+      "She decided to walk to school instead of taking her bicycle.",
+      "Her alarm did not go off.",
+      "She had a problem with her bicycle.",
+      "She overslept and got up late."
+    ],
+    "answer": 3,
+    "category": "posttest"
+  },
+  {
+    "question": "What generally seems to happen when students are late to Professor Trenton's class?",
+    "audioFileName": "PLN301",
+    "optionAnswer": [
+      "Professor Trenton holds them back.",
+      "Professor Trenton has no reaction.",
+      "Professor Trenton accepts excuses.",
+      "Professor Trenton penalizes students."
+    ],
+    "answer": 4,
+    "category": "posttest"
+  },
+  {
+    "question": "How does the man seem to feel about tonight's game?",
+    "audioFileName": "PLN302",
+    "optionAnswer": [
+      "Hopeful of a turn around",
+      "Confident of a success",
+      "Disgusted by the teams record",
+      "Ready to give up on the team"
+    ],
+    "answer": 1,
+    "category": "posttest"
+  },
+  {
+    "question": "How does the woman categorize herself?",
+    "audioFileName": "PLN302",
+    "optionAnswer": [
+      "As someone who never goes to basketball games",
+      "As a strong supporter of the team",
+      "As a fan only when the team is winning",
+      "As someone who is not a sports fan at all"
+    ],
+    "answer": 3,
+    "category": "posttest"
+  },
+  {
+    "question": "What are the man and woman going to do?",
+    "audioFileName": "PLN303",
+    "optionAnswer": [
+      "Work on some reading and writing for astronomy class",
+      "Attend a lecture in astronomy class",
+      "Observe a celestial object",
+      "Meet with a study group of students"
+    ],
+    "answer": 3,
+    "category": "posttest"
+  },
+  {
+    "question": "What time will they probably be finished?",
+    "audioFileName": "PLN303",
+    "optionAnswer": [
+      "At nine o'clock in the morning",
+      "At two o'clock in the afternoon",
+      "At nine o'clock in the evening",
+      "At eleven o'clock in the evening"
+    ],
+    "answer": 4,
+    "category": "posttest"
+  },
+  {
+    "question": "What is true about the tickets for the concert?",
+    "audioFileName": "PLN304",
+    "optionAnswer": [
+      "They are no longer available.",
+      "They are for sale only at the arena.",
+      "They are for reserved seats.",
+      "They have been on sale for only a week."
+    ],
+    "answer": 1,
+    "category": "posttest"
+  },
+  {
+    "question": "What is the man afraid will happen?",
+    "audioFileName": "PLN304",
+    "optionAnswer": [
+      "They will be sitting outside the arena.",
+      "They will not be able to get tickets.",
+      "They will have seats high up in the arena.",
+      "They will lose their reserved seats if they are late."
+    ],
+    "answer": 3,
+    "category": "posttest"
+  },
+  {
+    "question": "What is it necessary to do to go to the art gallery?",
+    "audioFileName": "PLN401",
+    "optionAnswer": [
+      "Prepare a sign",
+      "Put a name on a list",
+      "Sit in the back of the art room",
+      "Attend regularly for four weeks"
+    ],
+    "answer": 2,
+    "category": "posttest"
+  },
+  {
+    "question": "What does the man mean?",
+    "audioFileName": "PLG101",
+    "optionAnswer": [
+      "It was too cloudy to hold a concert.",
+      "The audience was too noisy.",
+      "She did not really go to the concert.",
+      "There were too many people."
+    ],
+    "answer": 4,
+    "category": "individualtest"
+  },
+  {
+    "question": "What does the man say about the paper?",
+    "audioFileName": "PLG102",
+    "optionAnswer": [
+      "He's not in a hurry.",
+      "He's been doing the paper for several weeks.",
+      "He's rushing to finish the paper.",
+      "The paper has been overdue for a week."
+    ],
+    "answer": 1,
+    "category": "individualtest"
+  },
+  {
+    "question": "What does the man say about the sweater?",
+    "audioFileName": "PLG201",
+    "optionAnswer": [
+      "Someone put it somewhere else.",
+      "He hasn't seen it.",
+      "It is sitting on the chair.",
+      "He saw someone move it."
+    ],
+    "answer": 1,
+    "category": "individualtest"
+  },
+  {
+    "question": "What will the man and woman probably do next?",
+    "audioFileName": "PLG202",
+    "optionAnswer": [
+      "Continue working",
+      "Quit their jobs",
+      "Review for the exam",
+      "Stop studying"
+    ],
+    "answer": 4,
+    "category": "individualtest"
+  },
+  {
+    "question": "What does the woman say about the physics exam?",
+    "audioFileName": "PLG301",
+    "optionAnswer": [
+      "She found it just as hard as the previous test.",
+      "It was more difficult than the last test.",
+      "She was the last one to finish it.",
+      "It was only slightly easier than an earlier test."
+    ],
+    "answer": 4,
+    "category": "individualtest"
+  },
+  {
+    "question": "What does the woman say about Dr. Martinez?",
+    "audioFileName": "PLG302",
+    "optionAnswer": [
+      "He doesn't usually appear before large groups.",
+      "This is the largest audience he has ever addressed.",
+      "He doesn't do very much public speaking.",
+      "He has never spoken to a large audience."
+    ],
+    "answer": 1,
+    "category": "individualtest"
+  },
+  {
+    "question": "What does the woman mean?",
+    "audioFileName": "PLG401",
+    "optionAnswer": [
+      "She agrees with the man.",
+      "She thinks the quizzes are too short.",
+      "She doesn't like biology.",
+      "She thinks the quizzes aren't tricky."
+    ],
+    "answer": 1,
+    "category": "individualtest"
+  },
+  {
+    "question": "What does the woman suggest to the man?",
+    "audioFileName": "PLG402",
+    "optionAnswer": [
+      "Trying to get hold of Martin immediately",
+      "Mailing a short letter to Martin",
+      "Postponing his call to Martin",
+      "Leaving a message for Martin"
+    ],
+    "answer": 3,
+    "category": "individualtest"
+  },
+  {
+    "question": "What does the woman mean?",
+    "audioFileName": "PLG501",
+    "optionAnswer": [
+      "She isn't certain the man is qualified.",
+      "The position hasn't been filled.",
+      "There were more openings than needed.",
+      "There are not enough teaching assistant jobs available."
+    ],
+    "answer": 4,
+    "category": "individualtest"
+  },
+  {
+    "question": "What does the man mean?",
+    "audioFileName": "PLG502",
+    "optionAnswer": [
+      "He used his card to get an article.",
+      "He needs to check on an article.",
+      "He left his card in the library.",
+      "He does not have his library card with him."
+    ],
+    "answer": 4,
+    "category": "individualtest"
+  },
+  {
+    "question": "What is the man trying to do?",
+    "audioFileName": "PLG601",
+    "optionAnswer": [
+      "Learn to relax",
+      "Get his spending under control",
+      "Achieve success",
+      "Head for home"
+    ],
+    "answer": 3,
+    "category": "individualtest"
+  },
+  {
+    "question": "What does the woman mean?",
+    "audioFileName": "PLG602",
+    "optionAnswer": [
+      "They will soon be taking a trip by boat.",
+      "Everyone is in the same situation.",
+      "The professor has made everyone happy.",
+      "They are going to math class in a few hours."
+    ],
+    "answer": 2,
+    "category": "individualtest"
+  },
+  {
+    "question": "What does the man suggest that they try?",
+    "audioFileName": "PLG603",
+    "optionAnswer": [
+      "Cutting off their telephone service",
+      "Destroying their budget",
+      "Reducing the number of calls",
+      "Making cuts in their budget"
+    ],
+    "answer": 3,
+    "category": "individualtest"
+  },
+  {
+    "question": "Why is the man unhappy?",
+    "audioFileName": "PLN101",
+    "optionAnswer": [
+      "His boss told him he couldn't get off early.",
+      "The game this weekend is not a home game.",
+      "He can't find a parking place.",
+      "He can't get off work to watch the game from start to finish."
+    ],
+    "answer": 4,
+    "category": "individualtest"
+  },
+  {
+    "question": "What does the woman offer to do?",
+    "audioFileName": "PLN101",
+    "optionAnswer": [
+      "Ask the man's employer if he can get off early",
+      "Put in some extra hours for him",
+      "Save seats for the two of them",
+      "Drive him to the game immediately"
+    ],
+    "answer": 3,
+    "category": "individualtest"
+  },
+  {
+    "question": "What is the woman doing?",
+    "audioFileName": "PLN102",
+    "optionAnswer": [
+      "Working on schoolwork",
+      "Writing a letter",
+      "Making a promise",
+      "Dealing with a problem"
+    ],
+    "answer": 2,
+    "category": "individualtest"
+  },
+  {
+    "question": "How has the man been keeping in touch with his parents?",
+    "audioFileName": "PLN102",
+    "optionAnswer": [
+      "He gives them a call once in a while.",
+      "He writes to them once a week.",
+      "He never contacts them.",
+      "He doesn't say much when he writes."
+    ],
+    "answer": 1,
+    "category": "individualtest"
+  },
+  {
+    "question": "In which class does the woman say she's going to have fun?",
+    "audioFileName": "PLN103",
+    "optionAnswer": [
+      "Science",
+      "History",
+      "Spanish grammar",
+      "Microeconomics"
+    ],
+    "answer": 1,
+    "category": "individualtest"
+  },
+  {
+    "question": "Why did the man like having Mrs. Aguilar as a Spanish teacher?",
+    "audioFileName": "PLN103",
+    "optionAnswer": [
+      "She discusses real-life situations.",
+      "She emphasizes the ability to converse in Spanish.",
+      "She focuses on vocabulary and grammar.",
+      "She speaks the language."
+    ],
+    "answer": 2,
+    "category": "individualtest"
+  },
+  {
+    "question": "What makes this performance of The Magic Flute so well done?",
+    "audioFileName": "PLN104",
+    "optionAnswer": [
+      "The voices of all the performers",
+      "The last nine scenes",
+      "The portrayal of the characters",
+      "The overall storyline"
+    ],
+    "answer": 3,
+    "category": "individualtest"
+  },
+  {
+    "question": "What does the man hope will be better during the second half of the opera?",
+    "audioFileName": "PLN104",
+    "optionAnswer": [
+      "The astuteness of the lead characters",
+      "The voice of the Queen of the Night",
+      "Monostatos' acting",
+      "The singing of the comic villain"
+    ],
+    "answer": 4,
+    "category": "individualtest"
+  },
+  {
+    "question": "To what does the man compare the food at this private university?",
+    "audioFileName": "PLN201",
+    "optionAnswer": [
+      "The food his mother used to make",
+      "The food his mother used to make",
+      "A thousand-dollar meal",
+      "The food in the student cafeteria at his former college"
+    ],
+    "answer": 4,
+    "category": "individualtest"
+  },
+  {
+    "question": "How does the man feel about the food at this private university?",
+    "audioFileName": "PLN201",
+    "optionAnswer": [
+      "It isn't great.",
+      "He's unable to make a judgement.",
+      "It compares favorably to what he's used to.",
+      "It's not as good as he expected it to be."
+    ],
+    "answer": 3,
+    "category": "individualtest"
+  },
+  {
+    "question": "Where had the man expected the woman to be this morning?",
+    "audioFileName": "PLN202",
+    "optionAnswer": [
+      "In German class",
+      "With her father's uncle",
+      "On vacation in Germany",
+      "In French class"
+    ],
+    "answer": 4,
+    "category": "individualtest"
+  },
+  {
+    "question": "Why has the woman decided to study German?",
+    "audioFileName": "PLN202",
+    "optionAnswer": [
+      "German class does not meet in the morning.",
+      "German will be more useful.",
+      "She can study French during summer vacation.",
+      "Her father's uncle is coming from Germany for a visit."
+    ],
+    "answer": 2,
+    "category": "individualtest"
+  },
+  {
+    "question": "Why is the man tired?",
+    "audioFileName": "PLN203",
+    "optionAnswer": [
+      "He has a full-time job and a full work load at school.",
+      "He hasn't slept for a week.",
+      "He has a part-time job and a part-time schedule at school.",
+      "He is trying to get his degree this quarter."
+    ],
+    "answer": 1,
+    "category": "individualtest"
+  },
+  {
+    "question": "What does the man mean?",
+    "audioFileName": "PLG103",
+    "optionAnswer": [
+      "That the man should review more carefully",
+      "That they should study together",
+      "That the man needs to master the subject",
+      "That there is too much information to cover"
+    ],
+    "answer": 2,
+    "category": "individualtest"
+  },
+  {
+    "question": "What does the man say about Barbara?",
+    "audioFileName": "PLG104",
+    "optionAnswer": [
+      "She quit her job.",
+      "She took some time off.",
+      "She lost her job.",
+      "She moved to a company downtown."
+    ],
+    "answer": 3,
+    "category": "individualtest"
+  },
+  {
+    "question": "What does the woman say about Cindy?",
+    "audioFileName": "PLG203",
+    "optionAnswer": [
+      "Cindy does professional work.",
+      "She doesn't know how Cindy made the posters.",
+      "Someone else made the posters.",
+      "She doesn't think Cindy's posters look nice."
+    ],
+    "answer": 3,
+    "category": "individualtest"
+  },
+  {
+    "question": "What can be inferred from this conversation?",
+    "audioFileName": "PLG204",
+    "optionAnswer": [
+      "The tablets were all probably taken.",
+      "The medication is not working.",
+      "The man took some medication.",
+      "The pills were not taken on schedule."
+    ],
+    "answer": 1,
+    "category": "individualtest"
+  },
+  {
+    "question": "What does the man imply?",
+    "audioFileName": "PLG303",
+    "optionAnswer": [
+      "He always gets up early.",
+      "It was a bit inconvenient.",
+      "The call didn't bother him.",
+      "He had some trouble this morning."
+    ],
+    "answer": 3,
+    "category": "individualtest"
+  },
+  {
+    "question": "What does the woman mean?",
+    "audioFileName": "PLG304",
+    "optionAnswer": [
+      "Not a sound was heard.",
+      "She was astonished.",
+      "No one was astounded.",
+      "She was not the only one to be hired."
+    ],
+    "answer": 2,
+    "category": "individualtest"
+  },
+  {
+    "question": "What does the woman mean?",
+    "audioFileName": "PLG403",
+    "optionAnswer": [
+      "Arthur has not applied for a job.",
+      "It appears that Arthur has not progressed on the document.",
+      "She does not want to share the information with the man.",
+      "Arthur has not headed his document correctly."
+    ],
+    "answer": 2,
+    "category": "individualtest"
+  },
+  {
+    "question": "What had the man assumed about the professor?",
+    "audioFileName": "PLG404",
+    "optionAnswer": [
+      "That she did not have the papers",
+      "That she would not be in her office",
+      "That she was waiting in her office at 3:00",
+      "That she had not graded the paper"
+    ],
+    "answer": 2,
+    "category": "individualtest"
+  },
+  {
+    "question": "What does the man mean?",
+    "audioFileName": "PLG503",
+    "optionAnswer": [
+      "He is glad that the wedding is right around the corner.",
+      "He is looking forward to attending the wedding.",
+      "He regrets that he is unable to attend the ceremony.",
+      "He is going to miss his final exams."
+    ],
+    "answer": 3,
+    "category": "individualtest"
+  },
+  {
+    "question": "What can be inferred about the woman?",
+    "audioFileName": "PLG504",
+    "optionAnswer": [
+      "She needs to finish some reading.",
+      "The ideas in the chapter are too powerful for her.",
+      "She hasn't reached the middle of the chapter.",
+      "Her head is too full of ideas."
+    ],
+    "answer": 1,
+    "category": "individualtest"
+  },
+  {
+    "question": "What does the man suggest?",
+    "audioFileName": "PLG604",
+    "optionAnswer": [
+      "Being careful of the hot iron",
+      "Striking out on her own",
+      "Waiting for another offer to come her way",
+      "Taking the opportunity that has been offered"
+    ],
+    "answer": 4,
+    "category": "individualtest"
+  },
+  {
+    "question": "What does the man say about himself?",
+    "audioFileName": "PLG605",
+    "optionAnswer": [
+      "He's coming downstairs now.",
+      "He's feeling rather sick.",
+      "He's certain he can keep going.",
+      "He thinks bad weather is on the way."
+    ],
+    "answer": 2,
+    "category": "individualtest"
+  },
+  {
+    "question": "What does the man suggest?",
+    "audioFileName": "PLG606",
+    "optionAnswer": [
+      "Taking a nap",
+      "Leaving it alone for now",
+      "Allowing the dog to sleep",
+      "Discussing it further"
+    ],
+    "answer": 2,
+    "category": "individualtest"
+  },
+  {
+    "question": "Why is the man taking the bus to school?",
+    "audioFileName": "PLN204",
+    "optionAnswer": [
+      "He's shopping for a new car.",
+      "The bus is 20 minutes faster than the car.",
+      "His car is being repaired.",
+      "There is too much traffic to drive."
+    ],
+    "answer": 3,
+    "category": "individualtest"
+  },
+  {
+    "question": "What does the woman expect the man to do in the future?",
+    "audioFileName": "PLN204",
+    "optionAnswer": [
+      "PLN204",
+      "Become dependent on the bus",
+      "Offer to drive her to school",
+      "Read the newspaper on the way to school"
+    ],
+    "answer": 1,
+    "category": "individualtest"
+  },
+  {
+    "question": "Why was the woman late to Professor Trenton's class?",
+    "audioFileName": "PLN301",
+    "optionAnswer": [
+      "She decided to walk to school instead of taking her bicycle.",
+      "Her alarm did not go off.",
+      "She had a problem with her bicycle.",
+      "She overslept and got up late."
+    ],
+    "answer": 3,
+    "category": "individualtest"
+  },
+  {
+    "question": "What generally seems to happen when students are late to Professor Trenton's class?",
+    "audioFileName": "PLN301",
+    "optionAnswer": [
+      "Professor Trenton holds them back.",
+      "Professor Trenton has no reaction.",
+      "Professor Trenton accepts excuses.",
+      "Professor Trenton penalizes students."
+    ],
+    "answer": 4,
+    "category": "individualtest"
+  },
+  {
+    "question": "How does the man seem to feel about tonight's game?",
+    "audioFileName": "PLN302",
+    "optionAnswer": [
+      "Hopeful of a turn around",
+      "Confident of a success",
+      "Disgusted by the teams record",
+      "Ready to give up on the team"
+    ],
+    "answer": 1,
+    "category": "individualtest"
+  },
+  {
+    "question": "How does the woman categorize herself?",
+    "audioFileName": "PLN302",
+    "optionAnswer": [
+      "As someone who never goes to basketball games",
+      "As a strong supporter of the team",
+      "As a fan only when the team is winning",
+      "As someone who is not a sports fan at all"
+    ],
+    "answer": 3,
+    "category": "individualtest"
+  },
+  {
+    "question": "What are the man and woman going to do?",
+    "audioFileName": "PLN303",
+    "optionAnswer": [
+      "Work on some reading and writing for astronomy class",
+      "Attend a lecture in astronomy class",
+      "Observe a celestial object",
+      "Meet with a study group of students"
+    ],
+    "answer": 3,
+    "category": "individualtest"
+  },
+  {
+    "question": "What time will they probably be finished?",
+    "audioFileName": "PLN303",
+    "optionAnswer": [
+      "At nine o'clock in the morning",
+      "At two o'clock in the afternoon",
+      "At nine o'clock in the evening",
+      "At eleven o'clock in the evening"
+    ],
+    "answer": 4,
+    "category": "individualtest"
+  },
+  {
+    "question": "What is true about the tickets for the concert?",
+    "audioFileName": "PLN304",
+    "optionAnswer": [
+      "They are no longer available.",
+      "They are for sale only at the arena.",
+      "They are for reserved seats.",
+      "They have been on sale for only a week."
+    ],
+    "answer": 1,
+    "category": "individualtest"
+  },
+  {
+    "question": "What is the man afraid will happen?",
+    "audioFileName": "PLN304",
+    "optionAnswer": [
+      "They will be sitting outside the arena.",
+      "They will not be able to get tickets.",
+      "They will have seats high up in the arena.",
+      "They will lose their reserved seats if they are late."
+    ],
+    "answer": 3,
+    "category": "individualtest"
+  },
+  {
+    "question": "What is it necessary to do to go to the art gallery?",
+    "audioFileName": "PLN401",
+    "optionAnswer": [
+      "Prepare a sign",
+      "Put a name on a list",
+      "Sit in the back of the art room",
+      "Attend regularly for four weeks"
+    ],
+    "answer": 2,
+    "category": "individualtest"
+  },
+  {
+    "question": "What does the man mean?",
+    "audioFileName": "PLG101",
+    "optionAnswer": [
+      "It was too cloudy to hold a concert.",
+      "The audience was too noisy.",
+      "She did not really go to the concert.",
+      "There were too many people."
+    ],
+    "answer": 4,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What does the man say about the paper?",
+    "audioFileName": "PLG102",
+    "optionAnswer": [
+      "He's not in a hurry.",
+      "He's been doing the paper for several weeks.",
+      "He's rushing to finish the paper.",
+      "The paper has been overdue for a week."
+    ],
+    "answer": 1,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What does the man say about the sweater?",
+    "audioFileName": "PLG201",
+    "optionAnswer": [
+      "Someone put it somewhere else.",
+      "He hasn't seen it.",
+      "It is sitting on the chair.",
+      "He saw someone move it."
+    ],
+    "answer": 1,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What will the man and woman probably do next?",
+    "audioFileName": "PLG202",
+    "optionAnswer": [
+      "Continue working",
+      "Quit their jobs",
+      "Review for the exam",
+      "Stop studying"
+    ],
+    "answer": 4,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What does the woman say about the physics exam?",
+    "audioFileName": "PLG301",
+    "optionAnswer": [
+      "She found it just as hard as the previous test.",
+      "It was more difficult than the last test.",
+      "She was the last one to finish it.",
+      "It was only slightly easier than an earlier test."
+    ],
+    "answer": 4,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What does the woman say about Dr. Martinez?",
+    "audioFileName": "PLG302",
+    "optionAnswer": [
+      "He doesn't usually appear before large groups.",
+      "This is the largest audience he has ever addressed.",
+      "He doesn't do very much public speaking.",
+      "He has never spoken to a large audience."
+    ],
+    "answer": 1,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What does the woman mean?",
+    "audioFileName": "PLG401",
+    "optionAnswer": [
+      "She agrees with the man.",
+      "She thinks the quizzes are too short.",
+      "She doesn't like biology.",
+      "She thinks the quizzes aren't tricky."
+    ],
+    "answer": 1,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What does the woman suggest to the man?",
+    "audioFileName": "PLG402",
+    "optionAnswer": [
+      "Trying to get hold of Martin immediately",
+      "Mailing a short letter to Martin",
+      "Postponing his call to Martin",
+      "Leaving a message for Martin"
+    ],
+    "answer": 3,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What does the woman mean?",
+    "audioFileName": "PLG501",
+    "optionAnswer": [
+      "She isn't certain the man is qualified.",
+      "The position hasn't been filled.",
+      "There were more openings than needed.",
+      "There are not enough teaching assistant jobs available."
+    ],
+    "answer": 4,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What does the man mean?",
+    "audioFileName": "PLG502",
+    "optionAnswer": [
+      "He used his card to get an article.",
+      "He needs to check on an article.",
+      "He left his card in the library.",
+      "He does not have his library card with him."
+    ],
+    "answer": 4,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What is the man trying to do?",
+    "audioFileName": "PLG601",
+    "optionAnswer": [
+      "Learn to relax",
+      "Get his spending under control",
+      "Achieve success",
+      "Head for home"
+    ],
+    "answer": 3,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What does the woman mean?",
+    "audioFileName": "PLG602",
+    "optionAnswer": [
+      "They will soon be taking a trip by boat.",
+      "Everyone is in the same situation.",
+      "The professor has made everyone happy.",
+      "They are going to math class in a few hours."
+    ],
+    "answer": 2,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What does the man suggest that they try?",
+    "audioFileName": "PLG603",
+    "optionAnswer": [
+      "Cutting off their telephone service",
+      "Destroying their budget",
+      "Reducing the number of calls",
+      "Making cuts in their budget"
+    ],
+    "answer": 3,
+    "category": "fulltest1"
+  },
+  {
+    "question": "Why is the man unhappy?",
+    "audioFileName": "PLN101",
+    "optionAnswer": [
+      "His boss told him he couldn't get off early.",
+      "The game this weekend is not a home game.",
+      "He can't find a parking place.",
+      "He can't get off work to watch the game from start to finish."
+    ],
+    "answer": 4,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What does the woman offer to do?",
+    "audioFileName": "PLN101",
+    "optionAnswer": [
+      "Ask the man's employer if he can get off early",
+      "Put in some extra hours for him",
+      "Save seats for the two of them",
+      "Drive him to the game immediately"
+    ],
+    "answer": 3,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What is the woman doing?",
+    "audioFileName": "PLN102",
+    "optionAnswer": [
+      "Working on schoolwork",
+      "Writing a letter",
+      "Making a promise",
+      "Dealing with a problem"
+    ],
+    "answer": 2,
+    "category": "fulltest1"
+  },
+  {
+    "question": "How has the man been keeping in touch with his parents?",
+    "audioFileName": "PLN102",
+    "optionAnswer": [
+      "He gives them a call once in a while.",
+      "He writes to them once a week.",
+      "He never contacts them.",
+      "He doesn't say much when he writes."
+    ],
+    "answer": 1,
+    "category": "fulltest1"
+  },
+  {
+    "question": "In which class does the woman say she's going to have fun?",
+    "audioFileName": "PLN103",
+    "optionAnswer": [
+      "Science",
+      "History",
+      "Spanish grammar",
+      "Microeconomics"
+    ],
+    "answer": 1,
+    "category": "fulltest1"
+  },
+  {
+    "question": "Why did the man like having Mrs. Aguilar as a Spanish teacher?",
+    "audioFileName": "PLN103",
+    "optionAnswer": [
+      "She discusses real-life situations.",
+      "She emphasizes the ability to converse in Spanish.",
+      "She focuses on vocabulary and grammar.",
+      "She speaks the language."
+    ],
+    "answer": 2,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What makes this performance of The Magic Flute so well done?",
+    "audioFileName": "PLN104",
+    "optionAnswer": [
+      "The voices of all the performers",
+      "The last nine scenes",
+      "The portrayal of the characters",
+      "The overall storyline"
+    ],
+    "answer": 3,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What does the man hope will be better during the second half of the opera?",
+    "audioFileName": "PLN104",
+    "optionAnswer": [
+      "The astuteness of the lead characters",
+      "The voice of the Queen of the Night",
+      "Monostatos' acting",
+      "The singing of the comic villain"
+    ],
+    "answer": 4,
+    "category": "fulltest1"
+  },
+  {
+    "question": "To what does the man compare the food at this private university?",
+    "audioFileName": "PLN201",
+    "optionAnswer": [
+      "The food his mother used to make",
+      "The food his mother used to make",
+      "A thousand-dollar meal",
+      "The food in the student cafeteria at his former college"
+    ],
+    "answer": 4,
+    "category": "fulltest1"
+  },
+  {
+    "question": "How does the man feel about the food at this private university?",
+    "audioFileName": "PLN201",
+    "optionAnswer": [
+      "It isn't great.",
+      "He's unable to make a judgement.",
+      "It compares favorably to what he's used to.",
+      "It's not as good as he expected it to be."
+    ],
+    "answer": 3,
+    "category": "fulltest1"
+  },
+  {
+    "question": "Where had the man expected the woman to be this morning?",
+    "audioFileName": "PLN202",
+    "optionAnswer": [
+      "In German class",
+      "With her father's uncle",
+      "On vacation in Germany",
+      "In French class"
+    ],
+    "answer": 4,
+    "category": "fulltest1"
+  },
+  {
+    "question": "Why has the woman decided to study German?",
+    "audioFileName": "PLN202",
+    "optionAnswer": [
+      "German class does not meet in the morning.",
+      "German will be more useful.",
+      "She can study French during summer vacation.",
+      "Her father's uncle is coming from Germany for a visit."
+    ],
+    "answer": 2,
+    "category": "fulltest1"
+  },
+  {
+    "question": "Why is the man tired?",
+    "audioFileName": "PLN203",
+    "optionAnswer": [
+      "He has a full-time job and a full work load at school.",
+      "He hasn't slept for a week.",
+      "He has a part-time job and a part-time schedule at school.",
+      "He is trying to get his degree this quarter."
+    ],
+    "answer": 1,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What does the man mean?",
+    "audioFileName": "PLG103",
+    "optionAnswer": [
+      "That the man should review more carefully",
+      "That they should study together",
+      "That the man needs to master the subject",
+      "That there is too much information to cover"
+    ],
+    "answer": 2,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What does the man say about Barbara?",
+    "audioFileName": "PLG104",
+    "optionAnswer": [
+      "She quit her job.",
+      "She took some time off.",
+      "She lost her job.",
+      "She moved to a company downtown."
+    ],
+    "answer": 3,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What does the woman say about Cindy?",
+    "audioFileName": "PLG203",
+    "optionAnswer": [
+      "Cindy does professional work.",
+      "She doesn't know how Cindy made the posters.",
+      "Someone else made the posters.",
+      "She doesn't think Cindy's posters look nice."
+    ],
+    "answer": 3,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What can be inferred from this conversation?",
+    "audioFileName": "PLG204",
+    "optionAnswer": [
+      "The tablets were all probably taken.",
+      "The medication is not working.",
+      "The man took some medication.",
+      "The pills were not taken on schedule."
+    ],
+    "answer": 1,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What does the man imply?",
+    "audioFileName": "PLG303",
+    "optionAnswer": [
+      "He always gets up early.",
+      "It was a bit inconvenient.",
+      "The call didn't bother him.",
+      "He had some trouble this morning."
+    ],
+    "answer": 3,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What does the woman mean?",
+    "audioFileName": "PLG304",
+    "optionAnswer": [
+      "Not a sound was heard.",
+      "She was astonished.",
+      "No one was astounded.",
+      "She was not the only one to be hired."
+    ],
+    "answer": 2,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What does the woman mean?",
+    "audioFileName": "PLG403",
+    "optionAnswer": [
+      "Arthur has not applied for a job.",
+      "It appears that Arthur has not progressed on the document.",
+      "She does not want to share the information with the man.",
+      "Arthur has not headed his document correctly."
+    ],
+    "answer": 2,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What had the man assumed about the professor?",
+    "audioFileName": "PLG404",
+    "optionAnswer": [
+      "That she did not have the papers",
+      "That she would not be in her office",
+      "That she was waiting in her office at 3:00",
+      "That she had not graded the paper"
+    ],
+    "answer": 2,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What does the man mean?",
+    "audioFileName": "PLG503",
+    "optionAnswer": [
+      "He is glad that the wedding is right around the corner.",
+      "He is looking forward to attending the wedding.",
+      "He regrets that he is unable to attend the ceremony.",
+      "He is going to miss his final exams."
+    ],
+    "answer": 3,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What can be inferred about the woman?",
+    "audioFileName": "PLG504",
+    "optionAnswer": [
+      "She needs to finish some reading.",
+      "The ideas in the chapter are too powerful for her.",
+      "She hasn't reached the middle of the chapter.",
+      "Her head is too full of ideas."
+    ],
+    "answer": 1,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What does the man suggest?",
+    "audioFileName": "PLG604",
+    "optionAnswer": [
+      "Being careful of the hot iron",
+      "Striking out on her own",
+      "Waiting for another offer to come her way",
+      "Taking the opportunity that has been offered"
+    ],
+    "answer": 4,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What does the man say about himself?",
+    "audioFileName": "PLG605",
+    "optionAnswer": [
+      "He's coming downstairs now.",
+      "He's feeling rather sick.",
+      "He's certain he can keep going.",
+      "He thinks bad weather is on the way."
+    ],
+    "answer": 2,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What does the man suggest?",
+    "audioFileName": "PLG606",
+    "optionAnswer": [
+      "Taking a nap",
+      "Leaving it alone for now",
+      "Allowing the dog to sleep",
+      "Discussing it further"
+    ],
+    "answer": 2,
+    "category": "fulltest1"
+  },
+  {
+    "question": "Why is the man taking the bus to school?",
+    "audioFileName": "PLN204",
+    "optionAnswer": [
+      "He's shopping for a new car.",
+      "The bus is 20 minutes faster than the car.",
+      "His car is being repaired.",
+      "There is too much traffic to drive."
+    ],
+    "answer": 3,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What does the woman expect the man to do in the future?",
+    "audioFileName": "PLN204",
+    "optionAnswer": [
+      "PLN204",
+      "Become dependent on the bus",
+      "Offer to drive her to school",
+      "Read the newspaper on the way to school"
+    ],
+    "answer": 1,
+    "category": "fulltest1"
+  },
+  {
+    "question": "Why was the woman late to Professor Trenton's class?",
+    "audioFileName": "PLN301",
+    "optionAnswer": [
+      "She decided to walk to school instead of taking her bicycle.",
+      "Her alarm did not go off.",
+      "She had a problem with her bicycle.",
+      "She overslept and got up late."
+    ],
+    "answer": 3,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What generally seems to happen when students are late to Professor Trenton's class?",
+    "audioFileName": "PLN301",
+    "optionAnswer": [
+      "Professor Trenton holds them back.",
+      "Professor Trenton has no reaction.",
+      "Professor Trenton accepts excuses.",
+      "Professor Trenton penalizes students."
+    ],
+    "answer": 4,
+    "category": "fulltest1"
+  },
+  {
+    "question": "How does the man seem to feel about tonight's game?",
+    "audioFileName": "PLN302",
+    "optionAnswer": [
+      "Hopeful of a turn around",
+      "Confident of a success",
+      "Disgusted by the teams record",
+      "Ready to give up on the team"
+    ],
+    "answer": 1,
+    "category": "fulltest1"
+  },
+  {
+    "question": "How does the woman categorize herself?",
+    "audioFileName": "PLN302",
+    "optionAnswer": [
+      "As someone who never goes to basketball games",
+      "As a strong supporter of the team",
+      "As a fan only when the team is winning",
+      "As someone who is not a sports fan at all"
+    ],
+    "answer": 3,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What are the man and woman going to do?",
+    "audioFileName": "PLN303",
+    "optionAnswer": [
+      "Work on some reading and writing for astronomy class",
+      "Attend a lecture in astronomy class",
+      "Observe a celestial object",
+      "Meet with a study group of students"
+    ],
+    "answer": 3,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What time will they probably be finished?",
+    "audioFileName": "PLN303",
+    "optionAnswer": [
+      "At nine o'clock in the morning",
+      "At two o'clock in the afternoon",
+      "At nine o'clock in the evening",
+      "At eleven o'clock in the evening"
+    ],
+    "answer": 4,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What is true about the tickets for the concert?",
+    "audioFileName": "PLN304",
+    "optionAnswer": [
+      "They are no longer available.",
+      "They are for sale only at the arena.",
+      "They are for reserved seats.",
+      "They have been on sale for only a week."
+    ],
+    "answer": 1,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What is the man afraid will happen?",
+    "audioFileName": "PLN304",
+    "optionAnswer": [
+      "They will be sitting outside the arena.",
+      "They will not be able to get tickets.",
+      "They will have seats high up in the arena.",
+      "They will lose their reserved seats if they are late."
+    ],
+    "answer": 3,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What is it necessary to do to go to the art gallery?",
+    "audioFileName": "PLN401",
+    "optionAnswer": [
+      "Prepare a sign",
+      "Put a name on a list",
+      "Sit in the back of the art room",
+      "Attend regularly for four weeks"
+    ],
+    "answer": 2,
+    "category": "fulltest1"
+  },
+  {
+    "question": "What does the man mean?",
+    "audioFileName": "PLG103",
+    "optionAnswer": [
+      "That the man should review more carefully",
+      "That they should study together",
+      "That the man needs to master the subject",
+      "That there is too much information to cover"
+    ],
+    "answer": 2,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What does the man say about Barbara?",
+    "audioFileName": "PLG104",
+    "optionAnswer": [
+      "She quit her job.",
+      "She took some time off.",
+      "She lost her job.",
+      "She moved to a company downtown."
+    ],
+    "answer": 3,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What does the woman say about Cindy?",
+    "audioFileName": "PLG203",
+    "optionAnswer": [
+      "Cindy does professional work.",
+      "She doesn't know how Cindy made the posters.",
+      "Someone else made the posters.",
+      "She doesn't think Cindy's posters look nice."
+    ],
+    "answer": 3,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What can be inferred from this conversation?",
+    "audioFileName": "PLG204",
+    "optionAnswer": [
+      "The tablets were all probably taken.",
+      "The medication is not working.",
+      "The man took some medication.",
+      "The pills were not taken on schedule."
+    ],
+    "answer": 1,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What does the man imply?",
+    "audioFileName": "PLG303",
+    "optionAnswer": [
+      "He always gets up early.",
+      "It was a bit inconvenient.",
+      "The call didn't bother him.",
+      "He had some trouble this morning."
+    ],
+    "answer": 3,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What does the woman mean?",
+    "audioFileName": "PLG304",
+    "optionAnswer": [
+      "Not a sound was heard.",
+      "She was astonished.",
+      "No one was astounded.",
+      "She was not the only one to be hired."
+    ],
+    "answer": 2,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What does the woman mean?",
+    "audioFileName": "PLG403",
+    "optionAnswer": [
+      "Arthur has not applied for a job.",
+      "It appears that Arthur has not progressed on the document.",
+      "She does not want to share the information with the man.",
+      "Arthur has not headed his document correctly."
+    ],
+    "answer": 2,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What had the man assumed about the professor?",
+    "audioFileName": "PLG404",
+    "optionAnswer": [
+      "That she did not have the papers",
+      "That she would not be in her office",
+      "That she was waiting in her office at 3:00",
+      "That she had not graded the paper"
+    ],
+    "answer": 2,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What does the man mean?",
+    "audioFileName": "PLG503",
+    "optionAnswer": [
+      "He is glad that the wedding is right around the corner.",
+      "He is looking forward to attending the wedding.",
+      "He regrets that he is unable to attend the ceremony.",
+      "He is going to miss his final exams."
+    ],
+    "answer": 3,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What can be inferred about the woman?",
+    "audioFileName": "PLG504",
+    "optionAnswer": [
+      "She needs to finish some reading.",
+      "The ideas in the chapter are too powerful for her.",
+      "She hasn't reached the middle of the chapter.",
+      "Her head is too full of ideas."
+    ],
+    "answer": 1,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What does the man suggest?",
+    "audioFileName": "PLG604",
+    "optionAnswer": [
+      "Being careful of the hot iron",
+      "Striking out on her own",
+      "Waiting for another offer to come her way",
+      "Taking the opportunity that has been offered"
+    ],
+    "answer": 4,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What does the man say about himself?",
+    "audioFileName": "PLG605",
+    "optionAnswer": [
+      "He's coming downstairs now.",
+      "He's feeling rather sick.",
+      "He's certain he can keep going.",
+      "He thinks bad weather is on the way."
+    ],
+    "answer": 2,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What does the man suggest?",
+    "audioFileName": "Taking a nap",
+    "optionAnswer": [
+      "Leaving it alone for now",
+      "Allowing the dog to sleep",
+      "Leaving it alone for now",
+      "Discussing it further"
+    ],
+    "answer": 3,
+    "category": "fulltest2"
+  },
+  {
+    "question": "Why is the man taking the bus to school?",
+    "audioFileName": "PLN204",
+    "optionAnswer": [
+      "He's shopping for a new car.",
+      "The bus is 20 minutes faster than the car.",
+      "His car is being repaired.",
+      "There is too much traffic to drive."
+    ],
+    "answer": 3,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What does the woman expect the man to do in the future?",
+    "audioFileName": "PLN204",
+    "optionAnswer": [
+      "Go back to driving to school",
+      "Become dependent on the bus",
+      "Offer to drive her to school",
+      "Read the newspaper on the way to school"
+    ],
+    "answer": 1,
+    "category": "fulltest2"
+  },
+  {
+    "question": "Why was the woman late to Professor Trenton's class?",
+    "audioFileName": "PLN301",
+    "optionAnswer": [
+      "She decided to walk to school instead of taking her bicycle.",
+      "Her alarm did not go off.",
+      "She had a problem with her bicycle.",
+      "She overslept and got up late."
+    ],
+    "answer": 3,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What generally seems to happen when students are late to Professor Trenton's class?",
+    "audioFileName": "PLN301",
+    "optionAnswer": [
+      "Professor Trenton holds them back.",
+      "Professor Trenton has no reaction.",
+      "Professor Trenton accepts excuses.",
+      "Professor Trenton penalizes students."
+    ],
+    "answer": 4,
+    "category": "fulltest2"
+  },
+  {
+    "question": "How does the man seem to feel about tonight's game?",
+    "audioFileName": "PLN302",
+    "optionAnswer": [
+      "Hopeful of a turn around",
+      "Confident of a success",
+      "Disgusted by the teams record",
+      "Ready to give up on the team"
+    ],
+    "answer": 1,
+    "category": "fulltest2"
+  },
+  {
+    "question": "How does the woman categorize herself?",
+    "audioFileName": "PLN302",
+    "optionAnswer": [
+      "As someone who never goes to basketball games",
+      "As a strong supporter of the team",
+      "As a fan only when the team is winning",
+      "As someone who is not a sports fan at all"
+    ],
+    "answer": 3,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What are the man and woman going to do?",
+    "audioFileName": "PLN303",
+    "optionAnswer": [
+      "Work on some reading and writing for astronomy class",
+      "Attend a lecture in astronomy class",
+      "Observe a celestial object",
+      "Meet with a study group of students"
+    ],
+    "answer": 3,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What time will they probably be finished?",
+    "audioFileName": "PLN303",
+    "optionAnswer": [
+      "At nine o'clock in the morning",
+      "At two o'clock in the afternoon",
+      "At nine o'clock in the evening",
+      "At eleven o'clock in the evening"
+    ],
+    "answer": 4,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What is true about the tickets for the concert?",
+    "audioFileName": "PLN304",
+    "optionAnswer": [
+      "They are no longer available.",
+      "They are for sale only at the arena.",
+      "They are for reserved seats.",
+      "They have been on sale for only a week."
+    ],
+    "answer": 1,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What is the man afraid will happen?",
+    "audioFileName": "PLN304",
+    "optionAnswer": [
+      "They will be sitting outside the arena.",
+      "They will not be able to get tickets.",
+      "They will have ~seats high up in the arena.",
+      "They will lose their reserved seats if they are late."
+    ],
+    "answer": 3,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What is it necessary to do to go to the art gallery?",
+    "audioFileName": "PLN401",
+    "optionAnswer": [
+      "Prepare a sign",
+      "Put a name on a list",
+      "Sit in the back of the art room",
+      "Attend regularly for four weeks"
+    ],
+    "answer": 2,
+    "category": "fulltest2"
+  },
+  {
+    "question": "Who is going to the art gallery?",
+    "audioFileName": "PLN401",
+    "optionAnswer": [
+      "Everyone in the class",
+      "A number of local artists",
+      "Only the man and woman",
+      "Most of the students taking the art course"
+    ],
+    "answer": 4,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What feature of the university helped the man to make the final decision about which university to attend?",
+    "audioFileName": "PLN402",
+    "optionAnswer": [
+      "The academic program",
+      "Its location in Arizona",
+      "Pictures of the campus grounds",
+      "The architecture department"
+    ],
+    "answer": 3,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What does the man mean?",
+    "audioFileName": "PLG101",
+    "optionAnswer": [
+      "It was too cloudy to hold a concert.",
+      "The audience was too noisy.",
+      "She did not really go to the concert.",
+      "There were too many people."
+    ],
+    "answer": 4,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What does the man say about the paper?",
+    "audioFileName": "PLG102",
+    "optionAnswer": [
+      "He's not in a hurry.",
+      "He's been doing the paper for several weeks.",
+      "He's rushing to finish the paper.",
+      "The paper has been overdue for a week."
+    ],
+    "answer": 1,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What does the man say about the sweater?",
+    "audioFileName": "PLG201",
+    "optionAnswer": [
+      "Someone put it somewhere else.",
+      "He hasn't seen it.",
+      "It is sitting on the chair.",
+      "He saw someone move it."
+    ],
+    "answer": 1,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What will the man and woman probably do next?",
+    "audioFileName": "PLG202",
+    "optionAnswer": [
+      "Continue working",
+      "Quit their jobs",
+      "Review for the exam",
+      "Stop studying"
+    ],
+    "answer": 4,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What does the woman say about the physics exam?",
+    "audioFileName": "PLG301",
+    "optionAnswer": [
+      "She found it just as hard as the previous test.",
+      "It was more difficult than the last test.",
+      "She was the last one to finish it.",
+      "It was only slightly easier than an earlier test."
+    ],
+    "answer": 4,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What does the woman say about Dr. Martinez?",
+    "audioFileName": "PLG302",
+    "optionAnswer": [
+      "He doesn't usually appear before large groups.",
+      "This is the largest audience he has ever addressed.",
+      "He doesn't do very much public speaking.",
+      "He has never spoken to a large audience."
+    ],
+    "answer": 1,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What does the woman mean?",
+    "audioFileName": "PLG401",
+    "optionAnswer": [
+      "She agrees with the man.",
+      "She thinks the quizzes are too short.",
+      "She doesn't like biology.",
+      "She thinks the quizzes aren't tricky."
+    ],
+    "answer": 1,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What does the woman suggest to the man?",
+    "audioFileName": "PLG402",
+    "optionAnswer": [
+      "Trying to get hold of Martin immediately",
+      "Mailing a short letter to Martin",
+      "Postponing his call to Martin",
+      "Leaving a message for Martin"
+    ],
+    "answer": 3,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What does the woman mean?",
+    "audioFileName": "PLG501",
+    "optionAnswer": [
+      "She isn't certain the man is qualified.",
+      "The position hasn't been filled.",
+      "There were more openings than needed.",
+      "There are not enough teaching assistant jobs available."
+    ],
+    "answer": 4,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What does the man mean?",
+    "audioFileName": "PLG502",
+    "optionAnswer": [
+      "He used his card to get an article.",
+      "He needs to check on an article.",
+      "He left his card in the library.",
+      "He does not have his library card with him."
+    ],
+    "answer": 4,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What is the man trying to do?",
+    "audioFileName": "PLG601",
+    "optionAnswer": [
+      "Learn to relax",
+      "Get his spending under control",
+      "Achieve success",
+      "Head for home"
+    ],
+    "answer": 3,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What does the woman mean?",
+    "audioFileName": "PLG602",
+    "optionAnswer": [
+      "They will soon be taking a trip by boat.",
+      "Everyone is in the same situation.",
+      "The professor has made everyone happy.",
+      "They are going to math class in a few hours."
+    ],
+    "answer": 2,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What does the man suggest that they try?",
+    "audioFileName": "PLG603",
+    "optionAnswer": [
+      "Cutting off their telephone service",
+      "Destroying their budget",
+      "Reducing the number of calls",
+      "Making cuts in their budget"
+    ],
+    "answer": 3,
+    "category": "fulltest2"
+  },
+  {
+    "question": "Why is the man unhappy?",
+    "audioFileName": "PLN101",
+    "optionAnswer": [
+      "His boss told him he couldn't get off early.",
+      "The game this weekend is not a home game.",
+      "He can't find a parking place.",
+      "He can't get off work to watch the game from start to finish."
+    ],
+    "answer": 4,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What does the woman offer to do?",
+    "audioFileName": "PLN101",
+    "optionAnswer": [
+      "Ask the man's employer if he can get off early",
+      "Put in some extra hours for him",
+      "Save seats for the two of them",
+      "Drive him to the game immediately"
+    ],
+    "answer": 3,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What is the woman doing?",
+    "audioFileName": "PLN102",
+    "optionAnswer": [
+      "Working on schoolwork",
+      "Writing a letter",
+      "Making a promise",
+      "Dealing with a problem"
+    ],
+    "answer": 2,
+    "category": "fulltest2"
+  },
+  {
+    "question": "How has the man been keeping in touch with his parents?",
+    "audioFileName": "PLN102",
+    "optionAnswer": [
+      "He gives them a call once in a while.",
+      "He writes to them once a week.",
+      "He never contacts them.",
+      "He doesn't say much when he writes."
+    ],
+    "answer": 1,
+    "category": "fulltest2"
+  },
+  {
+    "question": "In which class does the woman say she's going to have fun?",
+    "audioFileName": "PLN103",
+    "optionAnswer": [
+      "Science",
+      "History",
+      "Spanish grammar",
+      "Microeconomics"
+    ],
+    "answer": 1,
+    "category": "fulltest2"
+  },
+  {
+    "question": "Why did the man like having Mrs. Aguilar as a Spanish teacher?",
+    "audioFileName": "PLN103",
+    "optionAnswer": [
+      "She discusses real-life situations.",
+      "She emphasizes the ability to converse in Spanish.",
+      "She focuses on vocabulary and grammar.",
+      "She speaks the language."
+    ],
+    "answer": 2,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What makes this performance of The Magic Flute so well done?",
+    "audioFileName": "PLN104",
+    "optionAnswer": [
+      "The voices of all the performers",
+      "The last nine scenes",
+      "The portrayal of the characters",
+      "The overall storyline"
+    ],
+    "answer": 3,
+    "category": "fulltest2"
+  },
+  {
+    "question": "What does the man hope will be better during the second half of the opera?",
+    "audioFileName": "PLN104",
+    "optionAnswer": [
+      "The astuteness of the lead characters",
+      "The voice of the Queen of the Night",
+      "Monostatos' acting",
+      "The singing of the comic villain"
+    ],
+    "answer": 4,
+    "category": "fulltest2"
+  },
+  {
+    "question": "To what does the man compare the food at this private university?",
+    "audioFileName": "PLN201",
+    "optionAnswer": [
+      "The food his mother used to make",
+      "The food his mother used to make",
+      "A thousand-dollar meal",
+      "The food in the student cafeteria at his former college"
+    ],
+    "answer": 4,
+    "category": "fulltest2"
+  },
+  {
+    "question": "How does the man feel about the food at this private university?",
+    "audioFileName": "PLN201",
+    "optionAnswer": [
+      "It isn't great.",
+      "He's unable to make a judgement.",
+      "It compares favorably to what he's used to.",
+      "It's not as good as he expected it to be."
+    ],
+    "answer": 3,
+    "category": "fulltest2"
+  },
+  {
+    "question": "Where had the man expected the woman to be this morning?",
+    "audioFileName": "PLN202",
+    "optionAnswer": [
+      "In German class",
+      "With her father's uncle",
+      "On vacation in Germany",
+      "In French class"
+    ],
+    "answer": 4,
+    "category": "fulltest2"
   }
 ]
