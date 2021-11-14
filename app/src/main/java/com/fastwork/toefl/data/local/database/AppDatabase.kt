@@ -19,7 +19,7 @@ import com.fastwork.toefl.workers.ReadingSeedWorker
 import com.fastwork.toefl.workers.StructureSeedWorker
 
 @Database(
-    entities = [Product::class, ParagraphReading::class, Reading::class, Structure::class, Listening::class],
+    entities = [Product::class, ParagraphReading::class, Reading::class, Structure::class, Listening::class, Score::class, User::class],
     version = 1,
     exportSchema = false
 )
@@ -31,6 +31,9 @@ abstract class AppDatabase() : RoomDatabase() {
     abstract fun readingDao(): ReadingDao
     abstract fun structureDao(): StructureDao
     abstract fun listeningDao(): ListeningDao
+    abstract fun scoreDao(): ScoreDao
+    abstract fun userDao(): UserDao
+
 
     companion object {
         @Volatile

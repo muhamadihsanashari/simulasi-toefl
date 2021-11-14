@@ -57,7 +57,24 @@
         android:id="@+id/practiceTestFragment"
         android:name="com.fastwork.toefl.ui.practice.test.PracticeTestFragment"
         android:label="Practice Test Fragment"
-        tools:layout="@layout/fragment_test_practice" />
+        tools:layout="@layout/fragment_test_practice">
+
+        <action
+            android:id="@+id/action_to_score_result"
+            app:destination="@id/scoreResultFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/scoreResultFragment"
+        android:name="com.fastwork.toefl.ui.score.ScoreResultFragment"
+        android:label="Score Result Fragment"
+        tools:layout="@layout/fragment_score_result" />
 
 
 </navigation>

@@ -57,4 +57,8 @@
     <string name="format_question_count">Question: %d/%d</string>
     <string name="previous">Previous</string>
     <string name="format_remaining">-%s</string>
+    <string name="text_your_score">Your Score!</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="selesai">Selesai</string>
+    <string name="next">Next</string>
 </resources>

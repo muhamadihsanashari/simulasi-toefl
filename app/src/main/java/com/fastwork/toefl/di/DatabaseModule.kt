@@ -23,10 +23,17 @@ val databaseModule = module {
         return database.structureDao()
     }
 
-    fun provideListeningDao(database: AppDatabase):ListeningDao{
+    fun provideListeningDao(database: AppDatabase): ListeningDao {
         return database.listeningDao()
     }
 
+    fun provideScoreDao(database: AppDatabase): ScoreDao {
+        return database.scoreDao()
+    }
+
+    fun provideUserDao(database: AppDatabase): UserDao {
+        return database.userDao()
+    }
 
     single {
         AppDatabase.getInstance(androidContext())
@@ -43,5 +50,9 @@ val databaseModule = module {
     single { provideStuctureDao(get()) }
 
     single { provideListeningDao(get()) }
+
+    single { provideScoreDao(get()) }
+
+    single { provideUserDao(get()) }
 
 }

@@ -11,10 +11,13 @@ import android.widget.RadioButton
 import android.widget.SeekBar
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.fastwork.toefl.R
 import com.fastwork.toefl.data.local.model.Question
+import com.fastwork.toefl.data.local.model.ScoreType
 import com.fastwork.toefl.data.local.model.TestType
 import com.fastwork.toefl.databinding.FragmentTestPracticeBinding
+import com.fastwork.toefl.utils.SCORE_TYPE_KEY
 import com.fastwork.toefl.utils.TEST_TYPE_KEY
 import kotlinx.coroutines.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -250,10 +253,32 @@ class PracticeTestFragment : Fragment() {
                 val questionUpdate = questionData[currentQuestionPosition]
                 questionUpdate.userAnswer = currentUserAnswer
                 questionData[currentQuestionPosition] = questionUpdate
+                binding.btnNext.text = resources.getString(R.string.next)
             }
             ++currentQuestionPosition
             setupViewQuestion()
+            return
         }
+        if (currentQuestionPosition == questionData.size - 1) {
+            binding.btnNext.text = resources.getString(R.string.selesai)
+            val bundle = Bundle().apply {
+                val dataScore = ScoreType(category = testType!!.category, score = getScore())
+                putSerializable(SCORE_TYPE_KEY, dataScore)
+            }
+            findNavController().navigateUp()
+            findNavController().navigate(R.id.scoreResultFragment, bundle)
+        }
+    }
+
+    private fun getScore(): Int {
+        var numberOfCorrect = 0
+        for (element in questionData) {
+            if (element.userAnswer == element.answer) {
+                numberOfCorrect++
+            }
+        }
+        val result: Double = numberOfCorrect.toDouble() / questionData.size * 100
+        return result.toInt()
     }
 
     @SuppressLint("ResourceType")
@@ -297,6 +322,11 @@ class PracticeTestFragment : Fragment() {
         }
         binding.radioGroup.setOnCheckedChangeListener { _, checkedId ->
             currentUserAnswer = checkedId
+        }
+        if (currentQuestionPosition == questionData.size - 1) {
+            binding.btnNext.text = resources.getString(R.string.selesai)
+        } else {
+            binding.btnNext.text = resources.getString(R.string.next)
         }
     }
 
