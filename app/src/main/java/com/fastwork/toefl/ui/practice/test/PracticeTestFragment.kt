@@ -319,8 +319,6 @@ class PracticeTestFragment : Fragment() {
         const val READING_HARD = "hard"
         const val LISTENING_SORT_DIALOG = "sort dialogues"
         const val LISTENING_CASUAL_CONVERSATION = "casual conversation"
-        const val LISTENING_ACADEMIC_DISCUSSION = "academic discussion"
-        const val LISTENING_ACADEMIC_LECTURES = "academic lectures"
         const val STRUCTURE_ONE_CLAUSE = "one clause"
         const val STRUCTURE_MULTIPLE_CLAUSES = "multiple clauses"
         const val STRUCTURE_MORE_MULTIPLE_CLAUSE = "more multiple clauses"

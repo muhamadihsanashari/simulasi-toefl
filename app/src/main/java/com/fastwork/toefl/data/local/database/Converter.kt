@@ -4,6 +4,7 @@ import androidx.room.TypeConverter
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
+import java.util.*
 
 class Converter {
     @TypeConverter
@@ -11,4 +12,11 @@ class Converter {
 
     @TypeConverter
     fun toList(value: String) = Json.decodeFromString<List<String>>(value)
+
+    @TypeConverter
+    fun dateToTimeStamp(date: Date?) = date?.time
+
+    @TypeConverter
+    fun fromTimestamp(value: Long?): Date? = value?.let { Date(it) }
+
 }
