@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.fastwork.toefl.R
 import com.fastwork.toefl.data.local.model.ScoreType
 import com.fastwork.toefl.databinding.FragmentScoreResultBinding
@@ -40,7 +41,8 @@ class ScoreResultFragment : Fragment() {
             viewModel.insertData(scoreType)
         }
         viewModel.successInsert.observe(this, {
-
+            findNavController().navigateUp()
+            findNavController().navigate(R.id.mainFragment)
         })
     }
 

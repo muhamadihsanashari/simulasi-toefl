@@ -69,5 +69,9 @@
     <string name="pre_test_direction">In the pretest menu you are only given the opportunity 3 times to do the TOEFL practice questions. In this session your score will be saved</string>
     <string name="post_test_direction">In the post test menu you are only given the opportunity 3 times to do the TOEFL practice questions. In this session your score will be saved</string>
     <string name="preparing_local_database">Preparing Local Database ..</string>
+    <string name="listening_session_complete">Listening session is complete,\npress the button to continue to\nthe next session</string>
+    <string name="reading_session_complete">Reading session is complete,\npress the button to continue to\nthe next session</string>
+    <string name="all_session_complete">All session is complete,\npress the button to continue to\nthe next session</string>
+    <string name="finish">finish</string>
 
 </resources>

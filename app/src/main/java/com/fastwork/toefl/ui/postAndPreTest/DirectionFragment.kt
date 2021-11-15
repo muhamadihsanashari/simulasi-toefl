@@ -5,12 +5,17 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.fastwork.toefl.R
 import com.fastwork.toefl.data.local.model.ModelDirection
+import com.fastwork.toefl.data.local.model.ModelSession
 import com.fastwork.toefl.databinding.FragmentDirectionBinding
 import com.fastwork.toefl.utils.DIRECTION_KEY
+import com.fastwork.toefl.utils.SESSION_KEY
+import com.fastwork.toefl.utils.TEST_CATEGORY_KEY
 
 
 class DirectionFragment : Fragment() {
@@ -47,6 +52,22 @@ class DirectionFragment : Fragment() {
     private fun setupListener() {
         binding.back.setOnClickListener {
             activity?.onBackPressed()
+        }
+        binding.btnNext.setOnClickListener {
+            if (dataDirection?.chanceCount!! > 0) {
+                val bundle = Bundle().apply {
+                    putString(TEST_CATEGORY_KEY, dataDirection?.category)
+                    val dataSession = ModelSession(
+                        session = PreAndPostTestFragment.LISTENING_SESSION,
+                        category = dataDirection?.category
+                    )
+                    putSerializable(SESSION_KEY, dataSession)
+                }
+                findNavController().navigateUp()
+                findNavController().navigate(R.id.preAndPostTestFragment, bundle)
+            } else {
+                Toast.makeText(context, "Kesempatan sudah habis", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 

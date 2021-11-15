@@ -108,15 +108,21 @@
         tools:layout="@layout/fragment_direction" />
 
     <fragment
-        android:id="@+id/sessioFragment"
+        android:id="@+id/preAndPostTestFragment"
         android:name="com.fastwork.toefl.ui.postAndPreTest.PreAndPostTestFragment"
-        android:label="Session Fragment"
-        tools:layout="@layout/fragment_session" />
+        android:label="Pre And Post Fragment"
+        tools:layout="@layout/fragment_full_test" />
 
     <dialog
         android:id="@+id/dialogExitSession"
         android:label="dialog exit session"
         tools:layout="@layout/dialog_exit_session" />
+
+    <fragment
+        android:id="@+id/sessionFragment"
+        android:name="com.fastwork.toefl.ui.postAndPreTest.SessionFragment"
+        android:label="Session Fragment"
+        tools:layout="@layout/fragment_session" />
 
 
 </navigation>

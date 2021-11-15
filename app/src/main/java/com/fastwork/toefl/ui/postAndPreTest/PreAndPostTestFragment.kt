@@ -12,16 +12,21 @@ import android.widget.RadioButton
 import android.widget.SeekBar
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.fastwork.toefl.R
+import com.fastwork.toefl.data.local.model.ModelFullTest
 import com.fastwork.toefl.data.local.model.ModelSession
 import com.fastwork.toefl.data.local.model.Question
+import com.fastwork.toefl.data.local.model.ScoreType
 import com.fastwork.toefl.databinding.FragmentFullTestBinding
+import com.fastwork.toefl.utils.SCORE_TYPE_KEY
 import com.fastwork.toefl.utils.SESSION_KEY
 import com.fastwork.toefl.utils.TEST_CATEGORY_KEY
 import com.fastwork.toefl.utils.launchPeriodicAsync
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import org.koin.androidx.viewmodel.ext.android.viewModel
+import java.util.concurrent.TimeUnit
 
 class PreAndPostTestFragment : Fragment() {
 
@@ -39,7 +44,7 @@ class PreAndPostTestFragment : Fragment() {
 
     private val period: Long = 1000
     private var job = CoroutineScope(Dispatchers.Main).launchPeriodicAsync(period) {}
-    private val timerDuration = 21600000L
+    private val timerDuration = 1500000L
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -62,11 +67,22 @@ class PreAndPostTestFragment : Fragment() {
         timer = object : CountDownTimer(timerDuration, 1000L) {
             override fun onTick(millisUntilFinished: Long) {
                 val tvCount = binding.timer
-                tvCount.text = (millisUntilFinished / 1000).toString()
+                val millis: Long = millisUntilFinished
+                tvCount.text = String.format(
+                    "%02d:%02d",
+                    TimeUnit.MILLISECONDS.toMinutes(millis) - TimeUnit.HOURS.toMinutes(
+                        TimeUnit.MILLISECONDS.toHours(
+                            millis
+                        )
+                    ),
+                    TimeUnit.MILLISECONDS.toSeconds(millis) - TimeUnit.MINUTES.toSeconds(
+                        TimeUnit.MILLISECONDS.toMinutes(millis)
+                    )
+                )
             }
 
             override fun onFinish() {
-                // TODO: 15/11/2021
+                handleNextSession()
             }
 
         }.start()
@@ -80,14 +96,16 @@ class PreAndPostTestFragment : Fragment() {
         if (modelSession != null) {
             val session = modelSession?.session
             if (session == LISTENING_SESSION) {
+                binding.parentAudio.visibility = View.VISIBLE
                 viewModel.getListeningQuestion(category!!)
                 return
             }
             if (session == READING_SESSION) {
+                binding.parentPassage.visibility = View.VISIBLE
                 viewModel.getReadingQuestion(category!!)
                 return
             }
-            if (session == STRUCTURE_SESSIOn) {
+            if (session == STRUCTURE_SESSION) {
                 viewModel.getStructureQuestion(category!!)
                 return
             }
@@ -235,6 +253,9 @@ class PreAndPostTestFragment : Fragment() {
             setupViewQuestion()
             return
         }
+        if (currentQuestionPosition == questionData.size - 1) {
+           handleNextSession()
+        }
     }
 
     override fun onDestroy() {
@@ -242,6 +263,7 @@ class PreAndPostTestFragment : Fragment() {
         job.cancel()
         if (this::mp.isInitialized) {
             mp.release()
+            timer.cancel()
         }
     }
 
@@ -250,6 +272,7 @@ class PreAndPostTestFragment : Fragment() {
         job.cancel()
         if (this::mp.isInitialized) {
             mp.release()
+            timer.cancel()
         }
     }
 
@@ -326,12 +349,73 @@ class PreAndPostTestFragment : Fragment() {
         }
     }
 
+    private fun handleNextSession() {
+        val session = modelSession?.session
+        if (session == LISTENING_SESSION) {
+            val modelSession =
+                ModelSession(
+                    session = modelSession?.session,
+                    category = modelSession?.category,
+                    dataTest = ModelFullTest(listeningCorrect = getCorrectAnswer())
+                )
+            val bundle = Bundle().apply {
+                putSerializable(SESSION_KEY, modelSession)
+            }
+            findNavController().navigateUp()
+            findNavController().navigate(R.id.sessionFragment, bundle)
+            return
+        }
+        if (session == READING_SESSION) {
+            val modelSession =
+                ModelSession(
+                    session = modelSession?.session,
+                    category = modelSession?.category,
+                    dataTest = ModelFullTest(
+                        listeningCorrect = modelSession?.dataTest?.listeningCorrect,
+                        readingCorrect = getCorrectAnswer()
+                    )
+                )
+            val bundle = Bundle().apply {
+                putSerializable(SESSION_KEY, modelSession)
+            }
+            findNavController().navigateUp()
+            findNavController().navigate(R.id.sessionFragment, bundle)
+            return
+        }
+        if (session == STRUCTURE_SESSION) {
+            val modelSession =
+                ModelSession(
+                    session = modelSession?.session,
+                    category = modelSession?.category,
+                    dataTest = ModelFullTest(
+                        listeningCorrect = modelSession?.dataTest?.listeningCorrect,
+                        readingCorrect = modelSession?.dataTest?.readingCorrect,
+                        structureCorrect = getCorrectAnswer()
+                    )
+                )
+            val bundle = Bundle().apply {
+                putSerializable(SESSION_KEY, modelSession)
+            }
+            findNavController().navigateUp()
+            findNavController().navigate(R.id.sessionFragment, bundle)
+            return
+        }
+    }
+
+    private fun getCorrectAnswer(): Int {
+        var correctAnswer = 0
+        for (element in questionData) {
+            if (element.userAnswer == element.answer) {
+                correctAnswer++
+            }
+        }
+        return correctAnswer
+    }
+
     companion object {
         const val LISTENING_SESSION = "listening"
         const val READING_SESSION = "reading"
-        const val STRUCTURE_SESSIOn = "structure"
-        const val PRE_TEST = "pretest"
-        const val POST_TEST = "posttest"
+        const val STRUCTURE_SESSION = "structure"
     }
 
 }
