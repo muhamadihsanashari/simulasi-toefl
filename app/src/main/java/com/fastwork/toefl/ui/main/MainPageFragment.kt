@@ -8,7 +8,10 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.fastwork.toefl.R
+import com.fastwork.toefl.data.local.model.ModelDirection
 import com.fastwork.toefl.databinding.FragmentMainBinding
+import com.fastwork.toefl.ui.postAndPreTest.DirectionFragment
+import com.fastwork.toefl.utils.DIRECTION_KEY
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainPageFragment : Fragment() {
@@ -26,7 +29,6 @@ class MainPageFragment : Fragment() {
             viewModel = mainMenuViewModel
             lifecycleOwner = this@MainPageFragment
         }
-        mainMenuViewModel.getListParagraph()
         setupObserver()
         return binding.root
     }
@@ -34,6 +36,26 @@ class MainPageFragment : Fragment() {
     private fun setupObserver() {
         mainMenuViewModel.onPracticeClicked.observe(this, {
             findNavController().navigate(R.id.toPracticeFragment)
+        })
+        mainMenuViewModel.onPreTestClicked.observe(this, {
+            val bundle = Bundle().apply {
+                val data = ModelDirection(
+                    DirectionFragment.PRETEST_TYPE,
+                    mainMenuViewModel.preTestChance
+                )
+                putSerializable(DIRECTION_KEY, data)
+            }
+            findNavController().navigate(R.id.directionFragment, bundle)
+        })
+        mainMenuViewModel.onPostTestClicked.observe(this, {
+            val bundle = Bundle().apply {
+                val data = ModelDirection(
+                    DirectionFragment.POSTTEST_TYPE,
+                    mainMenuViewModel.postTestChance
+                )
+                putSerializable(DIRECTION_KEY, data)
+            }
+            findNavController().navigate(R.id.directionFragment, bundle)
         })
     }
 }

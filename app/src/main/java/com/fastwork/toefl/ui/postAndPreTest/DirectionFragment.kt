@@ -1,5 +1,6 @@
 package com.fastwork.toefl.ui.postAndPreTest
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -25,17 +26,27 @@ class DirectionFragment : Fragment() {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_direction, container, false)
         dataDirection = arguments?.get(DIRECTION_KEY) as ModelDirection
         setupData()
+        setupListener()
         return binding.root
     }
 
+    @SuppressLint("SetTextI18n")
     private fun setupData() {
         if (dataDirection != null) {
             if (dataDirection?.category == PRETEST_TYPE) {
-                binding.tvTitle.text = "Pre Test"
+                binding.tvTitle.text = getString(R.string.label_pre_test)
+                binding.textDirection.text = getString(R.string.pre_test_direction)
             } else if (dataDirection?.category == POSTTEST_TYPE) {
-                binding.tvTitle.text = "Post Test"
+                binding.tvTitle.text = getString(R.string.label_post_test)
+                binding.textDirection.text = getString(R.string.post_test_direction)
             }
             binding.chanceCount.text = dataDirection?.chanceCount.toString() + " Times"
+        }
+    }
+
+    private fun setupListener() {
+        binding.back.setOnClickListener {
+            activity?.onBackPressed()
         }
     }
 

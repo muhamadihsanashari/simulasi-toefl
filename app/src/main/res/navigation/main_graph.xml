@@ -90,6 +90,7 @@
 
     <fragment
         android:id="@+id/sessioFragment"
+        android:name="com.fastwork.toefl.ui.postAndPreTest.PreAndPostTestFragment"
         android:label="Session Fragment"
         tools:layout="@layout/fragment_session" />
 

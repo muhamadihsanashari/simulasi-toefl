@@ -1,21 +1,29 @@
 package com.fastwork.toefl.ui.main
 
+import android.content.SharedPreferences
 import com.fastwork.toefl.core.BaseViewModel
-import com.fastwork.toefl.data.repository.HomeRepository
+import com.fastwork.toefl.utils.POST_TEST_CHANCE_KEY
+import com.fastwork.toefl.utils.PRE_TEST_CHANCE_KEY
 import com.fastwork.toefl.utils.SingleLiveEvent
-import kotlinx.coroutines.launch
 
-class MainViewModel(private val homeRepository: HomeRepository) : BaseViewModel() {
+class MainViewModel(private val sharedPreferences: SharedPreferences) : BaseViewModel() {
 
     val onPracticeClicked = SingleLiveEvent<Void>()
+    val onPreTestClicked = SingleLiveEvent<Void>()
+    val onPostTestClicked = SingleLiveEvent<Void>()
 
-    fun getListParagraph() {
-        launch {
-            homeRepository.getListParagraph()
-        }
-    }
-
-    fun onPracticeClicked(){
+    fun onPracticeClicked() {
         onPracticeClicked.call()
     }
+
+    fun onPreTestClicked() {
+        onPreTestClicked.call()
+    }
+
+    fun onPostTestClicked() {
+        onPostTestClicked.call()
+    }
+
+    val preTestChance = sharedPreferences.getInt(PRE_TEST_CHANCE_KEY, 0)
+    val postTestChance = sharedPreferences.getInt(POST_TEST_CHANCE_KEY, 0)
 }
