@@ -24,7 +24,7 @@ val viewModelModule = module {
         PracticeTestViewModel(get())
     }
     viewModel {
-        ScoreViewModel(get())
+        ScoreViewModel(get(),get())
     }
     viewModel {
         SplashViewModel(get(), get())
