@@ -15,7 +15,10 @@ class BaseApplication : Application(), Configuration.Provider {
         Timber.plant(Timber.DebugTree())
         startKoin {
             androidContext(this@BaseApplication)
-            modules(databaseModule, networkModule, apiModule, repositoryModule, viewModelModule)
+            modules(
+                databaseModule, networkModule, apiModule, repositoryModule, viewModelModule,
+                appModule
+            )
         }
     }
 

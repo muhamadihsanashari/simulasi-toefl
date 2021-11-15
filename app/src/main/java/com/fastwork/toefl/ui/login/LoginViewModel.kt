@@ -1,17 +1,22 @@
 package com.fastwork.toefl.ui.login
 
+import android.content.SharedPreferences
 import android.text.Editable
 import androidx.databinding.ObservableField
 import androidx.lifecycle.MutableLiveData
 import com.fastwork.toefl.R
 import com.fastwork.toefl.core.BaseViewModel
 import com.fastwork.toefl.data.repository.UserRepository
+import com.fastwork.toefl.utils.USER_ID_KEY
 import com.fastwork.toefl.utils.Validator.isPasswordValid
 import com.fastwork.toefl.utils.Validator.isUsernameValid
 import kotlinx.coroutines.launch
 
 
-class LoginViewModel(private val userRepository: UserRepository) : BaseViewModel() {
+class LoginViewModel(
+    private val userRepository: UserRepository,
+    private val sharedPreferences: SharedPreferences
+) : BaseViewModel() {
 
 
     var email = ObservableField<String>()
@@ -22,7 +27,9 @@ class LoginViewModel(private val userRepository: UserRepository) : BaseViewModel
 
     fun btnLoginClick() {
         launch {
-            if (userRepository.login(email.get().toString(), password.get().toString()) != null) {
+            val result = userRepository.login(email.get().toString(), password.get().toString())
+            if (result != null) {
+                sharedPreferences.edit().putInt(USER_ID_KEY, result.id).apply()
                 loginResultState.value = LoginResultState(success = R.string.login_success)
             } else {
                 loginResultState.value = LoginResultState(error = R.string.login_failed)

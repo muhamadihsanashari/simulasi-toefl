@@ -10,12 +10,14 @@ import androidx.navigation.fragment.findNavController
 import com.fastwork.toefl.R
 import com.fastwork.toefl.databinding.FragmentSplashBinding
 import kotlinx.coroutines.*
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
 @DelicateCoroutinesApi
 class SplashScreen : Fragment() {
 
     lateinit var binding: FragmentSplashBinding
+    private val splashViewModel: SplashViewModel by viewModel()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -32,7 +34,11 @@ class SplashScreen : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         GlobalScope.launch(Dispatchers.Main) {
             delay(3000)
-            findNavController().navigate(R.id.loginFragment)
+            if (!splashViewModel.isLogin) {
+                findNavController().navigate(R.id.loginFragment)
+            } else {
+                findNavController().navigate(R.id.mainFragment)
+            }
         }
     }
 }
