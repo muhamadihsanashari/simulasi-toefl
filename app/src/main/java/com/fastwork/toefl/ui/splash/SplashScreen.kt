@@ -43,9 +43,9 @@ class SplashScreen : Fragment() {
             splashViewModel.getAllUser()
             splashViewModel.setChancesPreAndPostTest()
             if (!splashViewModel.isLogin) {
-                findNavController().navigate(R.id.loginFragment)
+                findNavController().navigate(R.id.action_to_login_fragment)
             } else {
-                findNavController().navigate(R.id.mainFragment)
+                findNavController().navigate(R.id.action_loginFragment_to_mainFragment)
             }
         }
     }
