@@ -13,10 +13,7 @@ import androidx.work.workDataOf
 import com.fastwork.toefl.data.local.database.dao.*
 import com.fastwork.toefl.data.local.model.*
 import com.fastwork.toefl.utils.*
-import com.fastwork.toefl.workers.ListeningSeedWorker
-import com.fastwork.toefl.workers.ParagraphSeedWorker
-import com.fastwork.toefl.workers.ReadingSeedWorker
-import com.fastwork.toefl.workers.StructureSeedWorker
+import com.fastwork.toefl.workers.*
 
 @Database(
     entities = [Product::class, ParagraphReading::class, Reading::class, Structure::class, Listening::class, Score::class, User::class],
@@ -67,10 +64,14 @@ abstract class AppDatabase() : RoomDatabase() {
                                 OneTimeWorkRequestBuilder<ListeningSeedWorker>()
                                     .setInputData(workDataOf(ListeningSeedWorker.KEY_FILENAME to LISTENING_FILE_DATA_NAME))
                                     .build()
+                            val requestSeedUser = OneTimeWorkRequestBuilder<UserSeedWorker>()
+                                .setInputData(workDataOf(UserSeedWorker.KEY_FILENAME to USER_FILE_DATA_NAME))
+                                .build()
                             listRequest.add(requestSeedParagraph)
                             listRequest.add(requestSeedReading)
                             listRequest.add(requestSeedStucture)
                             listRequest.add(requestSeedListening)
+                            listRequest.add(requestSeedUser)
                             WorkManager.getInstance(context).enqueue(listRequest)
                         }
                     }

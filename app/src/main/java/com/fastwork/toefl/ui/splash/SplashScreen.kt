@@ -32,7 +32,7 @@ class SplashScreen : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         GlobalScope.launch(Dispatchers.Main) {
             delay(3000)
-            findNavController().navigate(R.id.action_loginFragment_to_mainFragment)
+            findNavController().navigate(R.id.loginFragment)
         }
     }
 }

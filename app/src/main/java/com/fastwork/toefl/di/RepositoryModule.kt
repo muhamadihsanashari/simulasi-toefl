@@ -34,4 +34,6 @@ val repositoryModule = module {
 
     single<ScoreRepository> { ScoreRepositoryImpl(get()) }
 
+    single<UserRepository> { UserRepositoryImpl(get()) }
+
 }

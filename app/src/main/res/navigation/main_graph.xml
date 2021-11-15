@@ -76,5 +76,11 @@
         android:label="Score Result Fragment"
         tools:layout="@layout/fragment_score_result" />
 
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.fastwork.toefl.ui.login.LoginFragment"
+        android:label="Login Fragment"
+        tools:layout="@layout/fragment_login" />
+
 
 </navigation>

@@ -1,11 +1,9 @@
 package com.fastwork.toefl.utils
 
-import android.util.Patterns
-
 object Validator {
 
-    fun isEmailValid(username: String): Boolean {
-        return Patterns.EMAIL_ADDRESS.matcher(username).matches()
+    fun isUsernameValid(username: String): Boolean {
+        return username.length > 5
     }
 
     fun isPasswordValid(password: String): Boolean {
