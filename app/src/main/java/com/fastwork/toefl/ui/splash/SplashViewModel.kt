@@ -2,11 +2,16 @@ package com.fastwork.toefl.ui.splash
 
 import android.content.SharedPreferences
 import com.fastwork.toefl.core.BaseViewModel
+import com.fastwork.toefl.data.repository.UserRepository
 import com.fastwork.toefl.utils.POST_TEST_CHANCE_KEY
 import com.fastwork.toefl.utils.PRE_TEST_CHANCE_KEY
 import com.fastwork.toefl.utils.USER_ID_KEY
+import kotlinx.coroutines.launch
 
-class SplashViewModel(private val sharedPreferences: SharedPreferences) : BaseViewModel() {
+class SplashViewModel(
+    private val sharedPreferences: SharedPreferences,
+    private val userRepository: UserRepository
+) : BaseViewModel() {
 
     val isLogin = sharedPreferences.getInt(USER_ID_KEY, 0) != 0
 
@@ -17,6 +22,12 @@ class SplashViewModel(private val sharedPreferences: SharedPreferences) : BaseVi
         val postChanceCount = if (currentPostChance == 0) 3 else currentPostChance
         sharedPreferences.edit().putInt(PRE_TEST_CHANCE_KEY, preChanceCount).apply()
         sharedPreferences.edit().putInt(POST_TEST_CHANCE_KEY, postChanceCount).apply()
+    }
+
+    fun getAllUser() {
+        launch {
+            userRepository.getAllUser()
+        }
     }
 
 }

@@ -20,5 +20,17 @@ class UserRepositoryImpl(private val userDao: UserDao) : UserRepository {
         return user
     }
 
+    override suspend fun getAllUser(): List<User> {
+        val user = mutableListOf<User>()
+        withContext(Dispatchers.IO) {
+            try {
+                user.addAll(userDao.getAll())
+            } catch (e: Exception) {
+                Timber.e(e.message.toString())
+            }
+        }
+        return user
+    }
+
 
 }

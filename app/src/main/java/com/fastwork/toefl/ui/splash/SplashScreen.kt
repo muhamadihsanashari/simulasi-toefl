@@ -33,7 +33,14 @@ class SplashScreen : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         GlobalScope.launch(Dispatchers.Main) {
+            delay(2000)
+            binding.logo.visibility = View.GONE
+            binding.progress.visibility = View.VISIBLE
+            binding.tvMessage.visibility = View.VISIBLE
+        }
+        GlobalScope.launch(Dispatchers.Main) {
             delay(3000)
+            splashViewModel.getAllUser()
             splashViewModel.setChancesPreAndPostTest()
             if (!splashViewModel.isLogin) {
                 findNavController().navigate(R.id.loginFragment)

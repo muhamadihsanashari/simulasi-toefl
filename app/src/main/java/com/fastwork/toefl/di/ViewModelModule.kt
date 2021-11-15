@@ -27,7 +27,7 @@ val viewModelModule = module {
         ScoreViewModel(get())
     }
     viewModel {
-        SplashViewModel(get())
+        SplashViewModel(get(), get())
     }
     viewModel {
         PreAndPostTestViewModel(get(), get())

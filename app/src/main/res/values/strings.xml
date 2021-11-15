@@ -68,5 +68,6 @@
     <string name="your_score_is_not_saved">your score is not saved</string>
     <string name="pre_test_direction">In the pretest menu you are only given the opportunity 3 times to do the TOEFL practice questions. In this session your score will be saved</string>
     <string name="post_test_direction">In the post test menu you are only given the opportunity 3 times to do the TOEFL practice questions. In this session your score will be saved</string>
+    <string name="preparing_local_database">Preparing Local Database ..</string>
 
 </resources>
