@@ -34,6 +34,7 @@ class SplashScreen : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         GlobalScope.launch(Dispatchers.Main) {
             delay(3000)
+            splashViewModel.setChancesPreAndPostTest()
             if (!splashViewModel.isLogin) {
                 findNavController().navigate(R.id.loginFragment)
             } else {

@@ -61,5 +61,10 @@
     <string name="main_menu">Main Menu</string>
     <string name="selesai">Selesai</string>
     <string name="next">Next</string>
+    <string name="label_your_chance">Your Chance :</string>
+    <string name="exit">Exit</string>
+    <string name="next_session">Next Session</string>
+    <string name="are_you_sure_you_want_to_nexit_this_session">Are you sure you want to\nexit this session?</string>
+    <string name="your_score_is_not_saved">your score is not saved</string>
 
 </resources>

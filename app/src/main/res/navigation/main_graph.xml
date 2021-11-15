@@ -82,5 +82,21 @@
         android:label="Login Fragment"
         tools:layout="@layout/fragment_login" />
 
+    <fragment
+        android:id="@+id/directionFragment"
+        android:name="com.fastwork.toefl.ui.postAndPreTest.DirectionFragment"
+        android:label="direction fragment"
+        tools:layout="@layout/fragment_direction" />
+
+    <fragment
+        android:id="@+id/sessioFragment"
+        android:label="Session Fragment"
+        tools:layout="@layout/fragment_session" />
+
+    <dialog
+        android:id="@+id/dialogExitSession"
+        android:label="dialog exit session"
+        tools:layout="@layout/dialog_exit_session" />
+
 
 </navigation>
