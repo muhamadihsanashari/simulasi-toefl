@@ -2,6 +2,7 @@ package com.fastwork.toefl.di
 
 import com.fastwork.toefl.ui.login.LoginViewModel
 import com.fastwork.toefl.ui.main.MainViewModel
+import com.fastwork.toefl.ui.postAndPreTest.PreAndPostTestViewModel
 import com.fastwork.toefl.ui.practice.PracticeViewModel
 import com.fastwork.toefl.ui.practice.test.PracticeTestViewModel
 import com.fastwork.toefl.ui.score.ScoreViewModel
@@ -27,5 +28,8 @@ val viewModelModule = module {
     }
     viewModel {
         SplashViewModel(get())
+    }
+    viewModel {
+        PreAndPostTestViewModel(get(), get())
     }
 }

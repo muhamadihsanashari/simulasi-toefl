@@ -32,7 +32,7 @@ class DirectionFragment : Fragment() {
         if (dataDirection != null) {
             if (dataDirection?.category == PRETEST_TYPE) {
                 binding.tvTitle.text = "Pre Test"
-            } else {
+            } else if (dataDirection?.category == POSTTEST_TYPE) {
                 binding.tvTitle.text = "Post Test"
             }
             binding.chanceCount.text = dataDirection?.chanceCount.toString() + " Times"

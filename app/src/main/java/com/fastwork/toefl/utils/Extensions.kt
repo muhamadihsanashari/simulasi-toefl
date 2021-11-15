@@ -6,6 +6,10 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.fastwork.toefl.R
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.async
+import kotlinx.coroutines.cancel
+import kotlinx.coroutines.delay
 
 val Any.TAG: String
     get() {
@@ -39,4 +43,15 @@ inline fun FragmentManager.inTransaction(func: FragmentTransaction.() -> Unit) {
     val fragmentTransaction = beginTransaction()
     fragmentTransaction.func()
     fragmentTransaction.commit()
+}
+
+fun CoroutineScope.launchPeriodicAsync(repeatMillis: Long, action: () -> Unit) = async {
+    if (repeatMillis > 0) {
+        while (true) {
+            action()
+            delay(repeatMillis)
+        }
+    } else {
+        cancel()
+    }
 }

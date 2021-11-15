@@ -19,6 +19,7 @@ import com.fastwork.toefl.data.local.model.TestType
 import com.fastwork.toefl.databinding.FragmentTestPracticeBinding
 import com.fastwork.toefl.utils.SCORE_TYPE_KEY
 import com.fastwork.toefl.utils.TEST_TYPE_KEY
+import com.fastwork.toefl.utils.launchPeriodicAsync
 import kotlinx.coroutines.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -93,17 +94,6 @@ class PracticeTestFragment : Fragment() {
             if (!mp.isPlaying) {
                 binding.play.setBackgroundResource(R.drawable.ic_baseline_play_arrow_24)
             }
-        }
-    }
-
-    private fun CoroutineScope.launchPeriodicAsync(repeatMillis: Long, action: () -> Unit) = async {
-        if (repeatMillis > 0) {
-            while (true) {
-                action()
-                delay(period)
-            }
-        } else {
-            cancel()
         }
     }
 
