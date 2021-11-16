@@ -31,6 +31,7 @@
         <entry key="app/src/main/res/layout/dialog_exit_session.xml" value="0.253125" />
         <entry key="app/src/main/res/layout/fragment_about.xml" value="0.253125" />
         <entry key="app/src/main/res/layout/fragment_direction.xml" value="0.253125" />
+        <entry key="app/src/main/res/layout/fragment_download.xml" value="0.253125" />
         <entry key="app/src/main/res/layout/fragment_full_test.xml" value="0.253125" />
         <entry key="app/src/main/res/layout/fragment_list_score.xml" value="0.2075802601044781" />
         <entry key="app/src/main/res/layout/fragment_main.xml" value="0.31840965013381395" />

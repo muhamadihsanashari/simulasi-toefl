@@ -69,5 +69,8 @@ class MainPageFragment : Fragment() {
         mainMenuViewModel.onClickAbout.observe(this, {
             findNavController().navigate(R.id.aboutFragment)
         })
+        mainMenuViewModel.onDownloadClicked.observe(this, {
+            findNavController().navigate(R.id.fragmentDownload)
+        })
     }
 }
