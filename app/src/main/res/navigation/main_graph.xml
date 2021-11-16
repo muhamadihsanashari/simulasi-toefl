@@ -130,5 +130,17 @@
         android:label="Testing Landing Fragment"
         tools:layout="@layout/fragment_testing_landing" />
 
+    <fragment
+        android:id="@+id/scoreLanding"
+        android:name="com.fastwork.toefl.ui.score.ScoreLandingFragment"
+        android:label="Score Landing Fragment"
+        tools:layout="@layout/fragment_score_landing"/>
+
+    <fragment
+        android:id="@+id/scoreListFragment"
+        android:name="com.fastwork.toefl.ui.score.ScoreListFragment"
+        android:label="Score List Fragment"
+        tools:layout="@layout/fragment_list_score"/>
+
 
 </navigation>

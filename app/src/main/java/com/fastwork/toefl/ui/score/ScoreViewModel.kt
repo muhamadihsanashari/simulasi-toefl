@@ -1,6 +1,8 @@
 package com.fastwork.toefl.ui.score
 
 import android.content.SharedPreferences
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import com.fastwork.toefl.core.BaseViewModel
 import com.fastwork.toefl.data.local.model.Score
 import com.fastwork.toefl.data.local.model.ScoreType
@@ -20,6 +22,9 @@ class ScoreViewModel(
 ) : BaseViewModel() {
 
     val successInsert = SingleLiveEvent<Int>()
+
+    private val _scoreListLiveData by lazy { MutableLiveData<List<Score>>() }
+    val scoreListLiveData: LiveData<List<Score>> by lazy { _scoreListLiveData }
 
     fun insertData(scoreType: ScoreType?) {
         if (scoreType?.category == DirectionFragment.PRETEST_TYPE) {
@@ -48,5 +53,23 @@ class ScoreViewModel(
             }
         }
     }
+
+    fun getScores(category: String?) {
+        launch {
+            try {
+                val result =
+                    scoreRepository.getAllScores(
+                        sharedPreferences.getInt(USER_ID_KEY, 0),
+                        category!!
+                    )
+                if (result.isNotEmpty()) {
+                    _scoreListLiveData.postValue(result)
+                }
+            } catch (e: Exception) {
+                Timber.e(e.message.toString())
+            }
+        }
+    }
+
 
 }

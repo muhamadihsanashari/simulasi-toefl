@@ -78,5 +78,15 @@
     <string name="structure">Structure</string>
     <string name="complete_test_toefl_1">Complete Test TOEFL 1</string>
     <string name="complete_test_toefl_2">Complete Test TOEFL 2</string>
+    <string name="text_score_landing">On the score menu you can see the history of the scores from the practice questions that are done.</string>
+    <string name="complete_test_2">Complete Test 2</string>
+    <string name="complete_test_1">Complete Test 1</string>
+    <string name="individual_test_structure">Individual Test Structure</string>
+    <string name="individual_test_reading">Individual Test Reading</string>
+    <string name="individual_test_listening">Individual Test Listening</string>
+    <string name="practice_structure">Practice Structure</string>
+    <string name="practice_reading">Practice Reading</string>
+    <string name="practice_listening">Practice Listening</string>
+    <string name="reset_score">Reset Score</string>
 
 </resources>
