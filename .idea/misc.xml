@@ -29,6 +29,7 @@
         <entry key="app/src/main/res/drawable/ic_listening.xml" value="0.26927083333333335" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.253125" />
         <entry key="app/src/main/res/layout/dialog_exit_session.xml" value="0.253125" />
+        <entry key="app/src/main/res/layout/fragment_about.xml" value="0.253125" />
         <entry key="app/src/main/res/layout/fragment_direction.xml" value="0.253125" />
         <entry key="app/src/main/res/layout/fragment_full_test.xml" value="0.253125" />
         <entry key="app/src/main/res/layout/fragment_list_score.xml" value="0.2075802601044781" />

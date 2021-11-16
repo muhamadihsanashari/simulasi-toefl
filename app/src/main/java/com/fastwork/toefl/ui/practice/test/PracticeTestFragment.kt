@@ -224,7 +224,7 @@ class PracticeTestFragment : Fragment() {
 
     private fun setupListener() {
         binding.btnExit.setOnClickListener {
-            activity?.onBackPressed()
+            findNavController().navigate(R.id.dialogExitSession)
         }
         binding.btnNext.setOnClickListener {
             handleNextQuestion()

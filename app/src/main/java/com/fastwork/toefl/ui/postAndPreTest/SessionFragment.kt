@@ -49,9 +49,6 @@ class SessionFragment : Fragment() {
     }
 
     private fun setupListener() {
-        binding.btnPrevious.setOnClickListener {
-            findNavController().navigate(R.id.dialogExitSession)
-        }
         binding.btnNext.setOnClickListener {
             if (dataTest?.session == FullTestFragment.LISTENING_SESSION) {
                 val bundle = Bundle().apply {
@@ -86,6 +83,9 @@ class SessionFragment : Fragment() {
                 }
                 findNavController().navigateUp()
                 findNavController().navigate(R.id.scoreResultFragment, bundle)
+            }
+            binding.btnExit.setOnClickListener {
+                findNavController().navigate(R.id.dialogExitSession)
             }
         }
     }

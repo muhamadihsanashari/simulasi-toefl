@@ -195,6 +195,7 @@
                     android:background="@drawable/bg_white_gray_stroke"
                     android:fontFamily="@font/poppins_medium"
                     android:text="@string/label_about"
+                    android:onClick="@{()->viewModel.onClickAbout()}"
                     android:textAllCaps="false"
                     app:layout_constraintBottom_toBottomOf="parent" />
 

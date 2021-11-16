@@ -14,6 +14,7 @@ class MainViewModel(private val sharedPreferences: SharedPreferences) : BaseView
     val onTestingClicked = SingleLiveEvent<Void>()
     val onScoreClicked = SingleLiveEvent<Void>()
     val onProfileClicked = SingleLiveEvent<Void>()
+    val onClickAbout = SingleLiveEvent<Void>()
 
     fun onPracticeClicked() {
         onPracticeClicked.call()
@@ -37,6 +38,10 @@ class MainViewModel(private val sharedPreferences: SharedPreferences) : BaseView
 
     fun onProfileClicked(){
         onProfileClicked.call()
+    }
+
+    fun onClickAbout(){
+        onClickAbout.call()
     }
 
     val preTestChance = sharedPreferences.getInt(PRE_TEST_CHANCE_KEY, 0)

@@ -66,5 +66,8 @@ class MainPageFragment : Fragment() {
         mainMenuViewModel.onProfileClicked.observe(this, {
             findNavController().navigate(R.id.profileFragment)
         })
+        mainMenuViewModel.onClickAbout.observe(this, {
+            findNavController().navigate(R.id.aboutFragment)
+        })
     }
 }

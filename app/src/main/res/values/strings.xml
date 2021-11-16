@@ -93,5 +93,8 @@
     <string name="NIM">171011401469</string>
     <string name="gelombang_12">Gelombang 12</string>
     <string name="logout">Logout</string>
+    <string name="about">About</string>
+    <string name="toefl_simulation_is_an_android_based_toefl_training_application_the_scoring_system_in_this_simulation_is_adopted_from_paper_based_toefl_prediction_pbt">TOEFL Simulation is an Android-based TOEFL training application, the scoring system in this simulation is adopted from paper-based TOEFL prediction (PBT).</string>
+    <string name="testing">Testing</string>
 
 </resources>

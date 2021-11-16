@@ -28,6 +28,9 @@ class ScoreLandingFragment : Fragment() {
 
     private fun setupListener() {
         var category: String = ""
+        binding.back.setOnClickListener {
+            activity?.onBackPressed()
+        }
         binding.btnListening.setOnClickListener {
             category = LISTENING
             navigateToScoreList(category)

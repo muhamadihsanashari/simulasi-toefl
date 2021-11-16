@@ -327,7 +327,7 @@ class FullTestFragment : Fragment() {
 
     private fun setupListener() {
         binding.btnExit.setOnClickListener {
-            activity?.onBackPressed()
+            handleExitSession()
         }
         binding.btnNext.setOnClickListener {
             handleNextQuestion()
@@ -410,11 +410,14 @@ class FullTestFragment : Fragment() {
         return correctAnswer
     }
 
+    fun handleExitSession(){
+        findNavController().navigate(R.id.dialogExitSession)
+    }
+
     companion object {
         const val LISTENING_SESSION = "listening"
         const val READING_SESSION = "reading"
         const val STRUCTURE_SESSION = "structure"
-        const val FULLTEST_ONE = "fulltest1"
     }
 
 }

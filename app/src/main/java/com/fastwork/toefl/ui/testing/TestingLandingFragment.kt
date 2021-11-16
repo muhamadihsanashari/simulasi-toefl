@@ -36,6 +36,9 @@ class TestingLandingFragment : Fragment() {
     }
 
     private fun setupListener() {
+        binding.back.setOnClickListener {
+            activity?.onBackPressed()
+        }
         binding.btnListening.setOnClickListener {
             val bundle = Bundle().apply {
                 val dataTest = TestType(

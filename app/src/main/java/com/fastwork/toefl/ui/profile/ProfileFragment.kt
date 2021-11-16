@@ -29,6 +29,9 @@ class ProfileFragment : Fragment() {
         profileViewModel.logoutEvent.observe(this, {
             findNavController().navigate(R.id.action_logout)
         })
+        binding.btnMainMenu.setOnClickListener {
+            activity?.onBackPressed()
+        }
         return binding.root
     }
 }

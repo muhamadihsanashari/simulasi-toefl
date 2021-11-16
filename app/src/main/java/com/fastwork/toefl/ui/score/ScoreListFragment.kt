@@ -37,6 +37,9 @@ class ScoreListFragment : Fragment() {
     }
 
     private fun setupListener() {
+        binding.back.setOnClickListener {
+            activity?.onBackPressed()
+        }
         binding.btnClear.setOnClickListener {
             viewModel.resetScores(category)
         }
