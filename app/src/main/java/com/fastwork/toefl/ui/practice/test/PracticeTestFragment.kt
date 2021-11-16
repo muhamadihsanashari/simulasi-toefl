@@ -3,6 +3,7 @@ package com.fastwork.toefl.ui.practice.test
 import android.annotation.SuppressLint
 import android.media.MediaPlayer
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.text.method.ScrollingMovementMethod
 import android.view.LayoutInflater
 import android.view.View
@@ -22,6 +23,7 @@ import com.fastwork.toefl.utils.TEST_TYPE_KEY
 import com.fastwork.toefl.utils.launchPeriodicAsync
 import kotlinx.coroutines.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
+import java.util.concurrent.TimeUnit
 
 
 class PracticeTestFragment : Fragment() {
@@ -32,12 +34,13 @@ class PracticeTestFragment : Fragment() {
     private val questionData = arrayListOf<Question>()
     private var currentQuestionPosition: Int = 0
     private var currentUserAnswer = 0
-
+    private lateinit var timer: CountDownTimer
     private lateinit var mp: MediaPlayer
     private var totalTime: Int = 0
 
     private val period: Long = 1000
     private var job = CoroutineScope(Dispatchers.Main).launchPeriodicAsync(period) {}
+    private val timerDuration = 1500000L
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -136,11 +139,38 @@ class PracticeTestFragment : Fragment() {
                 viewModel.getStructureQuestion(it)
             }
             binding.parentPassage.visibility = View.GONE
+            return
         }
         if (testType?.category == LISTENING) {
             testType?.subCategory?.let {
                 binding.parentAudio.visibility = View.VISIBLE
                 viewModel.getListeningQuestion(it)
+            }
+            return
+        }
+        if (testType?.category == INDIVIDUAL_TEST_LISTENING) {
+            testType?.subCategory?.let {
+                binding.timer.visibility = View.VISIBLE
+                binding.parentAudio.visibility = View.VISIBLE
+                viewModel.getListeningQuestion(it)
+                setupTimer()
+            }
+            return
+        }
+        if (testType?.category == INDIVIDUAL_TEST_STRUCTURE) {
+            testType?.subCategory?.let {
+                binding.timer.visibility = View.VISIBLE
+                binding.parentPassage.visibility = View.GONE
+                viewModel.getStructureQuestion(it)
+                setupTimer()
+            }
+        }
+        if (testType?.category == INDIVIDUAL_TEST_READING) {
+            testType?.subCategory?.let {
+                binding.timer.visibility = View.VISIBLE
+                binding.parentPassage.visibility = View.VISIBLE
+                viewModel.getReadingQuestion(it)
+                setupTimer()
             }
         }
     }
@@ -251,13 +281,17 @@ class PracticeTestFragment : Fragment() {
         }
         if (currentQuestionPosition == questionData.size - 1) {
             binding.btnNext.text = resources.getString(R.string.selesai)
-            val bundle = Bundle().apply {
-                val dataScore = ScoreType(category = testType!!.category, score = getScore())
-                putSerializable(SCORE_TYPE_KEY, dataScore)
-            }
-            findNavController().navigateUp()
-            findNavController().navigate(R.id.scoreResultFragment, bundle)
+            toScoreResult()
         }
+    }
+
+    private fun toScoreResult() {
+        val bundle = Bundle().apply {
+            val dataScore = ScoreType(category = testType!!.category, score = getScore())
+            putSerializable(SCORE_TYPE_KEY, dataScore)
+        }
+        findNavController().navigateUp()
+        findNavController().navigate(R.id.scoreResultFragment, bundle)
     }
 
     private fun getScore(): Int {
@@ -267,7 +301,7 @@ class PracticeTestFragment : Fragment() {
                 numberOfCorrect++
             }
         }
-        val result: Double = numberOfCorrect.toDouble() / questionData.size * 100
+        val result: Double = numberOfCorrect.toDouble() / questionData.size * 1000
         return result.toInt()
     }
 
@@ -330,7 +364,36 @@ class PracticeTestFragment : Fragment() {
         }
     }
 
+    private fun setupTimer() {
+        timer = object : CountDownTimer(timerDuration, 1000L) {
+            override fun onTick(millisUntilFinished: Long) {
+                val tvCount = binding.timer
+                val millis: Long = millisUntilFinished
+                tvCount.text = String.format(
+                    "%02d:%02d",
+                    TimeUnit.MILLISECONDS.toMinutes(millis) - TimeUnit.HOURS.toMinutes(
+                        TimeUnit.MILLISECONDS.toHours(
+                            millis
+                        )
+                    ),
+                    TimeUnit.MILLISECONDS.toSeconds(millis) - TimeUnit.MINUTES.toSeconds(
+                        TimeUnit.MILLISECONDS.toMinutes(millis)
+                    )
+                )
+            }
+
+            override fun onFinish() {
+                toScoreResult()
+            }
+
+        }.start()
+    }
+
     companion object {
+        const val INDIVIDUAL_TEST_LISTENING = "individual test listening"
+        const val INDIVIDUAL_TEST_READING = "individual test reading"
+        const val INDIVIDUAL_TEST_STRUCTURE = "individual test structure"
+        const val INDIVIDUAL_SUB_CATEGORY = "fulltest1"
         const val LISTENING = "listening"
         const val READING = "reading"
         const val STRUCTURE = "structure"

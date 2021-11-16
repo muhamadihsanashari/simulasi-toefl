@@ -24,12 +24,16 @@
         <entry key="..\:/Users/Rizky Nalandya Fauzi/work/fastwork/toefl/app/src/main/res/layout/fragment_test_practice.xml" value="0.33" />
         <entry key="app/src/main/res/drawable/bg_score.xml" value="0.17777777777777778" />
         <entry key="app/src/main/res/drawable/bg_white_7_rad.xml" value="0.17777777777777778" />
+        <entry key="app/src/main/res/drawable/ic_individual_test.xml" value="0.17777777777777778" />
+        <entry key="app/src/main/res/drawable/ic_listening.xml" value="0.26927083333333335" />
         <entry key="app/src/main/res/layout/fragment_direction.xml" value="0.253125" />
+        <entry key="app/src/main/res/layout/fragment_full_test.xml" value="0.253125" />
         <entry key="app/src/main/res/layout/fragment_main.xml" value="0.14537037037037037" />
         <entry key="app/src/main/res/layout/fragment_practice.xml" value="0.14537037037037037" />
         <entry key="app/src/main/res/layout/fragment_score_result.xml" value="0.253125" />
         <entry key="app/src/main/res/layout/fragment_session.xml" value="0.253125" />
         <entry key="app/src/main/res/layout/fragment_test_practice.xml" value="0.2824074074074074" />
+        <entry key="app/src/main/res/layout/fragment_testing_landing.xml" value="0.253125" />
         <entry key="app/src/main/res/menu/main_navigation_menu.xml" value="0.253125" />
       </map>
     </option>

@@ -124,5 +124,11 @@
         android:label="Session Fragment"
         tools:layout="@layout/fragment_session" />
 
+    <fragment
+        android:id="@+id/fragmentTestinLanding"
+        android:name="com.fastwork.toefl.ui.testing.TestingLandingFragment"
+        android:label="Testing Landing Fragment"
+        tools:layout="@layout/fragment_testing_landing" />
+
 
 </navigation>

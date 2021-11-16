@@ -37,6 +37,9 @@ class MainPageFragment : Fragment() {
         mainMenuViewModel.onPracticeClicked.observe(this, {
             findNavController().navigate(R.id.toPracticeFragment)
         })
+        mainMenuViewModel.onTestingClicked.observe(this, {
+            findNavController().navigate(R.id.fragmentTestinLanding)
+        })
         mainMenuViewModel.onPreTestClicked.observe(this, {
             val bundle = Bundle().apply {
                 val data = ModelDirection(

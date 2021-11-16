@@ -159,6 +159,5 @@ class PracticeFragment : Fragment() {
         const val LISTENING = 0
         const val READING = 1
         const val STURCTURE = 2
-
     }
 }

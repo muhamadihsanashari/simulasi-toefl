@@ -73,5 +73,10 @@
     <string name="reading_session_complete">Reading session is complete,\npress the button to continue to\nthe next session</string>
     <string name="all_session_complete">All session is complete,\npress the button to continue to\nthe next session</string>
     <string name="finish">finish</string>
+    <string name="listening">Listening</string>
+    <string name="reading">Reading</string>
+    <string name="structure">Structure</string>
+    <string name="complete_test_toefl_1">Complete Test TOEFL 1</string>
+    <string name="complete_test_toefl_2">Complete Test TOEFL 2</string>
 
 </resources>
