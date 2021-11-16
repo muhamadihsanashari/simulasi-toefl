@@ -5,6 +5,7 @@ import com.fastwork.toefl.ui.main.MainViewModel
 import com.fastwork.toefl.ui.postAndPreTest.PreAndPostTestViewModel
 import com.fastwork.toefl.ui.practice.PracticeViewModel
 import com.fastwork.toefl.ui.practice.test.PracticeTestViewModel
+import com.fastwork.toefl.ui.profile.ProfileViewModel
 import com.fastwork.toefl.ui.score.ScoreViewModel
 import com.fastwork.toefl.ui.splash.SplashViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
@@ -24,12 +25,15 @@ val viewModelModule = module {
         PracticeTestViewModel(get())
     }
     viewModel {
-        ScoreViewModel(get(),get())
+        ScoreViewModel(get(), get())
     }
     viewModel {
         SplashViewModel(get(), get())
     }
     viewModel {
         PreAndPostTestViewModel(get(), get())
+    }
+    viewModel {
+        ProfileViewModel(get())
     }
 }

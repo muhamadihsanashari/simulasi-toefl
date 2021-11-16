@@ -63,5 +63,8 @@ class MainPageFragment : Fragment() {
         mainMenuViewModel.onScoreClicked.observe(this, {
             findNavController().navigate(R.id.scoreLanding)
         })
+        mainMenuViewModel.onProfileClicked.observe(this, {
+            findNavController().navigate(R.id.profileFragment)
+        })
     }
 }

@@ -88,5 +88,10 @@
     <string name="practice_reading">Practice Reading</string>
     <string name="practice_listening">Practice Listening</string>
     <string name="reset_score">Reset Score</string>
+    <string name="muhamad_ihsan_ashari">Muhamad Ihsan Ashari</string>
+    <string name="teknik_informatika">Teknik Informatika</string>
+    <string name="NIM">171011401469</string>
+    <string name="gelombang_12">Gelombang 12</string>
+    <string name="logout">Logout</string>
 
 </resources>

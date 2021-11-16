@@ -23,7 +23,6 @@ class ScoreViewModel(
 
     val successInsert = SingleLiveEvent<Int>()
     val successDelete = SingleLiveEvent<Int>()
-
     private val _scoreListLiveData by lazy { MutableLiveData<List<Score>>() }
     val scoreListLiveData: LiveData<List<Score>> by lazy { _scoreListLiveData }
 
