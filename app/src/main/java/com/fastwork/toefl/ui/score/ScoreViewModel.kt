@@ -22,6 +22,7 @@ class ScoreViewModel(
 ) : BaseViewModel() {
 
     val successInsert = SingleLiveEvent<Int>()
+    val successDelete = SingleLiveEvent<Int>()
 
     private val _scoreListLiveData by lazy { MutableLiveData<List<Score>>() }
     val scoreListLiveData: LiveData<List<Score>> by lazy { _scoreListLiveData }
@@ -65,6 +66,16 @@ class ScoreViewModel(
                 if (result.isNotEmpty()) {
                     _scoreListLiveData.postValue(result)
                 }
+            } catch (e: Exception) {
+                Timber.e(e.message.toString())
+            }
+        }
+    }
+
+    fun resetScores(category: String?) {
+        launch {
+            try {
+                successDelete.value = scoreRepository.resetScore(category!!)
             } catch (e: Exception) {
                 Timber.e(e.message.toString())
             }

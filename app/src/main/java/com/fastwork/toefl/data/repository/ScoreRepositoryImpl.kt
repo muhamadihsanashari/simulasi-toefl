@@ -32,4 +32,16 @@ class ScoreRepositoryImpl(private val scoreDao: ScoreDao) : ScoreRepository {
         return result
     }
 
+    override suspend fun resetScore(category: String): Int {
+        var result = 0
+        withContext(Dispatchers.IO) {
+            try {
+                result = scoreDao.resetScore(category)
+            } catch (e: Exception) {
+                Timber.e(e.message.toString())
+            }
+        }
+        return result
+    }
+
 }

@@ -13,4 +13,7 @@ interface ScoreDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun inserScore(data: Score): Long
+
+    @Query("DELETE FROM score WHERE category=:category")
+    suspend fun resetScore(category: String): Int
 }

@@ -31,13 +31,23 @@ class ScoreListFragment : Fragment() {
             lifecycleOwner = this@ScoreListFragment
         }
         setupData()
+        setupListener()
         setupObserver()
         return binding.root
+    }
+
+    private fun setupListener() {
+        binding.btnClear.setOnClickListener {
+            viewModel.resetScores(category)
+        }
     }
 
     private fun setupObserver() {
         viewModel.scoreListLiveData.observe(viewLifecycleOwner, {
             adapter.addItems(it)
+        })
+        viewModel.successDelete.observe(viewLifecycleOwner, {
+            adapter.clearItems()
         })
     }
 
