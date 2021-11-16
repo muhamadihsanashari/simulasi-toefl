@@ -58,7 +58,7 @@ class DirectionFragment : Fragment() {
                 val bundle = Bundle().apply {
                     putString(TEST_CATEGORY_KEY, dataDirection?.category)
                     val dataSession = ModelSession(
-                        session = PreAndPostTestFragment.LISTENING_SESSION,
+                        session = FullTestFragment.LISTENING_SESSION,
                         category = dataDirection?.category
                     )
                     putSerializable(SESSION_KEY, dataSession)
@@ -74,5 +74,7 @@ class DirectionFragment : Fragment() {
     companion object {
         const val PRETEST_TYPE = "pretest"
         const val POSTTEST_TYPE = "posttest"
+        const val FULLTEST_ONE = "fulltest1"
+        const val FULLTEST_TWO = "fulltest2"
     }
 }

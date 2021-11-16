@@ -109,7 +109,7 @@
 
     <fragment
         android:id="@+id/preAndPostTestFragment"
-        android:name="com.fastwork.toefl.ui.postAndPreTest.PreAndPostTestFragment"
+        android:name="com.fastwork.toefl.ui.postAndPreTest.FullTestFragment"
         android:label="Pre And Post Fragment"
         tools:layout="@layout/fragment_full_test" />
 

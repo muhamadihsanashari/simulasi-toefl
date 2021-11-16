@@ -33,15 +33,15 @@ class SessionFragment : Fragment() {
     }
 
     private fun setupData() {
-        if (dataTest?.session == PreAndPostTestFragment.LISTENING_SESSION) {
+        if (dataTest?.session == FullTestFragment.LISTENING_SESSION) {
             binding.tvSessionText.text = getString(R.string.listening_session_complete)
             return
         }
-        if (dataTest?.session == PreAndPostTestFragment.READING_SESSION) {
+        if (dataTest?.session == FullTestFragment.READING_SESSION) {
             binding.tvSessionText.text = getString(R.string.reading_session_complete)
             return
         }
-        if (dataTest?.session == PreAndPostTestFragment.STRUCTURE_SESSION) {
+        if (dataTest?.session == FullTestFragment.STRUCTURE_SESSION) {
             binding.tvSessionText.text = getString(R.string.all_session_complete)
             binding.btnNext.text = getString(R.string.finish)
             return
@@ -53,10 +53,10 @@ class SessionFragment : Fragment() {
             findNavController().navigate(R.id.dialogExitSession)
         }
         binding.btnNext.setOnClickListener {
-            if (dataTest?.session == PreAndPostTestFragment.LISTENING_SESSION) {
+            if (dataTest?.session == FullTestFragment.LISTENING_SESSION) {
                 val bundle = Bundle().apply {
                     val dataSession = ModelSession(
-                        session = PreAndPostTestFragment.READING_SESSION,
+                        session = FullTestFragment.READING_SESSION,
                         category = dataTest?.category,
                         dataTest = dataTest?.dataTest
                     )
@@ -66,10 +66,10 @@ class SessionFragment : Fragment() {
                 findNavController().navigateUp()
                 findNavController().navigate(R.id.preAndPostTestFragment, bundle)
             }
-            if (dataTest?.session == PreAndPostTestFragment.READING_SESSION) {
+            if (dataTest?.session == FullTestFragment.READING_SESSION) {
                 val bundle = Bundle().apply {
                     val dataSession = ModelSession(
-                        session = PreAndPostTestFragment.STRUCTURE_SESSION,
+                        session = FullTestFragment.STRUCTURE_SESSION,
                         category = dataTest?.category,
                         dataTest = dataTest?.dataTest
                     )
@@ -79,7 +79,7 @@ class SessionFragment : Fragment() {
                 findNavController().navigateUp()
                 findNavController().navigate(R.id.preAndPostTestFragment, bundle)
             }
-            if (dataTest?.session == PreAndPostTestFragment.STRUCTURE_SESSION) {
+            if (dataTest?.session == FullTestFragment.STRUCTURE_SESSION) {
                 val bundle = Bundle().apply {
                     val scoreType = ScoreType(dataTest?.category, calculateScore())
                     putSerializable(SCORE_TYPE_KEY, scoreType)

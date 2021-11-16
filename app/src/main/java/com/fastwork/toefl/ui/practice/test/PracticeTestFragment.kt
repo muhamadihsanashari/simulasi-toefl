@@ -301,7 +301,7 @@ class PracticeTestFragment : Fragment() {
                 numberOfCorrect++
             }
         }
-        val result: Double = numberOfCorrect.toDouble() / questionData.size * 1000
+        val result: Double = numberOfCorrect.toDouble() / questionData.size * 100
         return result.toInt()
     }
 

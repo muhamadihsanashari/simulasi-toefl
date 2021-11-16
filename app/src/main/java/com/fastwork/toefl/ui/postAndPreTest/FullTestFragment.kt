@@ -17,9 +17,7 @@ import com.fastwork.toefl.R
 import com.fastwork.toefl.data.local.model.ModelFullTest
 import com.fastwork.toefl.data.local.model.ModelSession
 import com.fastwork.toefl.data.local.model.Question
-import com.fastwork.toefl.data.local.model.ScoreType
 import com.fastwork.toefl.databinding.FragmentFullTestBinding
-import com.fastwork.toefl.utils.SCORE_TYPE_KEY
 import com.fastwork.toefl.utils.SESSION_KEY
 import com.fastwork.toefl.utils.TEST_CATEGORY_KEY
 import com.fastwork.toefl.utils.launchPeriodicAsync
@@ -28,7 +26,7 @@ import kotlinx.coroutines.Dispatchers
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import java.util.concurrent.TimeUnit
 
-class PreAndPostTestFragment : Fragment() {
+class FullTestFragment : Fragment() {
 
     private var modelSession: ModelSession? = null
     private lateinit var binding: FragmentFullTestBinding
@@ -53,8 +51,8 @@ class PreAndPostTestFragment : Fragment() {
     ): View {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_full_test, container, false)
         binding.apply {
-            viewModel = this@PreAndPostTestFragment.viewModel
-            lifecycleOwner = this@PreAndPostTestFragment
+            viewModel = this@FullTestFragment.viewModel
+            lifecycleOwner = this@FullTestFragment
         }
         setupData()
         setupObserver()
@@ -416,6 +414,7 @@ class PreAndPostTestFragment : Fragment() {
         const val LISTENING_SESSION = "listening"
         const val READING_SESSION = "reading"
         const val STRUCTURE_SESSION = "structure"
+        const val FULLTEST_ONE = "fulltest1"
     }
 
 }
