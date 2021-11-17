@@ -16,14 +16,13 @@ import com.fastwork.toefl.utils.*
 import com.fastwork.toefl.workers.*
 
 @Database(
-    entities = [Product::class, ParagraphReading::class, Reading::class, Structure::class, Listening::class, Score::class, User::class],
+    entities = [ParagraphReading::class, Reading::class, Structure::class, Listening::class, Score::class, User::class],
     version = 1,
     exportSchema = false
 )
 @TypeConverters(Converter::class)
 abstract class AppDatabase() : RoomDatabase() {
 
-    abstract fun productDao(): ProductDao
     abstract fun paragraphDao(): ParagraphDao
     abstract fun readingDao(): ReadingDao
     abstract fun structureDao(): StructureDao

@@ -7,10 +7,6 @@ import org.koin.dsl.module
 
 val databaseModule = module {
 
-    fun provideProductDao(database: AppDatabase): ProductDao {
-        return database.productDao()
-    }
-
     fun provideParagraphReadingDao(database: AppDatabase): ParagraphDao {
         return database.paragraphDao()
     }
@@ -37,10 +33,6 @@ val databaseModule = module {
 
     single {
         AppDatabase.getInstance(androidContext())
-    }
-
-    single {
-        provideProductDao(get())
     }
 
     single { provideParagraphReadingDao(get()) }
