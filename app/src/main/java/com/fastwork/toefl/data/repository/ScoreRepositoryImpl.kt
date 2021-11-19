@@ -32,6 +32,18 @@ class ScoreRepositoryImpl(private val scoreDao: ScoreDao) : ScoreRepository {
         return result
     }
 
+    override suspend fun getAllUserScores(category: String): List<Score> {
+        val result = mutableListOf<Score>()
+        withContext(Dispatchers.IO) {
+            try {
+                result.addAll(scoreDao.getAllUserScores(category = category))
+            } catch (e: Exception) {
+                Timber.e(e.message.toString())
+            }
+        }
+        return result
+    }
+
     override suspend fun resetScore(category: String): Int {
         var result = 0
         withContext(Dispatchers.IO) {

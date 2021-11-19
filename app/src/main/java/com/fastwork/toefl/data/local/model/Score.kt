@@ -14,7 +14,9 @@ data class Score(
     @ColumnInfo(name = "date")
     val date: Date,
     @ColumnInfo(name = "user_id")
-    val userId: Int
+    val userId: Int,
+    @ColumnInfo(name = "user_name")
+    val userName:String
 ) {
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")

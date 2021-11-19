@@ -97,5 +97,8 @@
     <string name="toefl_simulation_is_an_android_based_toefl_training_application_the_scoring_system_in_this_simulation_is_adopted_from_paper_based_toefl_prediction_pbt">TOEFL Simulation is an Android-based TOEFL training application, the scoring system in this simulation is adopted from paper-based TOEFL prediction (PBT).</string>
     <string name="testing">Testing</string>
     <string name="materials">Materials</string>
+    <string name="nilai_post_test">Nilai Post Test</string>
+    <string name="nilai_pre_test">Nilai Pre Test</string>
+    <string name="score">Score : </string>
 
 </resources>

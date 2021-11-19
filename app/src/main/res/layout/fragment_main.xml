@@ -81,113 +81,177 @@
                 android:layout_height="wrap_content"
                 android:padding="@dimen/size_24dp">
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/parent_banner"
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="140dp"
-                    app:cardCornerRadius="15dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/parent_user"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
                     app:layout_constraintTop_toTopOf="parent">
 
-                    <androidx.appcompat.widget.AppCompatImageView
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/parent_banner"
                         android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        app:cardCornerRadius="15dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/hero_img" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_practice"
+                        android:layout_width="0dp"
+                        android:layout_height="72dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/bg_purple_light"
+                        android:fontFamily="@font/poppins_medium"
+                        android:onClick="@{() -> viewModel.onPracticeClicked()}"
+                        android:text="@string/label_practice"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@id/guideline"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/parent_banner" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_testing"
+                        android:layout_width="0dp"
+                        android:layout_height="72dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_purple_light"
+                        android:fontFamily="@font/poppins_medium"
+                        android:onClick="@{()->viewModel.onTestingClicked()}"
+                        android:text="@string/label_testing"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/guideline"
+                        app:layout_constraintTop_toBottomOf="@id/parent_banner" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_pre_test"
+                        android:layout_width="0dp"
+                        android:layout_height="72dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/bg_purple_light"
+                        android:fontFamily="@font/poppins_medium"
+                        android:onClick="@{()-> viewModel.onPreTestClicked()}"
+                        android:text="@string/label_pre_test"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@id/guideline"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/btn_practice" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_post_test"
+                        android:layout_width="0dp"
+                        android:layout_height="72dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/bg_purple_light"
+                        android:fontFamily="@font/poppins_medium"
+                        android:onClick="@{()-> viewModel.onPostTestClicked()}"
+                        android:text="@string/label_post_test"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/guideline"
+                        app:layout_constraintTop_toBottomOf="@id/btn_testing" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_download"
+                        android:layout_width="0dp"
+                        android:layout_height="72dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/bg_purple_light"
+                        android:fontFamily="@font/poppins_medium"
+                        android:onClick="@{()->viewModel.onDownloadClicked()}"
+                        android:text="@string/label_download"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@id/guideline"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/btn_pre_test" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_scores"
+                        android:layout_width="0dp"
+                        android:layout_height="72dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/bg_purple_light"
+                        android:fontFamily="@font/poppins_medium"
+                        android:onClick="@{()-> viewModel.onScoreClicked()}"
+                        android:text="@string/label_scores"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/guideline"
+                        app:layout_constraintTop_toBottomOf="@id/btn_post_test" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline"
+                        android:layout_width="@dimen/size_1dp"
                         android:layout_height="match_parent"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/hero_img" />
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.5" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/parent_admin">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_score_pre_test"
+                        android:layout_width="0dp"
+                        android:layout_height="72dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/bg_purple_light"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/nilai_pre_test"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@id/guideline_admin"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_score_post_test"
+                        android:layout_width="0dp"
+                        android:layout_height="72dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/bg_purple_light"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/nilai_post_test"
+                        android:textStyle="bold"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/guideline_admin"
+                        />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline_admin"
+                        android:layout_width="@dimen/size_1dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.5" />
 
 
-                </androidx.cardview.widget.CardView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btn_practice"
-                    android:layout_width="0dp"
-                    android:layout_height="72dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="5dp"
-                    android:background="@drawable/bg_purple_light"
-                    android:fontFamily="@font/poppins_medium"
-                    android:onClick="@{() -> viewModel.onPracticeClicked()}"
-                    android:text="@string/label_practice"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="@id/guideline"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/parent_banner" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btn_testing"
-                    android:layout_width="0dp"
-                    android:layout_height="72dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/bg_purple_light"
-                    android:fontFamily="@font/poppins_medium"
-                    android:onClick="@{()->viewModel.onTestingClicked()}"
-                    android:text="@string/label_testing"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="@id/guideline"
-                    app:layout_constraintTop_toBottomOf="@id/parent_banner" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btn_pre_test"
-                    android:layout_width="0dp"
-                    android:layout_height="72dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="5dp"
-                    android:background="@drawable/bg_purple_light"
-                    android:fontFamily="@font/poppins_medium"
-                    android:onClick="@{()-> viewModel.onPreTestClicked()}"
-                    android:text="@string/label_pre_test"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="@id/guideline"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/btn_practice" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btn_post_test"
-                    android:layout_width="0dp"
-                    android:layout_height="72dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="5dp"
-                    android:background="@drawable/bg_purple_light"
-                    android:fontFamily="@font/poppins_medium"
-                    android:onClick="@{()-> viewModel.onPostTestClicked()}"
-                    android:text="@string/label_post_test"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="@id/guideline"
-                    app:layout_constraintTop_toBottomOf="@id/btn_testing" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btn_download"
-                    android:layout_width="0dp"
-                    android:layout_height="72dp"
-                    android:layout_marginTop="10dp"
-                    android:onClick="@{()->viewModel.onDownloadClicked()}"
-                    android:layout_marginEnd="5dp"
-                    android:background="@drawable/bg_purple_light"
-                    android:fontFamily="@font/poppins_medium"
-                    android:text="@string/label_download"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="@id/guideline"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/btn_pre_test" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btn_scores"
-                    android:layout_width="0dp"
-                    android:layout_height="72dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="5dp"
-                    android:onClick="@{()-> viewModel.onScoreClicked()}"
-                    android:background="@drawable/bg_purple_light"
-                    android:fontFamily="@font/poppins_medium"
-                    android:text="@string/label_scores"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="@id/guideline"
-                    app:layout_constraintTop_toBottomOf="@id/btn_post_test" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btn_about"
@@ -199,13 +263,6 @@
                     android:onClick="@{()->viewModel.onClickAbout()}"
                     android:textAllCaps="false"
                     app:layout_constraintBottom_toBottomOf="parent" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guideline"
-                    android:layout_width="@dimen/size_1dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.5" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

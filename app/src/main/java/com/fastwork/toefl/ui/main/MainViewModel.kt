@@ -4,6 +4,7 @@ import android.content.SharedPreferences
 import com.fastwork.toefl.core.BaseViewModel
 import com.fastwork.toefl.utils.POST_TEST_CHANCE_KEY
 import com.fastwork.toefl.utils.PRE_TEST_CHANCE_KEY
+import com.fastwork.toefl.utils.ROLES_KEY
 import com.fastwork.toefl.utils.SingleLiveEvent
 
 class MainViewModel(private val sharedPreferences: SharedPreferences) : BaseViewModel() {
@@ -51,4 +52,5 @@ class MainViewModel(private val sharedPreferences: SharedPreferences) : BaseView
 
     val preTestChance = sharedPreferences.getInt(PRE_TEST_CHANCE_KEY, 0)
     val postTestChance = sharedPreferences.getInt(POST_TEST_CHANCE_KEY, 0)
+    val userRoles = sharedPreferences.getString(ROLES_KEY, null)
 }

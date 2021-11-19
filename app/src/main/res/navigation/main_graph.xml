@@ -170,5 +170,11 @@
         tools:label="Download Fragment"
         tools:layout="@layout/fragment_download" />
 
+    <fragment
+        android:id="@+id/fragmentScoreListAdmin"
+        android:name="com.fastwork.toefl.ui.score.ScoreListAdmin"
+        android:label="Score List Admin"
+        tools:layout="@layout/fragment_list_score_admin"/>
+
 
 </navigation>

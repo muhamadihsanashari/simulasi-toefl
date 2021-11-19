@@ -7,7 +7,9 @@ import androidx.lifecycle.MutableLiveData
 import com.fastwork.toefl.R
 import com.fastwork.toefl.core.BaseViewModel
 import com.fastwork.toefl.data.repository.UserRepository
+import com.fastwork.toefl.utils.ROLES_KEY
 import com.fastwork.toefl.utils.USER_ID_KEY
+import com.fastwork.toefl.utils.USER_NAME
 import com.fastwork.toefl.utils.Validator.isPasswordValid
 import com.fastwork.toefl.utils.Validator.isUsernameValid
 import kotlinx.coroutines.launch
@@ -30,6 +32,8 @@ class LoginViewModel(
             val result = userRepository.login(email.get().toString(), password.get().toString())
             if (result != null) {
                 sharedPreferences.edit().putInt(USER_ID_KEY, result.id).apply()
+                sharedPreferences.edit().putString(ROLES_KEY, result.role).apply()
+                sharedPreferences.edit().putString(USER_NAME, result.username).apply()
                 loginResultState.value = LoginResultState(success = R.string.login_success)
             } else {
                 loginResultState.value = LoginResultState(error = R.string.login_failed)

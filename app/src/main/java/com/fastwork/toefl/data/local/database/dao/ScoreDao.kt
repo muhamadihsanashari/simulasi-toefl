@@ -16,4 +16,7 @@ interface ScoreDao {
 
     @Query("DELETE FROM score WHERE category=:category")
     suspend fun resetScore(category: String): Int
+
+    @Query("SELECT * FROM score WHERE category=:category")
+    suspend fun getAllUserScores(category: String): List<Score>
 }

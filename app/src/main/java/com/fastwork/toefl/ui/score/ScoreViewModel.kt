@@ -8,10 +8,7 @@ import com.fastwork.toefl.data.local.model.Score
 import com.fastwork.toefl.data.local.model.ScoreType
 import com.fastwork.toefl.data.repository.ScoreRepository
 import com.fastwork.toefl.ui.postAndPreTest.DirectionFragment
-import com.fastwork.toefl.utils.POST_TEST_CHANCE_KEY
-import com.fastwork.toefl.utils.PRE_TEST_CHANCE_KEY
-import com.fastwork.toefl.utils.SingleLiveEvent
-import com.fastwork.toefl.utils.USER_ID_KEY
+import com.fastwork.toefl.utils.*
 import kotlinx.coroutines.launch
 import timber.log.Timber
 import java.util.*
@@ -38,7 +35,8 @@ class ScoreViewModel(
             score = scoreType?.score!!,
             category = scoreType.category!!,
             date = Date(),
-            userId = sharedPreferences.getInt(USER_ID_KEY, 0)
+            userId = sharedPreferences.getInt(USER_ID_KEY, 0),
+            userName = sharedPreferences.getString(USER_NAME, "")!!
         )
         launch {
             try {
@@ -70,6 +68,23 @@ class ScoreViewModel(
             }
         }
     }
+
+    fun getAllUserScores(category: String?) {
+        launch {
+            try {
+                val result =
+                    scoreRepository.getAllUserScores(
+                        category!!
+                    )
+                if (result.isNotEmpty()) {
+                    _scoreListLiveData.postValue(result)
+                }
+            } catch (e: Exception) {
+                Timber.e(e.message.toString())
+            }
+        }
+    }
+
 
     fun resetScores(category: String?) {
         launch {

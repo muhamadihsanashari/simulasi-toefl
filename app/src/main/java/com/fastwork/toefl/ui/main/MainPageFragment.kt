@@ -11,7 +11,9 @@ import com.fastwork.toefl.R
 import com.fastwork.toefl.data.local.model.ModelDirection
 import com.fastwork.toefl.databinding.FragmentMainBinding
 import com.fastwork.toefl.ui.postAndPreTest.DirectionFragment
+import com.fastwork.toefl.ui.score.ScoreLandingFragment
 import com.fastwork.toefl.utils.DIRECTION_KEY
+import com.fastwork.toefl.utils.SCORE_CATEGORY_KEY
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainPageFragment : Fragment() {
@@ -29,8 +31,22 @@ class MainPageFragment : Fragment() {
             viewModel = mainMenuViewModel
             lifecycleOwner = this@MainPageFragment
         }
+        setupData()
         setupObserver()
         return binding.root
+    }
+
+    private fun setupData() {
+        if (mainMenuViewModel.userRoles != null && mainMenuViewModel.userRoles == "admin") {
+            binding.parentAdmin.visibility = View.VISIBLE
+            binding.parentUser.visibility = View.GONE
+            binding.ivPhoto.setImageResource(R.drawable.ic_photo_admin)
+            binding.tvName.text = "Admin"
+            binding.tvNim.visibility = View.GONE
+        } else {
+            binding.parentAdmin.visibility = View.GONE
+            binding.parentUser.visibility = View.VISIBLE
+        }
     }
 
     private fun setupObserver() {
@@ -72,5 +88,16 @@ class MainPageFragment : Fragment() {
         mainMenuViewModel.onDownloadClicked.observe(this, {
             findNavController().navigate(R.id.fragmentDownload)
         })
+        binding.btnScorePreTest.setOnClickListener {
+            navigateToScoreList(ScoreLandingFragment.PRE_TEST)
+        }
+        binding.btnScorePostTest.setOnClickListener {
+            navigateToScoreList(ScoreLandingFragment.POST_TEST)
+        }
+    }
+
+    private fun navigateToScoreList(category: String) {
+        val bundle = Bundle().apply { putString(SCORE_CATEGORY_KEY, category) }
+        findNavController().navigate(R.id.fragmentScoreListAdmin, bundle)
     }
 }
